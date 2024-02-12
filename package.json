@@ -28,6 +28,12 @@
     "url": "git+https://github.com/jaccomeijer/jmmake.git"
   },
   "license": "MIT",
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-eslint": "9.0.0",
+    "eslint-plugin-react": "7.33.2",
+    "feather-icons": "4.29.1"
+  },
   "files": [
     "dist"
   ],
