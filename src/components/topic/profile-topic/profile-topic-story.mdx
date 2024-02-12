@@ -1,0 +1,77 @@
+---
+navigation:
+  heading: ProfileTopic
+  parent: Topic
+topic:
+  heading: Profile example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { ProfileTopic } from './profile-topic'
+import { TwoColumnLayout } from '../../layout/two-column-layout/two-column-layout'
+import { ThreeColumnLayout } from '../../layout/three-column-layout/three-column-layout'
+import { FourColumnLayout } from '../../layout/four-column-layout/four-column-layout'
+import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+topic:
+  heading: Profile example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+```
+
+## Example
+```html
+<ProfileTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+```
+<ProfileTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+
+## Example
+```js
+import topicImage from '../../assets/images/pexels-skyler-ewing-4596712.jpg'
+```
+```html
+<ProfileTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+```
+<ProfileTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+
+## Example
+```html
+<ProfileTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
+```
+<ProfileTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>

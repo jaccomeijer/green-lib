@@ -1,0 +1,56 @@
+---
+navigation:
+  heading: FooterNavigation
+  parent: Navigation
+
+mainMenu:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialMenu:
+  - heading: Heading and icon
+    icon: cloud
+  - icon: github
+  - icon: linkedin
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { FooterNavigation } from './footer-navigation'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+mainMenu:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialMenu:
+  - heading: Github
+    icon: github
+  - heading: LinkedIn
+    icon: linkedin
+```
+
+
+## Example
+```html
+<FooterNavigation mainMenu={frontmatter.mainMenu} socialMenu={frontmatter.socialMenu} />
+```
+<FooterNavigation mainMenu={frontmatter.mainMenu} socialMenu={frontmatter.socialMenu} />
+
+## Example
+```html
+<FooterNavigation mainMenu={frontmatter.mainMenu} />
+```
+<FooterNavigation mainMenu={frontmatter.mainMenu} />
+
+## Example
+```html
+<FooterNavigation socialMenu={frontmatter.socialMenu} />
+```
+<FooterNavigation socialMenu={frontmatter.socialMenu} />

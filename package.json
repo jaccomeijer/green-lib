@@ -1,0 +1,8 @@
+{
+  "name": "mdx",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Jacco Meijer <jacco@jaccomeijer.nl> (https://www.jaccomeijer.nl/)",
+  "type": "module"
+}

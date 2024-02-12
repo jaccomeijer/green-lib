@@ -1,0 +1,9 @@
+:host {
+  display:block;
+}
+
+#root-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}

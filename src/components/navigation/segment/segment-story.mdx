@@ -1,0 +1,47 @@
+---
+navigation:
+  heading: Segment
+  parent: Navigation
+  url: /override/default/url
+
+menu:
+  - heading: Item A
+    icon: archive
+    url: /demo-a
+  - heading: Item B
+    url: /demo-b
+  - heading: Item C
+    icon: clock
+    url: /demo-c
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { Segment } from './segment.jsx'
+import ceCss from '../navigation-ce.css'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+navigation:
+  parent: Navigation
+  url: /override/default/url
+
+menu:
+  - heading: Item A
+    icon: archive
+    url: /demo-a
+  - heading: Item B
+    url: /demo-b
+  - heading: Item C
+    icon: clock
+    url: /demo-c
+```
+
+
+## Example
+```html
+<link rel="stylesheet" type="text/css" href={`/assets/${ceCss}`} />
+<Segment pageUrl="/demo-b" menu={frontmatter.menu} />
+```
+
+<link rel="stylesheet" type="text/css" href={`/assets/${ceCss}`} />
+<Segment pageUrl="/demo-b" menu={frontmatter.menu} />

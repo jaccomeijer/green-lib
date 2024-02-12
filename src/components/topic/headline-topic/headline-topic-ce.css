@@ -1,0 +1,54 @@
+:host {
+  display:block;
+}
+
+#topic-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 4rem 0;
+}
+
+#topic-picture {
+  order: var(--image-order);
+  width: 100%;
+}
+
+#topic-picture > img {
+  aspect-ratio: 5/2;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+#topic-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  max-width: 43rem;
+}
+
+#topic-content > feather-icon {
+  color: var(--color-primary-300);
+}
+
+#topic-content p,
+#topic-content h1,
+#topic-content h2,
+#topic-content h3 {
+  margin: 0;
+  text-align: center;
+}
+
+#topic-content > button {
+  margin: 0.5rem auto 0 auto;
+}
+
+#topic-labels span {
+  color: var(--color-primary-300);
+  margin: 0 0.75rem 0 0;
+}

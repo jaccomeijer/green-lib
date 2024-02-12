@@ -1,0 +1,26 @@
+:host {
+  display:block;
+}
+
+#root-container {
+  column-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4rem;
+}
+
+#root-container>* {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #root-container {
+    flex-direction: row;
+  }
+
+  #root-container>* {
+    width: calc(33.33% - (4rem/3));
+  }
+}

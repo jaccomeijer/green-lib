@@ -1,0 +1,108 @@
+---
+navigation:
+  heading: HeaderNavigation
+  parent: Navigation
+
+metadata:
+  branding: Story brand
+
+mainMenu:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialMenu:
+  - heading: Heading and icon
+    icon: cloud
+  - icon: github
+  - icon: linkedin
+
+actionMenu:
+  - heading: Share
+    icon: share
+  - icon: x
+  - heading: Text only
+
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { HeaderNavigation } from './header-navigation'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+metadata:
+  branding: Story brand
+
+mainMenu:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialMenu:
+  - heading: Github
+    icon: github
+  - heading: LinkedIn
+    icon: linkedin
+
+actionMenu:
+  - heading: Share
+    icon: share
+  - heading: Circle
+    icon: arrow-right
+```
+
+## Example
+```html
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  mainMenu={frontmatter.mainMenu}
+  socialMenu={frontmatter.socialMenu}
+  actionMenu={frontmatter.actionMenu} 
+/>
+```
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  mainMenu={frontmatter.mainMenu}
+  socialMenu={frontmatter.socialMenu}
+  actionMenu={frontmatter.actionMenu} 
+/>
+
+## Example
+```html
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  mainMenu={frontmatter.mainMenu}
+/>
+```
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  mainMenu={frontmatter.mainMenu}
+/>
+
+## Example
+```html
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  actionMenu={frontmatter.actionMenu} 
+/>
+```
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  actionMenu={frontmatter.actionMenu} 
+/>
+
+## Example
+```html
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  socialMenu={frontmatter.socialMenu}
+/>
+```
+<HeaderNavigation 
+  metadata={frontmatter.metadata}
+  socialMenu={frontmatter.socialMenu}
+/>

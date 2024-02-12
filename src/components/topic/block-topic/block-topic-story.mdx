@@ -1,0 +1,76 @@
+---
+navigation:
+  heading: BlockTopic
+  parent: Topic
+topic:
+  heading: Block example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+    url: /
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { BlockTopic } from './block-topic'
+import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+topic:
+  heading: Block example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+    url: /
+```
+
+## Example
+```html
+<BlockTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+```
+<BlockTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+
+## Example
+```js
+import topicImage from '../../assets/images/pexels-skyler-ewing-4596712.jpg'
+```
+```html
+<BlockTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+```
+<BlockTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+
+## Example
+```html
+<BlockTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
+```
+<BlockTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
