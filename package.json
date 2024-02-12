@@ -1,8 +1,42 @@
 {
-  "name": "green-lib",
+  "name": "@jaccomeijer/green-lib",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "Jacco Meijer <jacco@jaccomeijer.nl> (https://www.jaccomeijer.nl/)",
+  "description": "MDX component library for green-build",
+  "keywords": [
+    "esbuild",
+    "mdx",
+    "green",
+    "lib",
+    "jacco",
+    "meijer",
+    "component"
+  ],
+  "author": "Jacco Meijer (https://www.jaccomeijer.nl)",
+  "contributors": [
+    {
+      "name": "Jacco Meijer",
+      "email": "jacco@jaccomeijer.nl",
+      "url": "https://www.jaccomeijer.nl"
+    }
+  ],
+  "homepage": "https://github.com/jaccomeijer/jmmake#readme",
+  "bugs": {
+    "url": "https://github.com/jaccomeijer/jmmake/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaccomeijer/jmmake.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.11.1"
+  },
   "type": "module"
 }
