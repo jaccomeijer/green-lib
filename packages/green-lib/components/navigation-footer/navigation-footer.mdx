@@ -1,0 +1,82 @@
+---
+navigation:
+  heading: NavigationFooter
+  parent: Components
+
+mainActions:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialActions:
+  - heading: Heading and icon
+    icon: cloud
+  - icon: github
+  - icon: linkedin
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { NavigationFooter } from './navigation-footer'
+import { globals } from '@local/story/config/globals.js'
+
+## {frontmatter.navigation.heading}
+### Example
+```html
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  mainActions={frontmatter.mainActions}
+  socialActions={frontmatter.socialActions}
+/>
+```
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  mainActions={frontmatter.mainActions}
+  socialActions={frontmatter.socialActions}
+/>
+
+### Example
+```html
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  mainActions={frontmatter.mainActions}
+/>
+```
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  mainActions={frontmatter.mainActions}
+/>
+
+### Example
+```html
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  socialActions={frontmatter.socialActions}
+/>
+```
+<NavigationFooter
+  class="s-block-space u-block-space-xs u-border-top u-border-bottom"
+  globals={globals}
+  socialActions={frontmatter.socialActions}
+/>
+
+### Frontmatter
+```yaml
+mainActions:
+  - heading: Main1
+    url: /main1
+  - heading: Main2
+    icon: archive
+    url: /main2
+
+socialActions:
+  - heading: Github
+    icon: github
+  - heading: LinkedIn
+    icon: linkedin
+```

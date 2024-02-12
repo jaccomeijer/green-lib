@@ -1,0 +1,18 @@
+{
+  "name": "@local/story",
+  "version": "1.2.19",
+  "scripts": {
+    "build": "echo No build needed, this package is never published",
+    "clean": "rm -rf dist",
+    "design-tokens": "designTokens transform",
+    "serve": "npm run clean && MODE=serve node story.js"
+  },
+  "private": "true",
+  "type": "module",
+  "devDependencies": {
+    "@jaccomeijer/green-lib": "1.2.19"
+  },
+  "dependencies": {
+    "design-tokens-cli": "0.0.6"
+  }
+}

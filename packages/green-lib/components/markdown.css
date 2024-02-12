@@ -1,0 +1,29 @@
+.markdown {
+	font-family: var(--font-body-family);
+	font-size: var(--font-size-0);
+	font-weight: var(--font-body-weight);
+
+	hr {
+		border: 0.5px solid var(--color-mono-200);
+		color: var(--color-mono-100);
+		margin: 3rem 0;
+		width: 100%;
+	}
+
+	picture,
+	img {
+		width: 100%;
+	}
+
+	.topic.topic-block,
+	.topic.topic-card {
+		margin-block-end: var(--space-s);
+	}
+
+	.topic.topic-headline,
+	.topic.topic-hero,
+	.topic.topic-profile,
+	.topic.topic-quote {
+		margin-block-end: var(--space-xl);
+	}
+}

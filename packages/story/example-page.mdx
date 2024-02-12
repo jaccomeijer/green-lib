@@ -1,0 +1,169 @@
+---
+navigation:
+  heading: Example page
+  order: 90
+
+topic:
+  heading: Example page
+  icon: globe
+  abstract: Text is free style. Have it your own, including headings, images and all that.
+  image: demoImage
+  action:
+    heading: Test action
+    icon: archive
+imageTopic:
+  heading: Demo topic for example page
+  icon: globe
+  abstract: This topic has an image, a two line heading and a longer abstract, all for demo purposes.
+  image: demoImage2
+  action:
+    heading: Test action
+    icon: archive
+---
+export { Layout as default } from './layout/layout.jsx'
+import { Topic, TopicList, Picture } from '@jaccomeijer/green-lib'
+import { globals } from './config/globals.js'
+import demoImage from './assets/images/pexels-skyler-ewing-4596712.jpg'
+import demoImage2 from './assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
+
+<div class="s-popout">
+  <Topic
+    globals={globals}
+    images={{ demoImage, demoImage2 }}
+    topic={frontmatter.topic}
+    data-variant="headline"
+    swap-image={true}
+  />
+</div>
+
+export const assetUrl = globals.baseUrl + globals.assetUrl
+
+# Heading 1
+
+- Cras felis magna, imperdiet eu turpis ut, dignissim lorum ipsum venenatis
+  justo.
+- Nullam cursus fermentum risus nec semper.
+- Fusce ornare ipsum et facilisis consequat.
+
+1) Donec tincidunt ut arcu ac sagittis.
+2) Nulla condimentum consectetur tristique.
+3) Integer eu consectetur libero, et ullamcorper felis. 
+
+Integer **tempus** turpis vel ornare pulvinar. Nulla *facilisis* leo lectus, nec
+euismod magna vulputate et. Duis vel velit quam. Cras interdum aliquet
+efficitur. Integer accumsan ***maximus*** purus, at dignissim augue dapibus in.
+
+`Nulla et libero arcu. In convallis sed leo eget dictum.`
+
+Integer vitae elit sapien. Ut congue arcu mauris, non dictum ipsum viverra eget.
+Duis et ultricies lorem.
+
+
+## Heading 2
+
+Sed ac augue at nisi fringilla iaculis vitae ac metus. In in iaculis nunc.
+
+```text
+Aliquam eu ultrices nisi.
+```
+
+Maecenas consectetur justo non nibh efficitur pellentesque. Donec scelerisque
+nisi ac tortor porta mollis. Proin lacinia volutpat odio, eu interdum eros
+ullamcorper sed.
+
+---
+
+Etiam eget risus ac lorem dignissim vestibulum nec quis felis. Nullam
+scelerisque, sem sit amet tempus interdum, libero mi vehicula sem, ac volutpat
+urna nibh ut orci. Donec metus ex, luctus quis egestas at, placerat sed tortor.
+
+
+### Heading 3
+
+Integer vitae elit sapien. Ut congue arcu mauris, non dictum ipsum viverra eget.
+Duis et ultricies lorem. Nulla at varius arcu. Integer tristique mattis ante eu
+bibendum. Quisque maximus orci eget justo venenatis posuere.
+
+- This is a link to an <a href={ assetUrl + demoImage }>image</a>
+- This ia a link to [jaccomeijer.nl](https://www.jaccomeijer.nl)
+
+Sed velit sapien, sagittis quis ligula eu, molestie ornare eros. Etiam lobortis
+sagittis orci volutpat maximus.
+
+<div class="s-popout">
+  <Topic
+    globals={globals}
+    images={{ demoImage, demoImage2 }}
+    topic={frontmatter.imageTopic}
+    data-variant="hero"
+  />
+</div>
+
+Phasellus commodo magna id mauris aliquet, vel fermentum massa malesuada.
+Maecenas placerat velit non iaculis commodo. Nam ac auctor ante, sed tincidunt
+libero. Curabitur venenatis mi ac urna pellentesque, ut ornare ipsum malesuada.
+
+#### Heading 4
+
+Fusce tincidunt a nunc et fringilla. Nulla in nunc eget sapien finibus venenatis
+ut non orci. Suspendisse nec orci est. Duis id turpis quis mauris venenatis
+condimentum.
+
+<Picture
+  class="s-block-space u-block-space-s"
+  globals={globals}
+  id="topic-picture"
+  src={ demoImage }
+/>
+
+Maecenas nisl nulla, laoreet sed lectus id, commodo euismod lorem. Praesent
+tempus pulvinar sapien maximus placerat. Praesent ligula orci, egestas a mattis
+ac, ullamcorper tempor eros. Sed a pharetra leo. Etiam dapibus sem at neque
+faucibus, at porta mauris accumsan. Nullam tellus nunc, elementum in nibh sit
+amet, ultricies bibendum magna. Suspendisse potenti.
+
+Nulla facilisi. In porta auctor lorem blandit convallis. Phasellus quis sapien
+elit. Nullam mollis, nisi ac blandit consequat, sapien ligula suscipit libero,
+et vulputate velit sapien ut elit. Vivamus dolor risus, tempus sit amet erat id,
+sagittis pellentesque odio.
+
+<Topic
+  globals={globals}
+  images={{ demoImage, demoImage2 }}
+  topic={frontmatter.topic}
+  data-variant="card"
+/>
+
+Fusce id quam nulla. Mauris ac eros et erat dapibus gravida a ac justo. Integer
+sit amet elit dui. Fusce porta volutpat porttitor.
+
+Cras felis magna, imperdiet eu turpis ut, dignissim venenatis justo. Nullam
+cursus fermentum risus nec semper. Fusce ornare ipsum et facilisis consequat.
+
+<div class="s-popout">
+  <Topic
+    globals={globals}
+    images={{ demoImage, demoImage2 }}
+    topic={frontmatter.imageTopic}
+    data-variant="headline"
+  />
+</div>
+
+Donec tincidunt ut arcu ac sagittis. Nulla condimentum consectetur tristique.
+Integer eu consectetur libero, et ullamcorper felis. Integer tempus turpis vel
+ornare pulvinar.
+
+---
+
+<TopicList 
+  class="s-grid u-grid-four-cols u-gap-xs"
+  data-variant="card"
+  globals={globals}
+  images={{ demoImage, demoImage2 }}
+  topics={[ 
+    frontmatter.topic,
+    frontmatter.topic,
+    frontmatter.imageTopic,
+    frontmatter.imageTopic
+  ]}
+/>

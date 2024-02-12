@@ -1,0 +1,44 @@
+.topic.topic-profile {
+  align-items: center;
+  gap: var(--space-m);
+
+  .topic-picture {
+    aspect-ratio: 1/1;
+    max-width: 300px;
+  }
+
+  .topic-picture img {
+    border-radius: 100%;
+  }
+
+  .topic-content {
+    align-items: center;
+    gap: var(--space-s);
+
+    .topic-icon {
+      font-size: var(--font-size-5);
+    }
+
+    .topic-labels {
+      font-size: var(--font-size-1);
+      justify-content: center;
+    }
+
+    .topic-heading.display {
+      font-size: var(--font-size-4);
+      max-width: 20ch;
+      text-align: center;
+    }
+
+    .topic-abstract {
+      font-size: var(--font-size-1);
+      max-width: 40ch;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .topic-action {
+      font-size: var(--font-size-1);
+    }
+  }
+}

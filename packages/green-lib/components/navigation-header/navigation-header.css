@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.navigation-header {
+  .branding {
+    font-weight: var(--font-body-weight-bold);
+    text-decoration: none;
+  }
+
+  .wide-menu-view {
+    display: none;
+
+    @container (min-width: 45rem) {
+      & {
+        justify-content: space-between;
+      }
+
+      &,
+      .main-actions,
+      .social-actions,
+      .main-actions ul,
+      .social-actions ul {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2xs);
+      }
+
+      .main-actions,
+      .social-actions {
+        gap: var(--space-xs);
+      }
+    }
+  }
+
+  .open-menu-button {
+    border-radius: var(--border-radius-rounded);
+    display: block;
+    margin-inline-start: auto;
+
+    @container (min-width: 45rem) {
+      & {
+        display: none;
+      }
+    }
+  }
+}

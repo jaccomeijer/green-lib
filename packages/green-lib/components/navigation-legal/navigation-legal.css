@@ -1,0 +1,15 @@
+.navigation-legal {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size--1);
+  gap: var(--space-s);
+  justify-content: center;
+  width: 100%;
+
+  @container (min-width: 45rem) {
+    & {
+      justify-content: space-between;
+    }
+  }
+}

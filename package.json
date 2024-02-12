@@ -1,0 +1,16 @@
+{
+  "name": "@local/root",
+  "version": "1.2.19",
+  "devDependencies": {
+    "@jaccomeijer/green-build": "1.1.1",
+    "esbuild": "0.20.0",
+    "eslint": "8.56.0",
+    "eslint-config-eslint": "9.0.0",
+    "eslint-plugin-react": "7.33.2"
+  },
+  "workspaces": [
+    "packages/green-lib",
+    "packages/story"
+  ],
+  "type": "module"
+}

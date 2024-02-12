@@ -1,0 +1,80 @@
+---
+navigation:
+  heading: Topic Quote
+  parent: Topic
+topic:
+  heading: — Anonymous
+  labels: [opinion, test, demo, story]
+  abstract: '"Every time I thought I''d got it made, it seemed the taste was not so sweet"'
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { Topic } from './topic.jsx'
+import topicImage from '@local/story/assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '@local/story/config/globals.js'
+
+## {frontmatter.navigation.heading}
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="quote"
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="quote"
+/>
+
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="quote"
+  swap-image={true}
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="quote"
+  swap-image={true}
+/>
+
+### Example
+```html
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="quote"
+/>
+```
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="quote"
+/>
+
+### Frontmatter
+```yaml
+topic:
+  heading: -- Anonymous
+  labels: [opinion, test, demo, story]
+  abstract: '"Every time I thought I''d got it made, it seemed the taste was not so sweet"'
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+```

@@ -1,0 +1,25 @@
+---
+navigation:
+  heading: Picture
+  parent: Components
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { Picture } from './picture.jsx'
+import { globals } from '@local/story/config/globals.js'
+import image from '@local/story/assets/images/pexels-skyler-ewing-4596712.jpg'
+
+## {frontmatter.navigation.heading}
+
+### Example
+```html
+<Picture
+  alt="Image description"
+  globals={globals}
+  src={image}
+/>
+```
+<Picture
+  alt="Image description"
+  globals={globals}
+  src={image}
+/>

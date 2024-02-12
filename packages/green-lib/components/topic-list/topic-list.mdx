@@ -1,0 +1,138 @@
+---
+navigation:
+  heading: TopicList
+  parent: Topic
+topicList:
+  - heading: Testing AAA
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic. Short abstract.
+    image: topicImageA
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing BBB
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic. All topics actions must align.
+    image: topicImageB
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing CCC
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic. All topics have different lengths.
+    image: topicImageC
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing DDD
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic. This is another topic.
+    image: topicImageA
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing EEE
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic. All topics have different lengths. All topics actions must align.
+    image: topicImageB
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { TopicList } from './topic-list.jsx'
+import topicImageA from '@local/story/assets/images/kai-dahms-97yTozZh7N8-unsplash.jpg'
+import topicImageB from '@local/story/assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
+import topicImageC from '@local/story/assets/images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg'
+import { globals } from '@local/story/config/globals.js'
+
+## {frontmatter.navigation.heading}
+### Example
+```html
+<TopicList
+  class="s-grid u-grid-four-cols u-gap-xs"
+  data-variant="card"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+```
+<TopicList 
+  class="s-grid u-grid-four-cols u-gap-xs"
+  data-variant="card"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+
+### Example
+```html
+<TopicList 
+  class="s-grid u-grid-three-cols u-gap-l"
+  data-variant="block"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+```
+
+<TopicList 
+  class="s-grid u-grid-three-cols u-gap-l"
+  data-variant="block"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+
+### Example
+```html
+<TopicList 
+  class="s-grid u-grid-two-cols u-gap-l"
+  data-variant="block"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+```
+
+<TopicList 
+  class="s-grid u-grid-two-cols u-gap-l"
+  data-variant="block"
+  globals={globals}
+  images={{ topicImageA, topicImageB, topicImageC }}
+  topics={frontmatter.topicList}
+/>
+
+### Frontmatter
+```yaml
+topicList:
+  - heading: Testing AAA
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic
+    image: topicImageA
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing BBB
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic
+    image: topicImageB
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+  - heading: Testing CCC
+    labels: [opinion, test, demo, story]
+    abstract: This is a hero topic
+    image: topicImageC
+    icon: archive
+    action:
+      heading: Test action
+      icon: share
+```

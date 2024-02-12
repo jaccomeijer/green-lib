@@ -1,0 +1,26 @@
+.navigation-footer {
+
+  &,
+  ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    justify-content: center;
+    width: 100%;
+  }
+
+  sup {
+    margin-top: -1.4em;
+  }
+
+  @container (min-width: 45rem) {
+    & {
+      justify-content: space-between;
+    }
+
+    ul {
+      width: auto;
+    }
+  }
+}

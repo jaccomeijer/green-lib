@@ -1,0 +1,80 @@
+---
+navigation:
+  heading: Topic Profile
+  parent: Topic
+topic:
+  heading: Profile example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { Topic } from './topic.jsx'
+import topicImage from '@local/story/assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '@local/story/config/globals.js'
+
+## {frontmatter.navigation.heading}
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="profile"
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="profile"
+/>
+
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="profile"
+  swap-image={true}
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="profile"
+  swap-image={true}
+/>
+
+### Example
+```html
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="profile"
+/>
+```
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="profile"
+/>
+
+### Frontmatter
+```yaml
+topic:
+  heading: Profile example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+```

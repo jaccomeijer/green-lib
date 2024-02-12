@@ -1,0 +1,80 @@
+---
+navigation:
+  heading: Topic Headline
+  parent: Topic
+topic:
+  heading: Headline example topic with a long heading for testing
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a balanced topic abstract text, spanning multiple lines, has a max width in characters and that is placed below the header.
+  image: topicImage
+  icon: archive
+  action:
+    heading: Test action
+    icon: share
+---
+export { Layout as default } from '@local/story/layout/layout.jsx'
+import { Topic } from './topic.jsx'
+import topicImage from '@local/story/assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '@local/story/config/globals.js'
+
+## {frontmatter.navigation.heading}
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="headline"
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+data-variant="headline"
+/>
+
+### Example
+```html
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="headline"
+  swap-image={true}
+/>
+```
+<Topic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  globals={globals}
+  data-variant="headline"
+  swap-image={true}
+/>
+
+### Example
+```html
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="headline"
+/>
+```
+<Topic
+  topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
+  data-variant="headline"
+/>
+
+### Frontmatter
+```yaml
+topic:
+  heading: Headline example topic with a long heading for testing
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a balanced topic abstract text, spanning multiple lines, has a max width in characters and that is placed below the header.
+  image: topicImage
+  icon: archive
+  action:
+    heading: Test action
+    icon: share
+```
