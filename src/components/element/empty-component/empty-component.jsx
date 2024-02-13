@@ -1,4 +1,4 @@
-import ceCss from './empty-component-ce.css'
+import ceCss from './empty-component.ce.css'
 import ceJs from './empty-component.ce.js'
 
 export const EmptyComponent = () => (<empty-component>

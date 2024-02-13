@@ -1,4 +1,4 @@
-import ceCss from './carousel-layout-ce.css'
+import ceCss from './carousel-layout.ce.css'
 import ceJs from './carousel-layout.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 

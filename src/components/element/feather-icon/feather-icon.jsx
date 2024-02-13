@@ -1,4 +1,4 @@
-import ceCss from './feather-icon-ce.css'
+import ceCss from './feather-icon.ce.css'
 import ceJs from './feather-icon.ce.js'
 import sprite from '../../../../node_modules/feather-icons/dist/feather-sprite.svg'
 

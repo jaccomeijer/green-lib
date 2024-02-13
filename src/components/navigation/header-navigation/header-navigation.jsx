@@ -2,7 +2,7 @@ import { Branding } from './branding.jsx'
 import { ModalMenu } from './modal-menu.jsx'
 import { Segment } from '../segment/segment.jsx'
 import { ButtonSegment } from '../button-segment/button-segment.jsx'
-import ceCss from '../navigation-ce.css'
+import ceCss from '../navigation.ce.css'
 import ceJs from './header-navigation.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 

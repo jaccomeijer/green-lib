@@ -1,4 +1,4 @@
-import css from './story-menu-ce.css'
+import css from './story-menu.ce.css'
 import ceJs from './story-menu.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 

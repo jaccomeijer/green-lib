@@ -1,22 +1,16 @@
-import { metadata } from './src/data/metadata.js'
+import path from 'path'
+import { build } from 'esbuild'
 
-import { build } from '@jaccomeijer/green-build'
-
-const config = {
-  entryPointsGlob: 'src/components/**/*.{mdx}',
-  imageSizes: {
-    s: 300,
-    m: 700,
-    l: 1000,
+await build({
+  entryPoints: [path.resolve('./src/components/element/empty-component/empty-component.jsx')],
+  bundle: true,
+  format: 'esm',
+  jsx: 'automatic',
+  jsxImportSource: 'preact',
+  loader: {
+    '.ce.js': 'file',
+    '.ce.css': 'file',
   },
-  metadata,
   outdir: 'dist',
-  serve: false,
-  stripFromOutputPath: 'src/components',
-}
-
-if (process.argv[2] === 'serve') {
-  config.serve = true
-}
-
-build(config)
+  platform: 'browser',
+})

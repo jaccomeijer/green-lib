@@ -1,4 +1,4 @@
-import ceCss from './profile-topic-ce.css'
+import ceCss from './profile-topic.ce.css'
 import ceJs from './profile-topic.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'

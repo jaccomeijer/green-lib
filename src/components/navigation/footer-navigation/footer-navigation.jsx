@@ -1,4 +1,4 @@
-import ceCss from '../navigation-ce.css'
+import ceCss from '../navigation.ce.css'
 import ceJs from './footer-navigation.ce.js'
 import { Segment } from '../segment/segment.jsx'
 import globalCss from '../../../assets/css/global.bundle.css'

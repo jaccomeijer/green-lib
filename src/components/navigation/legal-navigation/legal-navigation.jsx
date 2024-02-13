@@ -1,4 +1,4 @@
-import ceCss from './legal-navigation-ce.css'
+import ceCss from './legal-navigation.ce.css'
 import ceJs from './legal-navigation.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 

@@ -12,8 +12,8 @@ echo $COMP_NAME_CAMEL
 mkdir -p src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH
 cp src/components/element/empty-component/* src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/
 
-mv src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/empty-component-ce.css \
-src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/$COMP_NAME_DASH-ce.css
+mv src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/empty-component.ce.css \
+src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/$COMP_NAME_DASH.ce.css
 
 mv src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/empty-component-ssr.jsx \
 src/components/$PARENT_COMP_DASH/$COMP_NAME_DASH/$COMP_NAME_DASH-ssr.jsx

@@ -1,4 +1,4 @@
-import ceCss from './three-column-layout-ce.css'
+import ceCss from './three-column-layout.ce.css'
 import ceJs from './three-column-layout.ce.js'
 import globalCss from '../../../assets/css/global.bundle.css'
 
