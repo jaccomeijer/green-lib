@@ -1,0 +1,82 @@
+/* INPUT */
+
+input {
+  border: 1px solid transparent;
+  border-color: var(--color-monochrome-300);
+  border-radius: 0.25rem;
+  color: var(--color-monochrome-500);
+  display: block;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+input[variant="s"] {
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+}
+
+input[variant="m"] {
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+input[variant="l"] {
+  font-size: var(--body-font-size-l);
+  line-height: var(--body-line-height-l);
+}
+
+input:active,
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 05.rem var(--color-primary-200);
+}
+
+input::placeholder {
+  color: var(--color-monochrome-300),
+}
+
+input:disabled {
+  background-color: var(--color-monochrome-100);
+  color: var(--color-monochrome-300);
+  cursor: not-allowed;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="checkbox"].switch {
+  appearance: none;
+  background-color: var(--color-monochrome-100);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-color: var(--color-monochrome-100);
+  border-radius: var(--radius-circle);
+  cursor: pointer;
+  height: 1.5rem;
+  margin: 5px 5px 5px 0;
+  transition: background-color .15s ease, background-position .15s ease, border-color .15s ease;
+  vertical-align: top;
+  width: 3rem;
+}
+
+input[type="checkbox"].switch:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+input[type="checkbox"].switch:checked {
+  background-color: var(--color-monochrome-400);
+  border-color: var(--color-monochrome-400);
+  background-position: right center;
+}

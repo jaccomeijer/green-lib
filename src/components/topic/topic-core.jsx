@@ -1,7 +1,7 @@
 import { FeatherIcon } from '../element/feather-icon/feather-icon.jsx'
 import { IconButton } from '../element/icon-button/icon-button.jsx'
 import { IconLink } from '../element/icon-link/icon-link.jsx'
-import { Picture } from '../../../esbuild-plugins/resize-image/picture.jsx'
+import { Picture } from '@jaccomeijer/green-build'
 
 export const TopicCore = props => {
   if (!props.topic) {

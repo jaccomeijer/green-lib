@@ -1,0 +1,47 @@
+/* TEXTAREA */
+
+textarea {
+  border: 1px solid transparent;
+  border-color: var(--color-monochrome-200);
+  border-radius: 0.25rem;
+  color: var(--color-monochrome-500);
+  display: block;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  padding: 0.5rem;
+  resize: none;
+  width: 100%;
+}
+
+textarea[variant="s"] {
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+}
+
+textarea[variant="m"] {
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+textarea[variant="l"] {
+  font-size: var(--body-font-size-l);
+  line-height: var(--body-line-height-l);
+}
+
+textarea.resize {
+  overflow: auto;
+  resize: vertical;
+}
+
+textarea:active,
+textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0.5rem var(--color-primary-200);
+}
+
+textarea:disabled {
+  background-color: var(--color-monochrome-100);
+  color: var(--color-monochrome-300);
+  cursor: not-allowed;
+}

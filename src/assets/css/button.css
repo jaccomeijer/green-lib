@@ -1,0 +1,68 @@
+/* BUTTON */
+
+button {
+  background-color: var(--color-primary-400);
+  border: 1px solid var(--color-primary-400);
+  border-radius: var(--radius-pill);
+  color: var(--color-monochrome-000);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  font-weight: var(--body-font-weight);
+  gap: 0.3rem;
+  justify-content: center;
+  line-height: var(--body-line-height-s);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: 0.35s;
+  user-select: none;
+}
+
+button:active,
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 6px var(--color-primary-300);
+}
+
+button:hover {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+}
+
+button feather-icon {
+  color: var(--color-monochrome-000);
+}
+
+button[variant="m"] {
+  font-size: var(--body-font-size-m);
+  gap: 0.4rem;
+  line-height: var(--body-line-height-m);
+  padding: 0.75rem 1.5rem;
+}
+
+button[variant="l"] {
+  font-size: var(--body-font-size-l);
+  gap: 0.7rem;
+  line-height: var(--body-line-height-l);
+  padding: 1rem 2rem;
+}
+ 
+button.outline {
+  background-color: transparent;
+  color: var(--color-primary-400);
+}
+
+button.outline:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-500);
+  color: var(--color-primary-500);
+}
+
+button.outline feather-icon {
+  color: var(--color-primary-500);
+}
+
+button.stretch {
+  width: 100%;
+}

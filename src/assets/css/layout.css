@@ -1,0 +1,37 @@
+/* LAYOUT */
+
+/* Recommended widths: 700px or 1280px */
+:root {
+	--container-width: 1280px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	max-width: var(--container-width);
+	padding: 0 1rem;
+	width: 100%;
+}
+
+.container-full {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
