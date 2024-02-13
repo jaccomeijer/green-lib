@@ -27,8 +27,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "node build.js",
-    "serve": "node build.js serve"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node build.js",
+    "serve": "npm run clean && node build.js serve"
   },
   "devDependencies": {
     "@jaccomeijer/green-build": "1.0.7",
