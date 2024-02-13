@@ -1,0 +1,77 @@
+---
+navigation:
+  heading: QuoteTopic
+  parent: Topic
+topic:
+  heading: -- Anonymous
+  labels: [opinion, test, demo, story]
+  abstract: '"Every time I thought I''d got it made, it seemed the taste was not so sweet"'
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { QuoteTopic } from './quote-topic'
+import { TwoColumnLayout } from '../../layout/two-column-layout/two-column-layout'
+import { ThreeColumnLayout } from '../../layout/three-column-layout/three-column-layout'
+import { FourColumnLayout } from '../../layout/four-column-layout/four-column-layout'
+import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+topic:
+  heading: -- Anonymous
+  labels: [opinion, test, demo, story]
+  abstract: '"Every time I thought I''d got it made, it seemed the taste was not so sweet"'
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+```
+
+## Example
+```html
+<QuoteTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+```
+<QuoteTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+
+## Example
+```js
+import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+```
+```html
+<QuoteTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+```
+<QuoteTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+
+## Example
+```html
+<QuoteTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
+```
+<QuoteTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>

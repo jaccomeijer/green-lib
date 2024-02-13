@@ -3,7 +3,7 @@ import { metadata } from './src/data/metadata.js'
 import { build } from '@jaccomeijer/green-build'
 
 const config = {
-  entryPointsGlob: 'src/components/**/*.{mdx}',
+  entryPointsGlob: 'src/package/components/**/*.{mdx}',
   imageSizes: {
     s: 300,
     m: 700,
@@ -13,7 +13,7 @@ const config = {
   outdir: 'dist',
   removeBundle: true,
   serve: false,
-  stripFromOutputPath: 'src/components',
+  stripFromOutputPath: 'src/package/components',
 }
 
 if (process.argv[2] === 'serve') {

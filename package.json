@@ -39,7 +39,7 @@
     "eslint-plugin-react": "7.33.2"
   },
   "files": [
-    "dist"
+    "src/package"
   ],
   "publishConfig": {
     "access": "public"

@@ -1,0 +1,62 @@
+---
+navigation:
+  heading: HeroTopic
+  parent: Topic
+topic:
+  heading: Hero example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { HeroTopic } from './hero-topic'
+import topicImage from '../../../../assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+topic:
+  heading: Hero example topic with a long heading
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: share
+  action:
+    heading: Test action
+    icon: archive
+```
+
+## Example
+```html
+<HeroTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+```
+<HeroTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+
+## Example
+```js
+import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+```
+```html
+<div class="container-full">
+  <HeroTopic
+    topic={frontmatter.topic}
+    images={{ topicImage }}
+    imageSizes={props.imageSizes}
+  />
+</div>
+```
+<div class="container-full">
+  <HeroTopic
+    topic={frontmatter.topic}
+    images={{ topicImage }}
+    imageSizes={props.imageSizes}
+  />
+</div>

@@ -1,0 +1,74 @@
+---
+navigation:
+  heading: FeaturedTopic
+  parent: Topic
+topic:
+  heading: Featured example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+---
+export { StoryLayout as default } from '../../../layouts/story-layout.jsx'
+import { FeaturedTopic } from './featured-topic'
+import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+
+# {frontmatter.navigation.heading}
+## Frontmatter
+```yaml
+topic:
+  heading: Featured example topic
+  labels: [opinion, test, demo, story]
+  abstract: This is an example of a topic abstract text.
+  image: topicImage
+  icon: book-open
+  action:
+    heading: Test action
+    icon: archive
+```
+
+## Example
+```html
+<FeaturedTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+```
+<FeaturedTopic
+  topic={{...frontmatter.topic, image: undefined}}
+/>
+
+## Example
+```js
+import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+```
+```html
+<FeaturedTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+```
+<FeaturedTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+/>
+
+## Example
+```html
+<FeaturedTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
+```
+<FeaturedTopic
+  topic={frontmatter.topic}
+  images={{ topicImage }}
+  imageSizes={props.imageSizes}
+  style="--image-order: 2"
+/>
