@@ -1,5 +1,5 @@
 import favicon from '../assets/favicon/favicon.ico'
-import { esbuildReload } from '@jaccomeijer/green-build'
+import esbuildReload from './esbuild-reload.ce.js'
 import globalCss from '../assets/css/global.bundle.css'
 
 export const Head = props => {

@@ -1,6 +1,6 @@
 import { Head } from './head.jsx'
 import { StoryMenu } from '../components/navigation/story-menu/story-menu.jsx'
-import { getMenuItems } from '@jaccomeijer/green-build'
+import { getMenuItems } from './get-menu-items.js'
 
 export const StoryLayout = props => {
   const mainMenu = getMenuItems({
