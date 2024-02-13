@@ -1,24 +1,18 @@
-import glob from 'tiny-glob'
-import { build } from 'esbuild'
+import { metadata } from './src/data/metadata.js'
 
-const entryPoints = await glob('src/components/**/*.{jsx}')
+import { build } from '@jaccomeijer/green-build'
 
-await build({
-  bundle: true,
-  entryPoints,
-  format: 'esm',
-  jsx: 'automatic',
-  jsxImportSource: 'preact',
-  loader: {
-
-    // Importing these files in js returns a filename with hash
-    '.css': 'file',
-    '.js': 'file',
-    '.svg': 'file',
-    '.ttf': 'file',
+const config = {
+  entryPointsGlob: 'src/components/**/*.{mdx}',
+  imageSizes: {
+    s: 300,
+    m: 700,
+    l: 1000,
   },
-  minify: true,
+  metadata,
   outdir: 'dist',
-  packages: 'external',
-  platform: 'node',
-})
+  serve: true,
+  stripFromOutputPath: 'src/components',
+}
+
+build(config)
