@@ -11,8 +11,12 @@ const config = {
   },
   metadata,
   outdir: 'dist',
-  serve: true,
+  serve: false,
   stripFromOutputPath: 'src/components',
+}
+
+if (process.argv[2] === 'serve') {
+  config.serve = true
 }
 
 build(config)

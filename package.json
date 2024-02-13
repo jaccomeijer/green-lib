@@ -26,6 +26,10 @@
     "url": "git+https://github.com/jaccomeijer/green-lib.git"
   },
   "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node build.js serve"
+  },
   "devDependencies": {
     "@jaccomeijer/green-build": "1.0.7",
     "eslint": "8.56.0",
