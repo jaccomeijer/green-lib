@@ -4,7 +4,6 @@ import globalCss from '../assets/css/global.bundle.css'
 
 export const Head = props => {
   const frontmatter = props.page.frontmatter
-  console.log(globalCss)
 
   return (<head>
     <meta charset="utf-8" />
