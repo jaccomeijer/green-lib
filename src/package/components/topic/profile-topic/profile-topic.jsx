@@ -1,6 +1,6 @@
 import ceCss from './profile-topic.ce.css'
 import ceJs from './profile-topic.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const ProfileTopic = props => (<profile-topic>

@@ -1,6 +1,6 @@
 import ceCss from './card-topic.ce.css'
 import ceJs from './card-topic.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const CardTopic = props => (<card-topic>

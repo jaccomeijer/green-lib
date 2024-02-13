@@ -1,6 +1,6 @@
 import ceCss from './featured-topic.ce.css'
 import ceJs from './featured-topic.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const FeaturedTopic = props => (<featured-topic>

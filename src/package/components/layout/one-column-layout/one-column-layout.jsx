@@ -1,6 +1,6 @@
 import ceCss from './one-column-layout.ce.css'
 import ceJs from './one-column-layout.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const OneColumnLayout = props => (<one-column-layout delay={props.delay}>
   <template shadowrootmode="open">

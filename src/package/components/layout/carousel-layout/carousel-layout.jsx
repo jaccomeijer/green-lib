@@ -1,6 +1,6 @@
 import ceCss from './carousel-layout.ce.css'
 import ceJs from './carousel-layout.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const CarouselLayout = props => (<carousel-layout delay={props.delay}>
   <template shadowrootmode="open">

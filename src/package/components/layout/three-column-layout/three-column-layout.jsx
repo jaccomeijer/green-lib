@@ -1,6 +1,6 @@
 import ceCss from './three-column-layout.ce.css'
 import ceJs from './three-column-layout.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const ThreeColumnLayout = props => (<three-column-layout delay={props.delay}>
   <template shadowrootmode="open">

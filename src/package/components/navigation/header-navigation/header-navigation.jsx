@@ -4,7 +4,7 @@ import { Segment } from '../segment/segment.jsx'
 import { ButtonSegment } from '../button-segment/button-segment.jsx'
 import ceCss from '../navigation.ce.css'
 import ceJs from './header-navigation.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const HeaderNavigation = props => {
   return (<header-navigation>

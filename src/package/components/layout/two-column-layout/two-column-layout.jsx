@@ -1,6 +1,6 @@
 import ceCss from './two-column-layout.ce.css'
 import ceJs from './two-column-layout.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const TwoColumnLayout = props => (<two-column-layout delay={props.delay}>
   <template shadowrootmode="open">

@@ -1,7 +1,7 @@
 import ceCss from '../navigation.ce.css'
 import ceJs from './footer-navigation.ce.js'
 import { Segment } from '../segment/segment.jsx'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const FooterNavigation = props => (<footer-navigation>
   <template shadowrootmode="open">

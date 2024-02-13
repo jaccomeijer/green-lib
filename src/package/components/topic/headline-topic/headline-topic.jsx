@@ -1,6 +1,6 @@
 import ceCss from './headline-topic.ce.css'
 import ceJs from './headline-topic.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const HeadlineTopic = props => (<headline-topic>

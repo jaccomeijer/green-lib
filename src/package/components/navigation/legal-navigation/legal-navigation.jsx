@@ -1,6 +1,6 @@
 import ceCss from './legal-navigation.ce.css'
 import ceJs from './legal-navigation.ce.js'
-import globalCss from '../../../../package/css/global.bundle.css'
+import globalCss from '../../../css/global.bundle.css'
 
 export const LegalNavigation = props => (<legal-navigation>
   <template shadowrootmode="open">
