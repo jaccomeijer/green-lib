@@ -29,8 +29,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build-stories": "npm run clean && node stories.js",
-    "serve-stories": "npm run clean && node stories.js serve",
-    "build": "npm run clean && node build.js"
+    "serve-stories": "npm run clean && node stories.js serve"
   },
   "devDependencies": {
     "@jaccomeijer/green-build": "1.0.7",
