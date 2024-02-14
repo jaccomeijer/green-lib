@@ -1,10 +1,15 @@
-## @jaccomeijer/green-lib 1.0.4
+## @jaccomeijer/green-lib 1.1.0
 
-## [1.0.4](https://github.com/jaccomeijer/green-lib/compare/1.0.3...1.0.4) (2024-2-14)
+## [1.1.0](https://github.com/jaccomeijer/green-lib/compare/1.0.4...1.1.0) (2024-2-14)
 
 
-### Bug Fixes
+### Features
 
-* feather icon svg import ([0a1121e](https://github.com/jaccomeijer/green-lib/commit/0a1121ee1fce41c3b3a475158764598c255e93e1))
+* Use props.assetUrlPrefix for asset urls ([d72dd12](https://github.com/jaccomeijer/green-lib/commit/d72dd12d5679fd1521c3e5210feb799abb0de33f))
+
+
+### Commits
+
+* update packages ([214a95a](https://github.com/jaccomeijer/green-lib/commit/214a95a60c0dfd53a48a36996900649e8da55878))
 
 
