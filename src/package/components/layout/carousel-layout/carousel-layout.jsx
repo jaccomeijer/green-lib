@@ -10,9 +10,9 @@ export const CarouselLayout = props => (<carousel-layout delay={props.delay}>
       </div>
       <div id="dots"></div>
     </div>
-    <link rel="stylesheet" type="text/css" href={`/assets/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`/assets/${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
   </template>
-  <script defer src={`/assets/${ceJs}`} />
+  <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
 </carousel-layout>
 )

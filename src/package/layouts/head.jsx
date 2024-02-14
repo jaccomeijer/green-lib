@@ -10,8 +10,8 @@ export const Head = props => {
     <title>{props.metadata.title} - {frontmatter.title || frontmatter.navigation?.heading}</title>
     <meta name="description" content={frontmatter.description || props.metadata.description} />
     <meta name="generator" content={props.metadata.generator} />
-    <link rel="icon" type="image/x-icon" href={`/assets/${props.favicon}`} />
-    <link rel="stylesheet" type="text/css" href={`/assets/${globalCss}`} />
-    <script defer src={`/assets/${esbuildReload}`} />
+    <link rel="icon" type="image/x-icon" href={`${props.assetUrlPrefix}/${props.favicon}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
+    <script defer src={`${props.assetUrlPrefix}/${esbuildReload}`} />
   </head>)
 }

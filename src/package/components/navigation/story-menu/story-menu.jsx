@@ -24,9 +24,9 @@ export const StoryMenu = props => (<story-menu>
         ))}
       </ul>
     </div>
-    <link rel="stylesheet" type="text/css" href={`/assets/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`/assets/${css}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${css}`} />
   </template>
-  <script defer src={`/assets/${ceJs}`} />
+  <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
 </story-menu>
 )

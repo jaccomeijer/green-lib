@@ -17,11 +17,11 @@ export const FeatherIcon = props => {
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <use href={`/assets/${sprite}#${props.icon}`} />
+        <use href={`${props.assetUrlPrefix}/${sprite}#${props.icon}`} />
       </svg>
-      <link rel="stylesheet" type="text/css" href={`/assets/${ceCss}`} />
+      <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
     </template>
-    <script defer src={`/assets/${ceJs}`} />
+    <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
   </feather-icon>
   )
 }

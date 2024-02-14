@@ -20,7 +20,7 @@ export const TopicCore = props => {
     <div id="topic-container" onClick={props.onClick} style={props.style} >
       {props.topic.image && <Picture
         id="topic-picture"
-        src={`/assets/${props.images[props.topic.image]}`}
+        src={`${props.assetUrlPrefix}/${props.images[props.topic.image]}`}
         sizes={props.imageSizes}
       />}
       <div id="topic-content">
