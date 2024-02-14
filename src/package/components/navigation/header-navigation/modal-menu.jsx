@@ -6,9 +6,9 @@ export const ModalMenu = props => (
     <div id="modal"></div>
     <nav>
       <button id="close-button">Close</button>
-      <Segment menu={props.mainMenu} />
-      <Segment menu={props.socialMenu} />
-      <ButtonSegment menu={props.actionMenu} />
+      <Segment globals={props.globals} menu={props.mainMenu} />
+      <Segment globals={props.globals} menu={props.socialMenu} />
+      <ButtonSegment globals={props.globals} menu={props.actionMenu} />
     </nav>
   </div>
 )

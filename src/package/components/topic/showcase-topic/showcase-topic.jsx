@@ -13,16 +13,16 @@ export const ShowcaseTopic = props => (<showcase-topic>
       iconStrokeWidth="1"
       iconVariant="l"
       images={props.images}
-      imageSizes={props.imageSizes}
+      globals={props.globals}
       labelVariant="s"
       style={props.style}
       topic={props.topic}
 
       actionElement="link"
     />
-    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
   </template>
-  <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
+  <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
 </showcase-topic>
 )

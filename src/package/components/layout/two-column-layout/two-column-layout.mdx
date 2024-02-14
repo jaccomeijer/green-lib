@@ -6,29 +6,30 @@ navigation:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { TwoColumnLayout } from './two-column-layout'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Example
 ```html
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
 </TwoColumnLayout>
 ```
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
 </TwoColumnLayout>
 
 ## Example
 ```html
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
 </TwoColumnLayout>
 ```
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
@@ -36,14 +37,14 @@ import { TwoColumnLayout } from './two-column-layout'
 
 ## Example
 ```html
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
   <div class="magenta-brick"/>
 </TwoColumnLayout>
 ```
-<TwoColumnLayout>
+<TwoColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />

@@ -15,10 +15,8 @@ topic:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { CardTopic } from './card-topic'
-import { TwoColumnLayout } from '../../layout/two-column-layout/two-column-layout'
-import { ThreeColumnLayout } from '../../layout/three-column-layout/three-column-layout'
-import { FourColumnLayout } from '../../layout/four-column-layout/four-column-layout'
 import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -39,10 +37,12 @@ topic:
 ```html
 <CardTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 ```
 <CardTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 
 ## Example
@@ -53,13 +53,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <CardTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 ```
 <CardTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 
 ## Example
@@ -67,13 +67,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <CardTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />
 ```
 <CardTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />

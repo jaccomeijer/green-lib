@@ -36,7 +36,7 @@ export const TopicList = props => {
       variant={topicVariant}
       topic={topicElement}
       images={props.images}
-      imageSizes={props.imageSizes}
+      globals={props.globals}
     />
   ))
 

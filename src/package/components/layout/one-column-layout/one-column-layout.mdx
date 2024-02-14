@@ -6,18 +6,19 @@ navigation:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { OneColumnLayout } from './one-column-layout'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Example
 ```html
-<OneColumnLayout>
+<OneColumnLayout globals={globals}>
   <div class="yellow-brick" />
   <div class="magenta-brick" />
   <div class="yellow-brick" />
   <div class="magenta-brick" />
 </OneColumnLayout>
 ```
-<OneColumnLayout>
+<OneColumnLayout globals={globals}>
   <div class="yellow-brick" />
   <div class="magenta-brick" />
   <div class="yellow-brick" />

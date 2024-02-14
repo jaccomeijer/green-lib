@@ -1,3 +1,3 @@
 export const Branding = props => (
-  <a id="branding" variant="s">{props.metadata?.branding}</a>
+  <a id="branding" variant="s">{props.globals.metadata.branding}</a>
 )

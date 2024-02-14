@@ -8,6 +8,7 @@ export const Segment = props => {
       {menu.map(item => <li>
         <IconLink 
           class={props.pageUrl === item.url && 'active'}
+          globals={props.globals}
           icon={item.icon}
           variant="s"
           url={item.url}>

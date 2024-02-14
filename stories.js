@@ -1,17 +1,12 @@
-import { metadata } from './src/data/metadata.js'
-
+import { globals } from './src/data/globals.js'
 import { build } from '@jaccomeijer/green-build'
 
 const config = {
   entryPointsGlob: 'src/package/components/**/*.{mdx}',
-  imageSizes: {
-    s: 300,
-    m: 700,
-    l: 1000,
-  },
-  metadata,
-  outdir: 'dist',
-  removeBundle: true,
+  imageSizes: globals.imageSizes,
+  initialProps: {},
+  outdir: 'docs',
+  removeBundle: false,
   serve: false,
   stripFromOutputPath: 'src/package/components',
 }

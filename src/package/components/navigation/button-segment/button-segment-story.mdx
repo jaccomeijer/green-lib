@@ -15,6 +15,7 @@ menu:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { ButtonSegment } from './button-segment.jsx'
+import { globals } from '../../../../data/globals.js'
 import ceCss from '../navigation.ce.css'
 
 # {frontmatter.navigation.heading}
@@ -37,10 +38,13 @@ menu:
 
 
 ## Example
+```js
+import ceCss from '../navigation.ce.css'
+```
 ```html
-<link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
-<ButtonSegment pageUrl="/demo-b" menu={frontmatter.menu} />
+<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<ButtonSegment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />
 ```
 
-<link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
-<ButtonSegment pageUrl="/demo-b" menu={frontmatter.menu} />
+<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<ButtonSegment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />

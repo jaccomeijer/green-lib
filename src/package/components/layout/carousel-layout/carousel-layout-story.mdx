@@ -5,36 +5,37 @@ navigation:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { CarouselLayout } from './carousel-layout'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Example
 ```html
-<CarouselLayout delay="500">
-  <div class="yellow-brick"   />
-  <div class="magenta-brick"  />
-  <div class="yellow-brick"     />
+<CarouselLayout globals={globals} delay="500">
+  <div class="yellow-brick" />
+  <div class="magenta-brick" />
+  <div class="yellow-brick" />
   <div class="magenta-brick"/>
 </CarouselLayout>
 ```
-<CarouselLayout delay="500">
-  <div class="yellow-brick"   />
-  <div class="magenta-brick"  />
-  <div class="yellow-brick"     />
+<CarouselLayout globals={globals} delay="500">
+  <div class="yellow-brick" />
+  <div class="magenta-brick" />
+  <div class="yellow-brick" />
   <div class="magenta-brick"/>
 </CarouselLayout>
 
 ## Example
 ```html
-<CarouselLayout delay="1000">
-  <div class="yellow-brick"   />
-  <div class="magenta-brick"  />
-  <div class="yellow-brick"     />
+<CarouselLayout globals={globals} delay="1000">
+  <div class="yellow-brick" />
+  <div class="magenta-brick" />
+  <div class="yellow-brick" />
   <div class="magenta-brick"/>
 </CarouselLayout>
 ```
-<CarouselLayout delay="1000">
-  <div class="yellow-brick"   />
-  <div class="magenta-brick"  />
-  <div class="yellow-brick"     />
+<CarouselLayout globals={globals} delay="1000">
+  <div class="yellow-brick" />
+  <div class="magenta-brick" />
+  <div class="yellow-brick" />
   <div class="magenta-brick"/>
 </CarouselLayout>

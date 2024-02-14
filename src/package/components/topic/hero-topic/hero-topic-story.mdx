@@ -15,6 +15,7 @@ topic:
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { HeroTopic } from './hero-topic'
 import topicImage from '../../../../assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -34,10 +35,12 @@ topic:
 ```html
 <HeroTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 ```
 <HeroTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 
 ## Example
@@ -49,7 +52,7 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
   <HeroTopic
     topic={frontmatter.topic}
     images={{ topicImage }}
-    imageSizes={props.imageSizes}
+    globals={globals}
   />
 </div>
 ```
@@ -57,6 +60,6 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
   <HeroTopic
     topic={frontmatter.topic}
     images={{ topicImage }}
-    imageSizes={props.imageSizes}
+    globals={globals}
   />
 </div>

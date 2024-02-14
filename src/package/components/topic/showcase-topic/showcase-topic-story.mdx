@@ -14,8 +14,8 @@ topic:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { ShowcaseTopic } from './showcase-topic'
-import { TwoColumnLayout } from '../../layout/two-column-layout/two-column-layout'
 import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -35,10 +35,12 @@ topic:
 ```html
 <ShowcaseTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 ```
 <ShowcaseTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 
 ## Example
@@ -49,13 +51,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <ShowcaseTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 ```
 <ShowcaseTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 
 ## Example
@@ -63,13 +65,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <ShowcaseTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />
 ```
 <ShowcaseTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />

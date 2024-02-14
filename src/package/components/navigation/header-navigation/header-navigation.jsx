@@ -10,25 +10,26 @@ export const HeaderNavigation = props => {
   return (<header-navigation>
     <template shadowrootmode="open">
       <div id="header-navigation">
-        <Branding metadata={props.metadata} />
+        <Branding globals={props.globals} />
         <nav>
-          <Segment menu={props.mainMenu} pageUrl={props.pageUrl} />
-          <Segment menu={props.socialMenu} />
-          <ButtonSegment menu={props.actionMenu} />
+          <Segment globals={props.globals} menu={props.mainMenu} pageUrl={props.pageUrl} />
+          <Segment globals={props.globals} menu={props.socialMenu} />
+          <ButtonSegment globals={props.globals} menu={props.actionMenu} />
         </nav>
         <div>
           <button id="menu-button">Menu</button>
           <ModalMenu
+            globals={props.globals}
             mainMenu={props.mainMenu}
             socialMenu={props.socialMenu}
             actionMenu={props.actionMenu}
           />
         </div>
       </div>
-      <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
-      <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
+      <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
+      <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
     </template>
-    <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
+    <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
   </header-navigation>
   )
 }

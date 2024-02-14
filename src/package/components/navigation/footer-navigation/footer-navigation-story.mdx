@@ -18,6 +18,7 @@ socialMenu:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { FooterNavigation } from './footer-navigation'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -39,18 +40,38 @@ socialMenu:
 
 ## Example
 ```html
-<FooterNavigation mainMenu={frontmatter.mainMenu} socialMenu={frontmatter.socialMenu} />
+<FooterNavigation
+  globals={globals}
+  mainMenu={frontmatter.mainMenu}
+  socialMenu={frontmatter.socialMenu}
+/>
 ```
-<FooterNavigation mainMenu={frontmatter.mainMenu} socialMenu={frontmatter.socialMenu} />
+<FooterNavigation
+  globals={globals}
+  mainMenu={frontmatter.mainMenu}
+  socialMenu={frontmatter.socialMenu}
+/>
 
 ## Example
 ```html
-<FooterNavigation mainMenu={frontmatter.mainMenu} />
+<FooterNavigation
+  globals={globals}
+  mainMenu={frontmatter.mainMenu}
+/>
 ```
-<FooterNavigation mainMenu={frontmatter.mainMenu} />
+<FooterNavigation
+  globals={globals}
+  mainMenu={frontmatter.mainMenu}
+/>
 
 ## Example
 ```html
-<FooterNavigation socialMenu={frontmatter.socialMenu} />
+<FooterNavigation
+  globals={globals}
+  socialMenu={frontmatter.socialMenu}
+/>
 ```
-<FooterNavigation socialMenu={frontmatter.socialMenu} />
+<FooterNavigation
+  globals={globals}
+  socialMenu={frontmatter.socialMenu}
+/>

@@ -4,7 +4,7 @@ export const ButtonSegment = props => {
   const menu = props.menu || []
 
   return (<div class="button-segment">
-    {menu.map(item => <IconButton variant="s" icon={item.icon} url={item.url}>{item.heading}</IconButton>)}
+    {menu.map(item => <IconButton globals={props.globals} variant="s" icon={item.icon} url={item.url}>{item.heading}</IconButton>)}
   </div>
   )
 }

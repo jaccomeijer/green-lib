@@ -3,9 +3,6 @@ navigation:
   heading: HeaderNavigation
   parent: Navigation
 
-metadata:
-  branding: Story brand
-
 mainMenu:
   - heading: Main1
     url: /main1
@@ -24,17 +21,14 @@ actionMenu:
     icon: share
   - icon: x
   - heading: Text only
-
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { HeaderNavigation } from './header-navigation'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
 ```yaml
-metadata:
-  branding: Story brand
-
 mainMenu:
   - heading: Main1
     url: /main1
@@ -58,14 +52,14 @@ actionMenu:
 ## Example
 ```html
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   mainMenu={frontmatter.mainMenu}
   socialMenu={frontmatter.socialMenu}
   actionMenu={frontmatter.actionMenu} 
 />
 ```
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   mainMenu={frontmatter.mainMenu}
   socialMenu={frontmatter.socialMenu}
   actionMenu={frontmatter.actionMenu} 
@@ -74,35 +68,35 @@ actionMenu:
 ## Example
 ```html
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   mainMenu={frontmatter.mainMenu}
 />
 ```
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   mainMenu={frontmatter.mainMenu}
 />
 
 ## Example
 ```html
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   actionMenu={frontmatter.actionMenu} 
 />
 ```
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   actionMenu={frontmatter.actionMenu} 
 />
 
 ## Example
 ```html
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   socialMenu={frontmatter.socialMenu}
 />
 ```
 <HeaderNavigation 
-  metadata={frontmatter.metadata}
+  globals={globals}
   socialMenu={frontmatter.socialMenu}
 />

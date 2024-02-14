@@ -2,27 +2,15 @@
 navigation:
   heading: LegalNavigation
   parent: Navigation
-
-metadata:
-  copyright: Copyright 2024 © Story
-  vendor: Made with Stories
-  version: 1.2.3
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { LegalNavigation } from './legal-navigation'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
-## Frontmatter
-```yaml
-metadata:
-  copyright: Copyright 2024 © Story
-  vendor: Made with Stories
-  version: 1.2.3
-```
-
 
 ## Example
 ```html
-<LegalNavigation metadata={frontmatter.metadata} />
+<LegalNavigation globals={globals} />
 ```
-<LegalNavigation metadata={frontmatter.metadata} />
+<LegalNavigation globals={globals} />

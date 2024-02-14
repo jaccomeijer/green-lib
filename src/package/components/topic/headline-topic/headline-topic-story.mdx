@@ -15,6 +15,7 @@ topic:
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { HeadlineTopic } from './headline-topic'
 import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -34,10 +35,12 @@ topic:
 ```html
 <HeadlineTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 ```
 <HeadlineTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 
 ## Example
@@ -48,14 +51,14 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <HeadlineTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 ```
 <div class="container-full">
   <HeadlineTopic
     topic={frontmatter.topic}
     images={{ topicImage }}
-    imageSizes={props.imageSizes}
+    globals={globals}
   />
 </div>
 
@@ -64,13 +67,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <HeadlineTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />
 ```
 <HeadlineTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />

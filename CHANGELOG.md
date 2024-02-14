@@ -9,7 +9,7 @@
 
 ### Features
 
-* Use props.assetUrlPrefix for asset urls ([d72dd12](https://github.com/jaccomeijer/green-lib/commit/d72dd12d5679fd1521c3e5210feb799abb0de33f))
+* Use props.globals.assetUrlPrefix for asset urls ([d72dd12](https://github.com/jaccomeijer/green-lib/commit/d72dd12d5679fd1521c3e5210feb799abb0de33f))
 
 
 ### Commits

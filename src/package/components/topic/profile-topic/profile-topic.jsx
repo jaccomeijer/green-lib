@@ -13,15 +13,15 @@ export const ProfileTopic = props => (<profile-topic>
       iconStrokeWidth="1"
       iconVariant="xl"
       images={props.images}
-      imageSizes={props.imageSizes}
+      globals={props.globals}
       labelVariant="l"
       style={props.style}
       topic={props.topic}
 
     />
-    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
   </template>
-  <script defer src={`${props.assetUrlPrefix}/${ceJs}`} />
+  <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
 </profile-topic>
 )

@@ -5,11 +5,12 @@ navigation:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { EmptyComponent } from './empty-component.jsx'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 
 ## Example
 ```html
-<EmptyComponent />
+<EmptyComponent globals={globals} />
 ```
-<EmptyComponent />
+<EmptyComponent globals={globals} />

@@ -8,10 +8,10 @@ export const Picture = (props) => {
   const imageBasePath = props.src.slice(0, -4)
 
   const sizesArray = Object
-    .keys(props.sizes)
+    .keys(props.globals.imageSizes)
     .map((name) => ({
       name,
-      width: props.sizes[name],
+      width: props.globals.imageSizes[name],
     }))
     .sort(numberSort)
 

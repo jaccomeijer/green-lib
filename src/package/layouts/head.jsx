@@ -7,11 +7,11 @@ export const Head = props => {
   return (<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{props.metadata.title} - {frontmatter.title || frontmatter.navigation?.heading}</title>
-    <meta name="description" content={frontmatter.description || props.metadata.description} />
-    <meta name="generator" content={props.metadata.generator} />
-    <link rel="icon" type="image/x-icon" href={`${props.assetUrlPrefix}/${props.favicon}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${globalCss}`} />
-    <script defer src={`${props.assetUrlPrefix}/${esbuildReload}`} />
+    <title>{props.globals.metadata.title} - {frontmatter.title || frontmatter.navigation?.heading}</title>
+    <meta name="description" content={frontmatter.description || props.globals.metadata.description} />
+    <meta name="generator" content={props.globals.metadata.generator} />
+    <link rel="icon" type="image/x-icon" href={`${props.globals.assetUrlPrefix}/${props.favicon}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
+    <script defer src={`${props.globals.assetUrlPrefix}/${esbuildReload}`} />
   </head>)
 }

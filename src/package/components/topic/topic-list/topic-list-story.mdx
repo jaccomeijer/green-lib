@@ -33,6 +33,7 @@ import { TopicList } from './topic-list'
 import topicImageA from '../../../../assets/images/kai-dahms-97yTozZh7N8-unsplash.jpg'
 import topicImageB from '../../../../assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
 import topicImageC from '../../../../assets/images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 
@@ -77,7 +78,7 @@ import topicImageC from '../../../assets/images/jean-philippe-delberghe-75xPHEQB
   variant="carousel"
   topicVariant="hero"
   images={{ topicImageA, topicImageB, topicImageC }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   topics={frontmatter.topicList}
 />
 ```
@@ -86,27 +87,27 @@ import topicImageC from '../../../assets/images/jean-philippe-delberghe-75xPHEQB
   variant="carousel"
   topicVariant="hero"
   images={{ topicImageA, topicImageB, topicImageC }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   topics={frontmatter.topicList}
 />
 
 ## Example
 ```html
 <TopicList 
-  delay="1000"
+  delay="2000"
   variant="carousel"
   topicVariant="hero"
   images={{ topicImageA, topicImageB, topicImageC }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   topics={frontmatter.topicList}
 />
 ```
 
 <TopicList 
-  delay="1000"
+  delay="2000"
   variant="carousel"
   topicVariant="hero"
   images={{ topicImageA, topicImageB, topicImageC }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   topics={frontmatter.topicList}
 />

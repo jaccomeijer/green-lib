@@ -14,6 +14,7 @@ mainMenu:
 ---
 export {StoryLayout as default} from '../../../../stories/story-layout.jsx'
 import { StoryMenu } from './story-menu'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -30,6 +31,6 @@ mainMenu:
 
 ## Example
 ```html
-<StoryMenu mainMenu={frontmatter.mainMenu} />
+<StoryMenu globals={globals} mainMenu={frontmatter.mainMenu} />
 ```
-<StoryMenu mainMenu={frontmatter.mainMenu} />
+<StoryMenu globals={globals} mainMenu={frontmatter.mainMenu} />

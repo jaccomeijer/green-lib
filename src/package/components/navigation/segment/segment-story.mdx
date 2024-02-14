@@ -17,6 +17,7 @@ menu:
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { Segment } from './segment.jsx'
 import ceCss from '../navigation.ce.css'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -39,9 +40,9 @@ menu:
 
 ## Example
 ```html
-<link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
-<Segment pageUrl="/demo-b" menu={frontmatter.menu} />
+<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />
 ```
 
-<link rel="stylesheet" type="text/css" href={`${props.assetUrlPrefix}/${ceCss}`} />
-<Segment pageUrl="/demo-b" menu={frontmatter.menu} />
+<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />

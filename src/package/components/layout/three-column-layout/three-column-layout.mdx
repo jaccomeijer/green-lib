@@ -6,17 +6,18 @@ navigation:
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { ThreeColumnLayout } from './three-column-layout'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Example
 ```html
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
 </ThreeColumnLayout>
 ```
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
@@ -24,14 +25,14 @@ import { ThreeColumnLayout } from './three-column-layout'
 
 ## Example
 ```html
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
   <div class="magenta-brick"/>
 </ThreeColumnLayout>
 ```
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
@@ -40,7 +41,7 @@ import { ThreeColumnLayout } from './three-column-layout'
 
 ## Example
 ```html
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />
@@ -48,7 +49,7 @@ import { ThreeColumnLayout } from './three-column-layout'
   <div class="yellow-brick"/>
 </ThreeColumnLayout>
 ```
-<ThreeColumnLayout>
+<ThreeColumnLayout globals={globals}>
   <div class="yellow-brick"   />
   <div class="magenta-brick"  />
   <div class="yellow-brick"     />

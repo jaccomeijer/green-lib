@@ -16,6 +16,7 @@ topic:
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { BlockTopic } from './block-topic'
 import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -36,10 +37,12 @@ topic:
 ```html
 <BlockTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 ```
 <BlockTopic
   topic={{...frontmatter.topic, image: undefined}}
+  globals={globals}
 />
 
 ## Example
@@ -50,13 +53,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <BlockTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 ```
 <BlockTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
 />
 
 ## Example
@@ -64,13 +67,13 @@ import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 <BlockTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />
 ```
 <BlockTopic
   topic={frontmatter.topic}
   images={{ topicImage }}
-  imageSizes={props.imageSizes}
+  globals={globals}
   style="--image-order: 2"
 />
