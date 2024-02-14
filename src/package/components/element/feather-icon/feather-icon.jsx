@@ -1,6 +1,6 @@
 import ceCss from './feather-icon.ce.css'
 import ceJs from './feather-icon.ce.js'
-import sprite from '../../../../../node_modules/feather-icons/dist/feather-sprite.svg'
+import sprite from 'feather-icons/dist/feather-sprite.svg'
 
 export const FeatherIcon = props => {
   const strokeWidth = props.strokeWidth || 2
