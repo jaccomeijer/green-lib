@@ -1,6 +1,6 @@
 {
   "name": "@jaccomeijer/green-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MDX component library for green-build",
   "keywords": [
     "esbuild",
@@ -29,7 +29,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build-stories": "npm run clean && node stories.js",
-    "serve-stories": "npm run clean && node stories.js serve"
+    "serve-stories": "npm run clean && node stories.js serve",
+    "build": "echo No need to build the static files in src/package"
   },
   "devDependencies": {
     "@jaccomeijer/green-build": "1.0.7",
@@ -37,6 +38,10 @@
     "eslint": "8.56.0",
     "eslint-config-eslint": "9.0.0",
     "eslint-plugin-react": "7.33.2"
+  },
+  "exports": {
+    "./EmptyComponent": "./src/package/components/element/empty-component/empty-component.jsx",
+    "./BlockTopic": "./src/package/components/topic/block-topic/block-topic.jsx"
   },
   "files": [
     "src/package"
