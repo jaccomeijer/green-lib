@@ -1,15 +1,11 @@
-## @jaccomeijer/green-lib 1.1.0
+## @jaccomeijer/green-lib 1.1.1
 
-## [1.1.0](https://github.com/jaccomeijer/green-lib/compare/1.0.4...1.1.0) (2024-2-14)
-
-
-### Features
-
-* Use props.globals.assetUrlPrefix for asset urls ([d72dd12](https://github.com/jaccomeijer/green-lib/commit/d72dd12d5679fd1521c3e5210feb799abb0de33f))
+## [1.1.1](https://github.com/jaccomeijer/green-lib/compare/1.1.0...1.1.1) (2024-2-14)
 
 
 ### Commits
 
-* update packages ([214a95a](https://github.com/jaccomeijer/green-lib/commit/214a95a60c0dfd53a48a36996900649e8da55878))
+* cleanup docs ([15c50f3](https://github.com/jaccomeijer/green-lib/commit/15c50f3c76057c02409c72cf0b5fc7361c4bd19f))
+* implement global prop ([a773be5](https://github.com/jaccomeijer/green-lib/commit/a773be5b0e621d98cd4ee61574fd38b5ab01e297))
 
 
