@@ -40,8 +40,7 @@
     "eslint-plugin-react": "7.33.2"
   },
   "exports": {
-    "./EmptyComponent": "./src/package/components/element/empty-component/empty-component.jsx",
-    "./BlockTopic": "./src/package/components/topic/block-topic/block-topic.jsx"
+    ".": "./src/package/index.js"
   },
   "files": [
     "src/package"
