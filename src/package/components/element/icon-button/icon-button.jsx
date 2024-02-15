@@ -5,7 +5,7 @@ export const IconButton = props => (
     variant={props.variant}
     class={props.class}
     type="button"
-    onclick={`location.href='${props.globals.baseUrl}${props.url || '#'}';`}
+    onclick={`location.href='${props.globals.baseUrl}${props.url}';`}
   >
     {props.icon &&
       <FeatherIcon

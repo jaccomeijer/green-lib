@@ -4,7 +4,7 @@ export const IconLink = props => (
   <a
     variant={props.variant}
     class={props.class}
-    href={props.globals.baseUrl + (props.url || '#')}
+    href={props.globals.baseUrl + props.url}
   >
     {props.icon &&
       <FeatherIcon
