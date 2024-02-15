@@ -12,7 +12,3 @@ export const config = {
   serve: false,
   stripFromOutputPath: 'src/package/components',
 }
-
-if (process.argv[2] === 'serve') {
-  config.serve = true
-}
