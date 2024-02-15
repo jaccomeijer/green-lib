@@ -1,10 +1,10 @@
-## @jaccomeijer/green-lib 1.2.6
+## @jaccomeijer/green-lib 1.2.7
 
-## [1.2.6](https://github.com/jaccomeijer/green-lib/compare/1.2.5...1.2.6) (2024-2-15)
+## [1.2.7](https://github.com/jaccomeijer/green-lib/compare/1.2.6...1.2.7) (2024-2-15)
 
 
 ### Bug Fixes
 
-* footer alignment ([7390582](https://github.com/jaccomeijer/green-lib/commit/7390582d99bb7b163c6a77e5cd9be590688e2069))
+* add padding to content of headline topic ([ceda582](https://github.com/jaccomeijer/green-lib/commit/ceda582fafafee3c89d352f9ff42b44196b390e9))
 
 
