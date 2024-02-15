@@ -1,10 +1,10 @@
-## @jaccomeijer/green-lib 1.2.7
+## @jaccomeijer/green-lib 1.2.8
 
-## [1.2.7](https://github.com/jaccomeijer/green-lib/compare/1.2.6...1.2.7) (2024-2-15)
+## [1.2.8](https://github.com/jaccomeijer/green-lib/compare/1.2.7...1.2.8) (2024-2-15)
 
 
-### Bug Fixes
+### Commits
 
-* add padding to content of headline topic ([ceda582](https://github.com/jaccomeijer/green-lib/commit/ceda582fafafee3c89d352f9ff42b44196b390e9))
+* uniform actions with heading, icon and url ([f7b2e4f](https://github.com/jaccomeijer/green-lib/commit/f7b2e4f1b6b4c64ec26322fb394a799a3d9b4b5f))
 
 
