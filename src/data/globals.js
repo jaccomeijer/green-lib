@@ -1,10 +1,8 @@
+import { config } from './config.js'
+
 export const globals = {
-  assetUrlPrefix: '/assets',
-  imageSizes: {
-    s: 300,
-    m: 700,
-    l: 1000,
-  },
+  assetUrlPrefix: config.assetUrlPrefix,
+  imageSizes: config.imageSizes,
   metadata: {
     author: {
       name: 'Jacco Meijer',
