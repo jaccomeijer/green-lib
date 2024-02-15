@@ -1,10 +1,11 @@
 import { FeatherIcon } from '../feather-icon/feather-icon'
+import { getAction } from '../../../layouts/get-action.js'
 
 export const IconLink = props => (
   <a
     variant={props.variant}
     class={props.class}
-    href={props.globals.baseUrl + props.url}
+    href={getAction({ type: 'href', globals: props.globals, url: props.url })}
   >
     {props.icon &&
       <FeatherIcon
