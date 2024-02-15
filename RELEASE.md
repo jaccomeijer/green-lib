@@ -1,11 +1,20 @@
-## @jaccomeijer/green-lib 1.1.1
+## @jaccomeijer/green-lib 1.2.0
 
-## [1.1.1](https://github.com/jaccomeijer/green-lib/compare/1.1.0...1.1.1) (2024-2-14)
+## [1.2.0](https://github.com/jaccomeijer/green-lib/compare/1.1.1...1.2.0) (2024-2-15)
+
+
+### Features
+
+* global baseUrl and assetUrl ([648885b](https://github.com/jaccomeijer/green-lib/commit/648885b5ff3a6d20720c6888ecf02ab648a1bb97))
 
 
 ### Commits
 
-* cleanup docs ([15c50f3](https://github.com/jaccomeijer/green-lib/commit/15c50f3c76057c02409c72cf0b5fc7361c4bd19f))
-* implement global prop ([a773be5](https://github.com/jaccomeijer/green-lib/commit/a773be5b0e621d98cd4ee61574fd38b5ab01e297))
+* set config.serve ([af3ea8d](https://github.com/jaccomeijer/green-lib/commit/af3ea8d091ee05ed3679f3da04759c441bf14234))
+
+
+### Code Refactoring
+
+* central config ([34120d8](https://github.com/jaccomeijer/green-lib/commit/34120d85a020f6a6a3ec48f2adcd7b2fe36f08e8))
 
 
