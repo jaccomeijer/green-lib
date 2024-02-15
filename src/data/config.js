@@ -1,6 +1,15 @@
+const buildConfig = {
+  serve: false,
+}
+
+const serveConfig = {
+  serve: true,
+}
+
 export const config = {
   assetUrl: '/assets/',
   baseUrl: '',
+  outdir: 'dist',
   entryPointsGlob: 'src/package/components/**/*.{mdx}',
   imageSizes: {
     s: 300,
@@ -8,8 +17,8 @@ export const config = {
     l: 1000,
   },
   initialProps: {},
-  outdir: 'dist',
   removeBundle: false,
-  serve: false,
   stripFromOutputPath: 'src/package/components',
+  ...(process.env.MODE === 'build' ? buildConfig : {}),
+  ...(process.env.MODE === 'serve' ? serveConfig : {}),
 }

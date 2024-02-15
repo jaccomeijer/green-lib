@@ -28,8 +28,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "build-stories": "npm run clean && node stories.js",
-    "serve-stories": "npm run clean && node stories.js serve",
+    "serve": "npm run clean && MODE=serve node stories.js",
     "build": "echo No need to build the static files in src/package"
   },
   "devDependencies": {
