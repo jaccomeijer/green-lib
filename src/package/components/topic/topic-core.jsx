@@ -17,7 +17,7 @@ export const TopicCore = props => {
   const labelVariant = props.labelVariant || 's'
 
   return (
-    <div id="topic-container" onClick={props.onClick} style={props.style} >
+    <div id="topic-container" onclick={props.onclick} style={props.style} >
       {props.topic.image && <Picture
         globals={props.globals}
         id="topic-picture"
