@@ -42,9 +42,9 @@ menu:
 import ceCss from '../navigation.ce.css'
 ```
 ```html
-<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
 <ButtonSegment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />
 ```
 
-<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
 <ButtonSegment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />

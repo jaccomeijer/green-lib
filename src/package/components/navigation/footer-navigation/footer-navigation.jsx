@@ -9,10 +9,10 @@ export const FooterNavigation = props => (<footer-navigation>
       <Segment globals={props.globals} menu={props.mainMenu} pageUrl={props.pageUrl} />
       <Segment globals={props.globals} menu={props.socialMenu} />
     </nav>
-    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
   </template>
-  <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
+  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
 </footer-navigation>
 )
 

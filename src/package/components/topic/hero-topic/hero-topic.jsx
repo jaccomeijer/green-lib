@@ -21,10 +21,10 @@ export const HeroTopic = props => {
         topic={props.topic}
 
       />
-      <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
-      <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
+      <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
+      <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
     </template>
-    <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
+    <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
   </hero-topic>
   )
 }

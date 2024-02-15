@@ -8,9 +8,9 @@ export const LegalNavigation = props => (<legal-navigation>
       <p variant="xs">{props.globals.metadata.copyright}</p>
       <a variant="xs">{props.globals.metadata.vendor}<sup>{props.globals.metadata.version}</sup></a>
     </nav>
-    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.assetUrlPrefix}/${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
+    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
   </template>
-  <script defer src={`${props.globals.assetUrlPrefix}/${ceJs}`} />
+  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
 </legal-navigation>
 )

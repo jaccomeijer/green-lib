@@ -21,7 +21,7 @@ export const TopicCore = props => {
       {props.topic.image && <Picture
         globals={props.globals}
         id="topic-picture"
-        src={`${props.globals.assetUrlPrefix}/${props.images[props.topic.image]}`}
+        src={`${props.globals.baseUrl}${props.globals.assetUrl}${props.images[props.topic.image]}`}
         sizes={props.imageSizes}
       />}
       <div id="topic-content">

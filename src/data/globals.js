@@ -1,7 +1,8 @@
 import { config } from './config.js'
 
 export const globals = {
-  assetUrlPrefix: config.assetUrlPrefix,
+  assetUrl: config.assetUrl,
+  baseUrl: config.baseUrl,
   imageSizes: config.imageSizes,
   metadata: {
     author: {

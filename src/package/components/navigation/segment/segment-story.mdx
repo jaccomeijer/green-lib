@@ -40,9 +40,9 @@ menu:
 
 ## Example
 ```html
-<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
 <Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />
 ```
 
-<link rel="stylesheet" type="text/css" href={`${globals.assetUrlPrefix}/${ceCss}`} />
+<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
 <Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />

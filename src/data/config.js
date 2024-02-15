@@ -1,5 +1,6 @@
 export const config = {
-  assetUrlPrefix: '/assets',
+  assetUrl: '/assets/',
+  baseUrl: '',
   entryPointsGlob: 'src/package/components/**/*.{mdx}',
   imageSizes: {
     s: 300,
