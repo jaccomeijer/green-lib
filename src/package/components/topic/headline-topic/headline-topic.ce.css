@@ -30,6 +30,7 @@
   flex: 1;
   gap: 1rem;
   max-width: 43rem;
+  padding: 1rem;
 }
 
 #topic-content > feather-icon {
