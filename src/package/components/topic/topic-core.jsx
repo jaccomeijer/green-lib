@@ -26,9 +26,18 @@ export const TopicCore = props => {
       />}
       <div id="topic-content">
         {props.topic.icon &&
-          <FeatherIcon globals={props.globals} icon={props.topic.icon} variant={iconVariant} strokeWidth={iconStrokeWidth} />}
+          <FeatherIcon
+            globals={props.globals}
+            icon={props.topic.icon}
+            variant={iconVariant}
+            strokeWidth={iconStrokeWidth}
+          />
+        }
         {props.topic.labels &&
-          <div id="topic-labels"><p variant={labelVariant}>{props.topic.labels?.map(label => <><span>{label}</span> </>)}</p></div>}
+          <div id="topic-labels">
+            <p variant={labelVariant}>{props.topic.labels?.map(label => <><span>{label}</span> </>)}</p>
+          </div>
+        }
         {props.topic.heading && headingElement === 'h1' &&
           <h1 id="topic-heading" variant={headingVariant}>{props.topic.heading}</h1>}
         {props.topic.heading && headingElement === 'h2' &&
@@ -38,9 +47,14 @@ export const TopicCore = props => {
         {props.topic.abstract &&
           <p id="topic-abstract" variant={abstractVariant}>{props.topic.abstract}</p>}
         {props.topic.action && actionElement === 'button' &&
-          <IconButton variant={actionVariant} globals={props.globals} icon={props.topic.action.icon} url={props.topic.action.url}>{props.topic.action.heading}</IconButton>}
+          <IconButton
+            variant={actionVariant}
+            globals={props.globals}
+            action={props.topic.action}
+            url={props.topic.action.url}
+          />}
         {props.topic.action && actionElement === 'link' &&
-          <IconLink globals={props.globals} variant={actionVariant} icon={props.topic.action.icon} url={props.topic.action.url}>{props.topic.action.heading}</IconLink>}
+          <IconLink globals={props.globals} variant={actionVariant} action={props.topic.action}/>}
       </div>
     </div>
   )

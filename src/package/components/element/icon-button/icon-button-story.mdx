@@ -2,68 +2,79 @@
 navigation:
   heading: IconButton
   parent: Element
+
+action:
+  heading: Demo action
+  url: /demo-url
+
+actionWithIcon:
+  icon: circle
+  heading: Demo actionWithIcon
+  url: /demo-url-with-icon
+
+actionWithHref:
+  heading: Demo actionWithHref
+  url: https://www.modelberry.com
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { IconButton } from './icon-button'
 import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
-## Example
-```html
-<IconButton globals={globals} url="/demo-url" variant="s">Small button</IconButton>
+## frontmatter
+```yaml
+action:
+  heading: Demo action
+  url: /demo-url
+
+actionWithIcon:
+  icon: circle
+  heading: Demo actionWithIcon
+  url: /demo-url-with-icon
+
+actionWithHref:
+  heading: Demo actionWithHref
+  url: https://www.modelberry.com
 ```
-<IconButton globals={globals} url="/demo-url" variant="s">Small button</IconButton>
 
 ## Example
 ```html
-<IconButton globals={globals} url="https://www.modelberry.com" variant="m">Medium button</IconButton>
+<IconButton globals={globals} variant="s" action={frontmatter.action}>child</IconButton>
 ```
-<IconButton globals={globals} url="https://www.modelberry.com" variant="m">Medium button</IconButton>
+<IconButton globals={globals} variant="s" action={frontmatter.action}>child</IconButton>
 
 ## Example
 ```html
-<IconButton globals={globals} url="/demo-url" variant="l">Large button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.action} />
 ```
-<IconButton globals={globals} url="/demo-url" variant="l">Large button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.action} />
 
 ## Example
 ```html
-<IconButton globals={globals} icon="circle" variant="s" />
+<IconButton globals={globals} variant="l" action={frontmatter.action} />
 ```
-<IconButton globals={globals} icon="circle" variant="s" />
+<IconButton globals={globals} variant="l" action={frontmatter.action} />
 
 ## Example
 ```html
-<IconButton globals={globals} icon="circle" variant="m" />
+<IconButton globals={globals} variant="s" action={frontmatter.actionWithIcon} />
 ```
-<IconButton globals={globals} icon="circle" variant="m" />
+<IconButton globals={globals} variant="s" action={frontmatter.actionWithIcon} />
 
 ## Example
 ```html
-<IconButton globals={globals} icon="circle" variant="s">Small button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.actionWithIcon} />
 ```
-<IconButton globals={globals} icon="circle" variant="s">Small button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.actionWithIcon} />
 
 ## Example
 ```html
-<IconButton globals={globals} icon="share" variant="m">Medium button</IconButton>
+<IconButton globals={globals} variant="l" action={frontmatter.actionWithIcon} />
 ```
-<IconButton globals={globals} icon="share" variant="m">Medium button</IconButton>
+<IconButton globals={globals} variant="l" action={frontmatter.actionWithIcon} />
 
 ## Example
 ```html
-<IconButton globals={globals} icon="archive" variant="l">Large button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.actionWithHref} />
 ```
-<IconButton globals={globals} icon="archive" variant="l">Large button</IconButton>
-
-## Example
-```html
-<IconButton globals={globals} icon="github" variant="s" class="stretch">Small button</IconButton>
-```
-<IconButton globals={globals} icon="github" variant="s" class="stretch">Small button</IconButton>
-
-## Example
-```html
-<IconButton globals={globals} icon="github" variant="l" class="outline">Large button</IconButton>
-```
-<IconButton globals={globals} icon="github" variant="l" class="outline">Large button</IconButton>
+<IconButton globals={globals} variant="m" action={frontmatter.actionWithHref} />

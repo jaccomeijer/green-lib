@@ -2,44 +2,85 @@
 navigation:
   heading: IconLink
   parent: Element
+
+action:
+  heading: Demo action
+  url: /demo-url
+
+actionWithIcon:
+  icon: circle
+  heading: Demo actionWithIcon
+  url: /demo-url-with-icon
+
+actionWithHref:
+  heading: Demo actionWithHref
+  url: https://www.modelberry.com
 ---
 export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
 import { IconLink } from './icon-link'
 import { globals } from '../../../../data/globals.js'
 
 # {frontmatter.navigation.heading}
-## Example
-```html
-<p variant="s">Text with a <IconLink globals={globals} url="/demo-url">small link</IconLink> inside.</p>
+## frontmatter
+```yaml
+action:
+  heading: Demo action
+  url: /demo-url
+
+actionWithIcon:
+  icon: circle
+  heading: Demo actionWithIcon
+  url: /demo-url-with-icon
+
+actionWithHref:
+  heading: Demo actionWithHref
+  url: https://www.modelberry.com
 ```
-<p variant="s">Text with a <IconLink globals={globals} url="/demo-url">small link</IconLink> inside.</p>
 
 ## Example
 ```html
-<p variant="m">Text with a <IconLink globals={globals} url="/demo-url">medium link</IconLink> inside.</p>
+<p variant="m">Text with a <IconLink globals={globals} action={frontmatter.action}>child</IconLink> inside.</p>
 ```
-<p variant="m">Text with a <IconLink globals={globals} url="/demo-url">medium link</IconLink> inside.</p>
+<p variant="m">Text with a <IconLink globals={globals} action={frontmatter.action}>child</IconLink> inside.</p>
 
 ## Example
 ```html
-<p variant="l">Text with a <IconLink globals={globals} url="/demo-url">large link</IconLink> inside.</p>
+<p variant="s">Text with a <IconLink globals={globals} action={frontmatter.action} /> inside.</p>
 ```
-<p variant="l">Text with a <IconLink globals={globals} url="/demo-url">large link</IconLink> inside.</p>
+<p variant="s">Text with a <IconLink globals={globals} action={frontmatter.action} /> inside.</p>
 
 ## Example
 ```html
-<IconLink globals={globals} icon="circle" variant="s">small icon link</IconLink>
+<p variant="m">Text with a <IconLink globals={globals} action={frontmatter.action} /> inside.</p>
 ```
-<IconLink globals={globals} icon="circle" variant="s">small icon link</IconLink>
+<p variant="m">Text with a <IconLink globals={globals} action={frontmatter.action} /> inside.</p>
 
 ## Example
 ```html
-<IconLink globals={globals} icon="github" variant="m">medium icon link</IconLink>
+<p variant="l">Text with a <IconLink globals={globals} action={frontmatter.actionWithIcon} /> inside.</p>
 ```
-<IconLink globals={globals} icon="github" variant="m">medium icon link</IconLink>
+<p variant="l">Text with a <IconLink globals={globals} action={frontmatter.actionWithIcon} /> inside.</p>
 
 ## Example
 ```html
-<IconLink globals={globals} icon="github" variant="l">large icon link</IconLink>
+<IconLink globals={globals} variant="s" action={frontmatter.actionWithIcon} />
 ```
-<IconLink globals={globals} icon="github" variant="l">large icon link</IconLink>
+<IconLink globals={globals} variant="s" action={frontmatter.actionWithIcon} />
+
+## Example
+```html
+<IconLink globals={globals} variant="m" action={frontmatter.actionWithIcon} />
+```
+<IconLink globals={globals} variant="m" action={frontmatter.actionWithIcon} />
+
+## Example
+```html
+<IconLink globals={globals} variant="l" action={frontmatter.actionWithIcon} />
+```
+<IconLink globals={globals} variant="l" action={frontmatter.actionWithIcon} />
+
+## Example
+```html
+<IconLink globals={globals} variant="m" action={frontmatter.actionWithHref} />
+```
+<IconLink globals={globals} variant="m" action={frontmatter.actionWithHref} />

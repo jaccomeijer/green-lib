@@ -7,13 +7,11 @@ export const Segment = props => {
     <ul class="navigation-segment">
       {menu.map(item => <li>
         <IconLink 
+          action={item}
           class={props.pageUrl === item.url && 'active'}
           globals={props.globals}
-          icon={item.icon}
           variant="s"
-          url={item.url}>
-            {item.heading}
-        </IconLink>
+        />
       </li>)}
     </ul>
   )

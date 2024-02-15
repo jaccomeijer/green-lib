@@ -3,17 +3,18 @@ import { getAction } from '../../../layouts/get-action.js'
 
 export const IconLink = props => (
   <a
-    variant={props.variant}
     class={props.class}
-    href={getAction({ type: 'href', globals: props.globals, url: props.url })}
+    href={getAction({ type: 'href', globals: props.globals, url: props.action.url })}
+    id={props.id}
+    variant={props.variant}
   >
-    {props.icon &&
+    {props.action.icon &&
       <FeatherIcon
         globals={props.globals}
-        icon={props.icon}
+        icon={props.action.icon}
         variant={props.variant}
       />
     }
-    {props.children}
+    {props.children || props.action.heading}
   </a>
 )

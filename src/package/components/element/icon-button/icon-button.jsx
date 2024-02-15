@@ -6,15 +6,15 @@ export const IconButton = props => (
     variant={props.variant}
     class={props.class}
     type="button"
-    onclick={getAction({ type: 'onclick', globals: props.globals, url: props.url })}
+    onclick={getAction({ type: 'onclick', globals: props.globals, url: props.action.url })}
   >
-    {props.icon &&
+    {props.action.icon &&
       <FeatherIcon
         globals={props.globals}
-        icon={props.icon}
+        icon={props.action.icon}
         variant={props.variant}
       />
     }
-    {props.children}
+    {props.children || props.action.heading}
   </button>
 )

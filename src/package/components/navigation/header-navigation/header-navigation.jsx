@@ -1,16 +1,21 @@
-import { Branding } from './branding.jsx'
 import { ModalMenu } from './modal-menu.jsx'
 import { Segment } from '../segment/segment.jsx'
 import { ButtonSegment } from '../button-segment/button-segment.jsx'
 import ceCss from '../navigation.ce.css'
 import ceJs from './header-navigation.ce.js'
 import globalCss from '../../../css/global.bundle.css'
+import { IconLink } from '../../element/icon-link/icon-link.jsx'
 
 export const HeaderNavigation = props => {
   return (<header-navigation>
     <template shadowrootmode="open">
       <div id="header-navigation">
-        <Branding globals={props.globals} />
+        <IconLink
+          action={props.globals.metadata.branding}
+          globals={props.globals}
+          id="branding"
+          variant="s"
+        />
         <nav>
           <Segment globals={props.globals} menu={props.mainMenu} pageUrl={props.pageUrl} />
           <Segment globals={props.globals} menu={props.socialMenu} />
