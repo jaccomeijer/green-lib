@@ -18,7 +18,7 @@ export const CardTopic = props => (<card-topic>
       style={props.style}
       topic={props.topic}
 
-      onclick={`location.href='${props.globals.baseUrl}${props.url}';`}
+      onclick={`location.href='${props.globals.baseUrl}${props.topic.action.url}';`}
       />
     <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
     <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
