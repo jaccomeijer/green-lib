@@ -12,6 +12,7 @@ export const StoryLayout = props => {
   return (
     <html lang={globals.metadata.language}>
       <Head
+        enableReload={true}
         favicon={favicon}
         globals={globals}
         page={props.page}

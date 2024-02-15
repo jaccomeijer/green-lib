@@ -12,6 +12,8 @@ export const Head = props => {
     <meta name="generator" content={props.globals.metadata.generator} />
     <link rel="icon" type="image/x-icon" href={`${props.globals.baseUrl}${props.globals.assetUrl}${props.favicon}`} />
     <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
-    <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${esbuildReload}`} />
+    {props.enableReload && 
+      <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${esbuildReload}`} />
+    }
   </head>)
 }
