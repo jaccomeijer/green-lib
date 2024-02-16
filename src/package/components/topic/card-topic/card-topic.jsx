@@ -2,7 +2,7 @@ import ceCss from './card-topic.ce.css'
 import ceJs from './card-topic.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
-import { getAction } from '../../../layouts/get-action.js'
+import { getOnClickAction } from '../../../layouts/get-action.js'
 
 export const CardTopic = props => (<card-topic>
   <template shadowrootmode="open">
@@ -19,7 +19,7 @@ export const CardTopic = props => (<card-topic>
       style={props.style}
       topic={props.topic}
 
-      onclick={getAction({ type: 'onclick', globals: props.globals, url: props.topic.action.url })}
+      onclick={getOnClickAction({ globals: props.globals, action: props.topic.action })}
       />
     <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
     <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />

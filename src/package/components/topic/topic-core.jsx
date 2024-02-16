@@ -21,16 +21,16 @@ export const TopicCore = props => {
       {props.topic.image && <Picture
         globals={props.globals}
         id="topic-picture"
-        src={`${props.globals.baseUrl}${props.globals.assetUrl}${props.images[props.topic.image]}`}
         sizes={props.imageSizes}
+        src={`${props.globals.baseUrl}${props.globals.assetUrl}${props.images[props.topic.image]}`}
       />}
       <div id="topic-content">
         {props.topic.icon &&
           <FeatherIcon
             globals={props.globals}
             icon={props.topic.icon}
-            variant={iconVariant}
             strokeWidth={iconStrokeWidth}
+            variant={iconVariant}
           />
         }
         {props.topic.labels &&
@@ -48,13 +48,16 @@ export const TopicCore = props => {
           <p id="topic-abstract" variant={abstractVariant}>{props.topic.abstract}</p>}
         {props.topic.action && actionElement === 'button' &&
           <IconButton
-            variant={actionVariant}
-            globals={props.globals}
             action={props.topic.action}
-            url={props.topic.action.url}
+            globals={props.globals}
+            variant={actionVariant}
           />}
         {props.topic.action && actionElement === 'link' &&
-          <IconLink globals={props.globals} variant={actionVariant} action={props.topic.action}/>}
+          <IconLink
+            action={props.topic.action}
+            globals={props.globals}
+            variant={actionVariant}
+          />}
       </div>
     </div>
   )

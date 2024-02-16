@@ -4,10 +4,10 @@ export const ButtonSegment = props => {
   const menu = props.menu || []
 
   return (<div class="button-segment">
-    {menu.map(item => <IconButton
+    {menu.map(action => <IconButton
+      action={action}
       globals={props.globals}
       variant="s"
-      action={item}
     />)}
     </div>
   )

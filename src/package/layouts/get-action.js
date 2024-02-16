@@ -1,19 +1,12 @@
-const parseUrl = ({ globals, url }) => {
-  if (url && url.startsWith('http')) {
-    return url
+const parseUrl = ({ globals, action }) => {
+  if (action?.url && action.url.startsWith('http')) {
+    return action.url
   }
-  return globals.baseUrl + (url || '#')
+  return globals.baseUrl + (action?.url || '#')
 }
 
-export const getAction = ({ type, globals, url }) => {
-  switch (type) {
-  case 'onclick':
-    return `location.href='${parseUrl({ globals, url })}';`
+export const getOnClickAction = ({ globals, action }) =>
+  `location.href='${parseUrl({ globals, action })}';`
 
-  case 'href':
-    return parseUrl({ globals, url })
-
-  default:
-    return '#unknown-type'
-  }
-}
+export const getHrefAction = ({ globals, action }) =>
+  parseUrl({ globals, action })

@@ -1,4 +1,4 @@
-export const getMenuItems = ({ pages }) => {
+export const getMenuActions = ({ pages }) => {
 
   // Add frontmatter data to page list
   const menuItems = pages

@@ -1,12 +1,12 @@
 import { FeatherIcon } from '../feather-icon/feather-icon'
-import { getAction } from '../../../layouts/get-action.js'
+import { getOnClickAction } from '../../../layouts/get-action.js'
 
 export const IconButton = props => (
   <button
     variant={props.variant}
     class={props.class}
     type="button"
-    onclick={getAction({ type: 'onclick', globals: props.globals, url: props.action.url })}
+    onclick={getOnClickAction({ globals: props.globals, action: props.action })}
   >
     {props.action.icon &&
       <FeatherIcon

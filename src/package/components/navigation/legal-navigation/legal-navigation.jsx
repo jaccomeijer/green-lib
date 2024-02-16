@@ -1,7 +1,6 @@
 import ceCss from '../navigation.ce.css'
 import ceJs from './legal-navigation.ce.js'
 import globalCss from '../../../css/global.bundle.css'
-import { getAction } from '../../../layouts/get-action.js'
 import { IconLink } from '../../element/icon-link/icon-link.jsx'
 
 export const LegalNavigation = props => (<legal-navigation>

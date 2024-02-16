@@ -1,11 +1,11 @@
 import { Head } from '../package/layouts/head.jsx'
 import { StoryMenu } from '../package/components/navigation/story-menu/story-menu.jsx'
-import { getMenuItems } from '../package/layouts/get-menu-items.js'
+import { getMenuActions } from '../package/layouts/get-menu-actions.js'
 import favicon from '../assets/favicon/favicon.ico'
 import { globals } from '../data/globals.js'
 
 export const StoryLayout = props => {
-  const mainMenu = getMenuItems({
+  const mainMenu = getMenuActions({
     pages: props.pages,
   })
 

@@ -6,15 +6,15 @@ export const StoryMenu = props => (<story-menu>
   <template shadowrootmode="open">
     <div>
       <ul>
-        {props.mainMenu.map(menuItem => (
+        {props.mainMenu.map(menuAction => (
           <li>
-            <a href={menuItem.url}>{menuItem.heading}</a>
+            <a href={menuAction.url}>{menuAction.heading}</a>
             {
-              Array.isArray(menuItem.children) && (
+              Array.isArray(menuAction.children) && (
                 <ul>
-                  {menuItem.children.map(subMenuItem => (
+                  {menuAction.children.map(subMenuAction => (
                     <li>
-                      <a href={subMenuItem.url}>{subMenuItem.heading}</a>
+                      <a href={subMenuAction.url}>{subMenuAction.heading}</a>
                     </li>
                   ))}
                 </ul>

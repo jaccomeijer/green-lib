@@ -5,10 +5,10 @@ export const Segment = props => {
 
   return (
     <ul class="navigation-segment">
-      {menu.map(item => <li>
+      {menu.map(action => <li>
         <IconLink 
-          action={item}
-          class={props.pageUrl === item.url && 'active'}
+          action={action}
+          class={props.pageUrl === action.url && 'active'}
           globals={props.globals}
           variant="s"
         />
