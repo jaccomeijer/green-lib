@@ -13,6 +13,7 @@ a {
 }
 
 a feather-icon {
+  color: var(--color-primary-400);
   margin-right: 0.25rem;
 }
 
@@ -43,10 +44,6 @@ a[variant="xs"] {
 
 a:hover {
   text-decoration: underline;
-}
-
-a feather-icon {
-  color: var(--color-primary-400);
 }
 
 a.active {
