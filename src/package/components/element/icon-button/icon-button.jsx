@@ -3,6 +3,7 @@ import { getOnClickAction } from '../../../layouts/get-action.js'
 
 export const IconButton = props => (
   <button
+    aria-label={props.action.icon} 
     variant={props.variant}
     class={props.class}
     type="button"

@@ -3,6 +3,7 @@ import { getHrefAction } from '../../../layouts/get-action.js'
 
 export const IconLink = props => (
   <a
+    aria-label={props.action.icon} 
     class={props.class}
     href={getHrefAction({ globals: props.globals, action: props.action })}
     id={props.id}

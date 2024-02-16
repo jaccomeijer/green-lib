@@ -1,14 +1,14 @@
 ---
 navigation:
-  heading: Test page
+  heading: Example page
   parent: Page
 
 topic:
-  heading: Test page
+  heading: Example page
   icon: globe
   abstract: Text is free style. Have it your own, including headings, images and all that.
 imageTopic:
-  heading: Demo topic for test page
+  heading: Demo topic for example page
   icon: globe
   abstract: This topic has an image, a two line heading and a longer abstract, all for demo purposes.
   image: demoImage
@@ -17,7 +17,7 @@ imageTopic:
     icon: archive
 ---
 export { StoryLayout as default } from '../../../stories/story-layout.jsx'
-import { Topic, TopicList } from '../../index.js'
+import { Topic, TopicList, Picture } from '../../index.js'
 import { globals } from '../../../data/globals.js'
 import demoImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
 
@@ -102,7 +102,12 @@ Fusce tincidunt a nunc et fringilla. Nulla in nunc eget sapien finibus venenatis
 ut non orci. Suspendisse nec orci est. Duis id turpis quis mauris venenatis
 condimentum.
 
-<img src={`${globals.baseUrl}${globals.assetUrl}/${demoImage}`} alt="Demo image" class="md-image" />
+<Picture
+  class="md-picture"
+  globals={globals}
+  id="topic-picture"
+  src={`${globals.baseUrl}${globals.assetUrl}/${demoImage}`}
+/>
 
 Maecenas nisl nulla, laoreet sed lectus id, commodo euismod lorem. Praesent
 tempus pulvinar sapien maximus placerat. Praesent ligula orci, egestas a mattis

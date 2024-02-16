@@ -18,7 +18,7 @@ export const Picture = (props) => {
   const lowestWidth = sizesArray.pop()
 
   return (
-    <picture id={props.id}>
+    <picture id={props.id} class={props.class}>
       {/* Create a source for each image with a higher width than the img.src */}
       {sizesArray.map((size) => (
         <source
@@ -30,7 +30,7 @@ export const Picture = (props) => {
       {/* Use the lowest resolution image as default */}
       <img
         src={`${imageBasePath}-${lowestWidth.name}.webp`}
-        alt={props.alt || 'Image'}
+        alt={props.alt || 'Image without description'}
       />
     </picture>
   )

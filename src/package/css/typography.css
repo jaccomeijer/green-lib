@@ -74,6 +74,7 @@ body {
   src: url('../font/Montserrat-VariableFont_wght.ttf') format("truetype-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
+  font-display: swap;
 }
 
 

@@ -19,9 +19,9 @@ export const TopicCore = props => {
   return (
     <div id="topic-container" onclick={props.onclick} style={props.style} >
       {props.topic.image && <Picture
+        alt={props.topic.imageDescription}
         globals={props.globals}
         id="topic-picture"
-        sizes={props.imageSizes}
         src={`${props.globals.baseUrl}${props.globals.assetUrl}${props.images[props.topic.image]}`}
       />}
       <div id="topic-content">
