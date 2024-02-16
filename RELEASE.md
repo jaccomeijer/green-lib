@@ -1,10 +1,15 @@
-## @jaccomeijer/green-lib 1.2.8
+## @jaccomeijer/green-lib 1.2.9
 
-## [1.2.8](https://github.com/jaccomeijer/green-lib/compare/1.2.7...1.2.8) (2024-2-15)
+## [1.2.9](https://github.com/jaccomeijer/green-lib/compare/1.2.8...1.2.9) (2024-2-16)
 
 
-### Commits
+### Bug Fixes
 
-* uniform actions with heading, icon and url ([f7b2e4f](https://github.com/jaccomeijer/green-lib/commit/f7b2e4f1b6b4c64ec26322fb394a799a3d9b4b5f))
+* accessibility improvements ([2d7f851](https://github.com/jaccomeijer/green-lib/commit/2d7f85118408877ff8a17e0b171d3dab00e2803e))
+
+
+### Code Refactoring
+
+* rename menu items into menu actions ([d9cafb5](https://github.com/jaccomeijer/green-lib/commit/d9cafb5dbdc63e718f4973de6ad77f951ad9573e))
 
 
