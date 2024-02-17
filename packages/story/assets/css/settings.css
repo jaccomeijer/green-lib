@@ -1,0 +1,84 @@
+/* SETTINGS */
+
+/* Recommended widths: 700px or 1280px */
+:root {
+	--container-width: 1280px;
+}
+
+:root {
+
+  /* Body */
+  --body-font-family: Montserrat, “Helvetica Neue”, sans-serif;
+  --body-font-size-xl: 1.6rem;
+  --body-font-size-l: 1.4rem;
+  --body-font-size-m: 1.15rem;
+  --body-font-size-s: 1rem;
+  --body-font-size-xs: 0.9rem;
+
+  --body-line-height-xl: 1.5;
+  --body-line-height-l: 1.5;
+  --body-line-height-m: 1.5;
+  --body-line-height-s: 1.4;
+  --body-line-height-xs: 1.3;
+
+  --body-font-weight-bold: 600;
+  --body-font-weight: 400;
+
+
+  /* Display	 */
+  --display-font-family: Montserrat, “Helvetica Neue”, sans-serif;
+  --display-font-size-l: 3.4rem;
+  --display-font-size-m: 2.5rem;
+  --display-font-size-s: 2rem;
+  --display-font-weight: 800;
+
+  --display-line-height-l: 1.3;
+  --display-line-height-m: 1.2;
+  --display-line-height-s: 1.1;
+
+
+  /* Heading */
+  --heading-font-family: Montserrat, “Helvetica Neue”, sans-serif;
+  --heading-font-size-xl: 2.4rem;
+  --heading-font-size-l: 2rem;
+  --heading-font-size-m: 1.5rem;
+  --heading-font-size-s: 1.3rem;
+  --heading-font-weight: 700;
+
+  --heading-line-height-xl: 1.3;
+  --heading-line-height-l: 1.3;
+  --heading-line-height-m: 1.2;
+  --heading-line-height-s: 1.1;
+
+  /* Other	 */
+  --radius-circle: 9999px;
+  --radius-pill: 0.25rem;
+  --radius-rounded: 0.25rem;
+}
+
+/* COLORS */
+
+:root {
+	--color-primary-100: #dae7f9;
+	--color-primary-200: #90b6ee;
+	--color-primary-300: #4685e3;
+	--color-primary-400: #1c5ab9;
+	--color-primary-500: #11366f;
+	--color-primary-600: #061225;
+
+	--color-secondary-100: #fff1ea;
+	--color-secondary-200: #ffb895;
+	--color-secondary-300: #ff8040;
+	--color-secondary-400: #ea4e00;
+	--color-secondary-500: #953200;
+	--color-secondary-600: #401500;
+
+	--color-monochrome-100: #eaeaea;
+	--color-monochrome-200: #bfbfbf;
+	--color-monochrome-300: #959595;
+	--color-monochrome-400: #6a6a6a;
+	--color-monochrome-500: #404040;
+	--color-monochrome-600: #151515;
+	--color-monochrome-700: #000000;
+	--color-monochrome-000: #ffffff;
+}

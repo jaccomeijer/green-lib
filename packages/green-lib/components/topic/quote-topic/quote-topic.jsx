@@ -3,7 +3,9 @@ import ceJs from './quote-topic.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
-export const QuoteTopic = props => (<quote-topic>
+export const QuoteTopic = props => {
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  return (<quote-topic>
   <template shadowrootmode="open">
     <TopicCore
       abstractVariant="l"
@@ -19,9 +21,9 @@ export const QuoteTopic = props => (<quote-topic>
       topic={props.topic}
 
     />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + globalCss} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + ceCss} />
   </template>
-  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
+  <script defer src={assetUrl + ceJs} />
 </quote-topic>
-)
+)}

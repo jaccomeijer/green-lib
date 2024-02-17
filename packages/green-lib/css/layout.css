@@ -1,22 +1,17 @@
 /* LAYOUT */
 
-/* Recommended widths: 700px or 1280px */
-:root {
-	--container-width: 1280px;
-}
-
 * {
 	box-sizing: border-box;
 }
 
-html {
-	padding: 0;
-	margin: 0 auto;
-}
-
+html,
 body {
-	padding: 0;
 	margin: 0 auto;
+	padding: 0;
+  background-color: var(--color-monochrome-000);
+  color: var(--color-monochrome-500);
+  font-family: var(--body-font-family);
+  font-size: clamp(12px, .8rem + .25vw, 20px);
 }
 
 .container {

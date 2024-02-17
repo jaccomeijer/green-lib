@@ -3,7 +3,10 @@ import ceJs from './featured-topic.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
-export const FeaturedTopic = props => (<featured-topic>
+export const FeaturedTopic = props => {
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+
+  return (<featured-topic>
   <template shadowrootmode="open">
     <TopicCore
       abstractVariant="l"
@@ -19,9 +22,9 @@ export const FeaturedTopic = props => (<featured-topic>
       topic={props.topic}
 
     />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + globalCss} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + ceCss} />
   </template>
-  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
+  <script defer src={assetUrl + ceJs} />
 </featured-topic>
-)
+)}

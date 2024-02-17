@@ -15,6 +15,7 @@ export const TopicCore = props => {
   const iconStrokeWidth = props.iconStrokeWidth || 2
   const iconVariant = props.iconVariant || 's'
   const labelVariant = props.labelVariant || 's'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
 
   return (
     <div id="topic-container" onclick={props.onclick} style={props.style} >
@@ -22,7 +23,7 @@ export const TopicCore = props => {
         alt={props.topic.imageDescription}
         globals={props.globals}
         id="topic-picture"
-        src={`${props.globals.baseUrl}${props.globals.assetUrl}${props.images[props.topic.image]}`}
+        src={assetUrl + props.images[props.topic.image]}
       />}
       <div id="topic-content">
         {props.topic.icon &&

@@ -39,10 +39,15 @@ menu:
 
 
 ## Example
+```js
+export const assetUrl = globals.baseUrl + globals.assetUrl + '/'
+```
 ```html
-<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
+<link rel="stylesheet" type="text/css" href={assetUrl + ceCss } />
 <Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />
 ```
 
-<link rel="stylesheet" type="text/css" href={`${globals.baseUrl}${globals.assetUrl}${ceCss}`} />
+export const assetUrl = globals.baseUrl + globals.assetUrl + '/'
+
+<link rel="stylesheet" type="text/css" href={assetUrl + ceCss } />
 <Segment globals={globals} pageUrl="/demo-b" menu={frontmatter.menu} />

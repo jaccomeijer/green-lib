@@ -4,7 +4,10 @@ import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 import { getOnClickAction } from '../../../layouts/get-action.js'
 
-export const CardTopic = props => (<card-topic>
+export const CardTopic = props => {
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  
+  return (<card-topic>
   <template shadowrootmode="open">
     <TopicCore
       abstractVariant="m"
@@ -21,9 +24,9 @@ export const CardTopic = props => (<card-topic>
 
       onclick={getOnClickAction({ globals: props.globals, action: props.topic.action })}
       />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + globalCss} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + ceCss} />
   </template>
-  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
+  <script defer src={assetUrl + ceJs} />
 </card-topic>
-)
+)}

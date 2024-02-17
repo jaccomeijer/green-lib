@@ -3,7 +3,10 @@ import ceJs from './showcase-topic.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
-export const ShowcaseTopic = props => (<showcase-topic>
+export const ShowcaseTopic = props => {
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  
+  return (<showcase-topic>
   <template shadowrootmode="open">
     <TopicCore
       abstractVariant="m"
@@ -20,9 +23,9 @@ export const ShowcaseTopic = props => (<showcase-topic>
 
       actionElement="link"
     />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${globalCss}`} />
-    <link rel="stylesheet" type="text/css" href={`${props.globals.baseUrl}${props.globals.assetUrl}${ceCss}`} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + globalCss} />
+    <link rel="stylesheet" type="text/css" href={assetUrl + ceCss} />
   </template>
-  <script defer src={`${props.globals.baseUrl}${props.globals.assetUrl}${ceJs}`} />
+  <script defer src={assetUrl + ceJs} />
 </showcase-topic>
-)
+)}

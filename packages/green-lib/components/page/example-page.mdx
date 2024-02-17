@@ -28,6 +28,7 @@ import demoImage from '../../../story/assets/images/pexels-skyler-ewing-4596712.
 />
 
 ---
+export const assetUrl = globals.baseUrl + globals.assetUrl + '/'
 
 <div class="container" style="--container-width: 700px">
 # Heading 1
@@ -76,7 +77,7 @@ Integer vitae elit sapien. Ut congue arcu mauris, non dictum ipsum viverra eget.
 Duis et ultricies lorem. Nulla at varius arcu. Integer tristique mattis ante eu
 bibendum. Quisque maximus orci eget justo venenatis posuere.
 
-- This is a link to an <a href={`${globals.baseUrl}${globals.assetUrl}${demoImage}`}>image</a>
+- This is a link to an <a href={ assetUrl + demoImage }>image</a>
 - This ia a link to [jaccomeijer.nl](https://www.jaccomeijer.nl)
 
 Sed velit sapien, sagittis quis ligula eu, molestie ornare eros. Etiam lobortis
@@ -106,7 +107,7 @@ condimentum.
   class="md-picture"
   globals={globals}
   id="topic-picture"
-  src={`${globals.baseUrl}${globals.assetUrl}/${demoImage}`}
+  src={ assetUrl + demoImage }
 />
 
 Maecenas nisl nulla, laoreet sed lectus id, commodo euismod lorem. Praesent
