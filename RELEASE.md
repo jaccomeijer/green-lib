@@ -1,15 +1,10 @@
-## @jaccomeijer/green-lib 1.2.13
+## @jaccomeijer/green-lib 1.2.14
 
-## [1.2.13](https://github.com/jaccomeijer/green-lib/compare/1.2.12...1.2.13) (2024-2-17)
-
-
-### Commits
-
-* add props.stylesheets to head component ([8bb272c](https://github.com/jaccomeijer/green-lib/commit/8bb272c142252f1590d9422c5bde599f30a6bcab))
+## [1.2.14](https://github.com/jaccomeijer/green-lib/compare/1.2.13...1.2.14) (2024-2-17)
 
 
-### Code Refactoring
+### Bug Fixes
 
-* define assetUrl variable once ([51a1441](https://github.com/jaccomeijer/green-lib/commit/51a1441821b9165a00afe8ab9127c0516844876e))
+* add css exports ([7a6c7ed](https://github.com/jaccomeijer/green-lib/commit/7a6c7ed43f7e95a77ace0c2f46bce4bbe0b615f7))
 
 
