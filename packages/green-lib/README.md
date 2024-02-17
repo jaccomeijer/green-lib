@@ -2,8 +2,6 @@
 
 MDX component library for green-build.
 
-## Stories
+## Docs
 
-```bash
- npm -w @local/story run serve
-```
+To be written.
