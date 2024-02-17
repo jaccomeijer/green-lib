@@ -4,7 +4,7 @@ import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const FeaturedTopic = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
 
   return (<featured-topic>
   <template shadowrootmode="open">

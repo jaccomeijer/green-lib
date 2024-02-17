@@ -5,7 +5,7 @@ import { TopicCore } from '../topic-core.jsx'
 import { getOnClickAction } from '../../../layouts/get-action.js'
 
 export const CardTopic = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<card-topic>
   <template shadowrootmode="open">

@@ -4,7 +4,7 @@ import sprite from 'feather-icons/dist/feather-sprite.svg'
 
 export const FeatherIcon = props => {
   const strokeWidth = props.strokeWidth || 2
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
 
   return (<feather-icon>
     <template shadowrootmode="open">
@@ -18,7 +18,7 @@ export const FeatherIcon = props => {
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <use href={`${assetUrl}sprite}#${props.icon}`} />
+        <use href={`${assetUrl}${sprite}#${props.icon}`} />
       </svg>
       <link rel="stylesheet" type="text/css" href={assetUrl + ceCss} />
     </template>

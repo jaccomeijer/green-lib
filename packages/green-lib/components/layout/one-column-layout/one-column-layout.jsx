@@ -3,7 +3,7 @@ import ceJs from './one-column-layout.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 
 export const OneColumnLayout = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<one-column-layout delay={props.delay}>
   <template shadowrootmode="open">

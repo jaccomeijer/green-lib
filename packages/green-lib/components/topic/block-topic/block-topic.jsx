@@ -4,7 +4,7 @@ import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const BlockTopic = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<block-topic>
   <template shadowrootmode="open">

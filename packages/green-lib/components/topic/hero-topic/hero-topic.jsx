@@ -5,7 +5,7 @@ import { TopicCore } from '../topic-core.jsx'
 
 export const HeroTopic = props => {
   if (!props.topic?.image) return <p>Image required for Hero topic</p>
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<hero-topic>
     <template shadowrootmode="open">

@@ -4,7 +4,7 @@ import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
 
 export const HeadlineTopic = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<headline-topic>
   <template shadowrootmode="open">

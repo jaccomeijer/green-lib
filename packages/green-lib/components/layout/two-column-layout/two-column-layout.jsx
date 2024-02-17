@@ -3,7 +3,7 @@ import ceJs from './two-column-layout.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 
 export const TwoColumnLayout = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<two-column-layout delay={props.delay}>
   <template shadowrootmode="open">

@@ -15,7 +15,7 @@ export const TopicCore = props => {
   const iconStrokeWidth = props.iconStrokeWidth || 2
   const iconVariant = props.iconVariant || 's'
   const labelVariant = props.labelVariant || 's'
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
 
   return (
     <div id="topic-container" onclick={props.onclick} style={props.style} >

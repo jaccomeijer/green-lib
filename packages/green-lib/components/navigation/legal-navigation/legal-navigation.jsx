@@ -4,7 +4,7 @@ import globalCss from '../../../css/global.bundle.css'
 import { IconLink } from '../../element/icon-link/icon-link.jsx'
 
 export const LegalNavigation = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<legal-navigation>
   <template shadowrootmode="open">

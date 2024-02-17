@@ -7,7 +7,7 @@ import globalCss from '../../../css/global.bundle.css'
 import { IconLink } from '../../element/icon-link/icon-link.jsx'
 
 export const HeaderNavigation = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<header-navigation>
     <template shadowrootmode="open">

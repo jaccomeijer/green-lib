@@ -4,7 +4,7 @@ import { Segment } from '../segment/segment.jsx'
 import globalCss from '../../../css/global.bundle.css'
 
 export const FooterNavigation = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl + '/'
+  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   
   return (<footer-navigation>
   <template shadowrootmode="open">
