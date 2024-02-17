@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.2.19](https://github.com/jaccomeijer/green-lib/compare/1.2.18...1.2.19) (2024-2-17)
+
 ## [1.2.18](https://github.com/jaccomeijer/green-lib/compare/1.2.14...1.2.18) (2024-2-17)
 
 
