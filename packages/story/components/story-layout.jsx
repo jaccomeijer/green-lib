@@ -2,7 +2,7 @@ import { Head } from '../../green-lib/layouts/head.jsx'
 import { StoryMenu } from '../../green-lib/components/navigation/story-menu/story-menu.jsx'
 import { getMenuActions } from '../../green-lib/layouts/get-menu-actions.js'
 import favicon from '../assets/favicon/favicon.ico'
-import { globals } from '../data/globals.js'
+import { globals } from '../config/globals.js'
 
 export const StoryLayout = props => {
   const mainMenu = getMenuActions({

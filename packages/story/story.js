@@ -1,4 +1,4 @@
-import { config } from '@local/story/data/config.js'
+import { config } from './config/config.js'
 import { build } from '@jaccomeijer/green-build'
 
 if (process.argv[2] === 'serve') {
