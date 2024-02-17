@@ -1,5 +1,5 @@
 import { FeatherIcon } from '../feather-icon/feather-icon.jsx'
-import { getOnClickAction } from '../../../layouts/get-action.js'
+import { getOnClickAction } from '../../../lib/get-action.js'
 
 export const IconButton = props => (
   <button

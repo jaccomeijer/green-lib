@@ -1,5 +1,5 @@
 import { FeatherIcon } from '../feather-icon/feather-icon.jsx'
-import { getHrefAction } from '../../../layouts/get-action.js'
+import { getHrefAction } from '../../../lib/get-action.js'
 
 export const IconLink = props => (
   <a

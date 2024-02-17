@@ -1,11 +1,11 @@
-import esbuildReload from './esbuild-reload.ce.js'
-import globalCss from '../css/global.bundle.css'
-import settingsCss from '../../story/assets/css/settings.bundle.css'
+import esbuildReload from '@jaccomeijer/green-lib'
+import globalCss from '../../../green-lib/css/global.bundle.css'
+import settingsCss from '../assets/css/settings.bundle.css'
 
 export const Head = props => {
   const frontmatter = props.page.frontmatter
   const assetUrl = props.globals.baseUrl + props.globals.assetUrl
-  const stylesheets = props.stylesheets || [settingsCss, globalCss]
+  const stylesheets = [settingsCss, globalCss]
 
   return (<head>
     <meta charset="utf-8" />

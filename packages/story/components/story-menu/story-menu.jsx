@@ -1,6 +1,6 @@
 import css from './story-menu.ce.css'
 import ceJs from './story-menu.ce.js'
-import globalCss from '../../../css/global.bundle.css'
+import globalCss from '@jaccomeijer/green-lib/css/global.bundle.css'
 
 export const StoryMenu = props => {
   const assetUrl = props.globals.baseUrl + props.globals.assetUrl

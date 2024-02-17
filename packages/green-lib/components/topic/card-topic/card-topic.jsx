@@ -2,7 +2,7 @@ import ceCss from './card-topic.ce.css'
 import ceJs from './card-topic.ce.js'
 import globalCss from '../../../css/global.bundle.css'
 import { TopicCore } from '../topic-core.jsx'
-import { getOnClickAction } from '../../../layouts/get-action.js'
+import { getOnClickAction } from '../../../lib/get-action.js'
 
 export const CardTopic = props => {
   const assetUrl = props.globals.baseUrl + props.globals.assetUrl

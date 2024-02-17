@@ -1,8 +1,8 @@
-import { Head } from '../../green-lib/layouts/head.jsx'
-import { StoryMenu } from '../../green-lib/components/navigation/story-menu/story-menu.jsx'
-import { getMenuActions } from '../../green-lib/layouts/get-menu-actions.js'
-import favicon from '../assets/favicon/favicon.ico'
-import { globals } from '../config/globals.js'
+import { getMenuActions } from '@jaccomeijer/green-lib'
+import { Head } from './head.jsx'
+import { StoryMenu } from '../story-menu/story-menu.jsx'
+import favicon from '../../assets/favicon/favicon.ico'
+import { globals } from '../../config/globals.js'
 
 export const StoryLayout = props => {
   const mainMenu = getMenuActions({
