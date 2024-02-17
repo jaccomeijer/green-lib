@@ -32,7 +32,8 @@
     "build": "echo No need to build the static files in src/package"
   },
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./css/*.css": "./css/*.css"
   },
   "publishConfig": {
     "access": "public"
