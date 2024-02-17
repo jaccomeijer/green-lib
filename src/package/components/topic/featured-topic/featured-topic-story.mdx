@@ -12,10 +12,10 @@ topic:
     heading: Test action
     icon: archive
 ---
-export { StoryLayout as default } from '../../../../stories/story-layout.jsx'
+export { StoryLayout as default } from '@local/story/components/story-layout.jsx'
 import { FeaturedTopic } from './featured-topic'
-import topicImage from '../../../../assets/images/pexels-skyler-ewing-4596712.jpg'
-import { globals } from '../../../../data/globals.js'
+import topicImage from '@local/story/assets/images/pexels-skyler-ewing-4596712.jpg'
+import { globals } from '@local/story/data/globals.js'
 
 # {frontmatter.navigation.heading}
 ## Frontmatter
@@ -45,7 +45,7 @@ topic:
 
 ## Example
 ```js
-import topicImage from '../../../assets/images/pexels-skyler-ewing-4596712.jpg'
+import topicImage from '../../../story/assets/images/pexels-skyler-ewing-4596712.jpg'
 ```
 ```html
 <FeaturedTopic

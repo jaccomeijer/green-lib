@@ -1,6 +1,6 @@
-import { Head } from '../package/layouts/head.jsx'
-import { StoryMenu } from '../package/components/navigation/story-menu/story-menu.jsx'
-import { getMenuActions } from '../package/layouts/get-menu-actions.js'
+import { Head } from '../../package/layouts/head.jsx'
+import { StoryMenu } from '../../package/components/navigation/story-menu/story-menu.jsx'
+import { getMenuActions } from '../../package/layouts/get-menu-actions.js'
 import favicon from '../assets/favicon/favicon.ico'
 import { globals } from '../data/globals.js'
 
