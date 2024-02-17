@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "clean": "rm -rf dist",
-    "serve": "npm run clean && MODE=serve node stories.js"
+    "serve": "npm run clean && MODE=serve node story.js"
   },
   "type": "module"
 }
