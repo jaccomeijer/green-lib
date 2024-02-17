@@ -10,7 +10,7 @@ export const config = {
   assetUrl: '/assets/',
   baseUrl: '',
   outdir: 'dist',
-  entryPointsGlob: 'src/package/components/**/*.{mdx}',
+  entryPointsGlob: '../green-lib/components/**/*.{mdx}',
   imageSizes: {
     s: 300,
     m: 700,
@@ -18,7 +18,7 @@ export const config = {
   },
   initialProps: {},
   removeBundle: false,
-  stripFromOutputPath: 'src/package/components',
+  stripFromOutputPath: '../green-lib/components',
   ...(process.env.MODE === 'build' ? buildConfig : {}),
   ...(process.env.MODE === 'serve' ? serveConfig : {}),
 }

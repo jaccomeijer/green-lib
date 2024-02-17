@@ -1,4 +1,4 @@
-import { FeatherIcon } from '../feather-icon/feather-icon'
+import { FeatherIcon } from '../feather-icon/feather-icon.jsx'
 import { getHrefAction } from '../../../layouts/get-action.js'
 
 export const IconLink = props => (

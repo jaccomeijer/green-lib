@@ -1,0 +1,51 @@
+{
+  "name": "@jaccomeijer/green-lib",
+  "version": "1.2.9",
+  "description": "MDX component library for green-build",
+  "keywords": [
+    "esbuild",
+    "mdx",
+    "green",
+    "lib",
+    "component"
+  ],
+  "author": "Jacco Meijer (https://www.jaccomeijer.nl)",
+  "contributors": [
+    {
+      "name": "Jacco Meijer",
+      "email": "jacco@jaccomeijer.nl",
+      "url": "https://www.jaccomeijer.nl"
+    }
+  ],
+  "homepage": "https://github.com/jaccomeijer/green-lib#readme",
+  "bugs": {
+    "url": "https://github.com/jaccomeijer/green-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaccomeijer/green-lib.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "serve": "npm run clean && MODE=serve node stories.js",
+    "build": "echo No need to build the static files in src/package"
+  },
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "src/package"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.11.1"
+  },
+  "type": "module",
+  "dependencies": {
+    "feather-icons": "4.29.1"
+  }
+}
