@@ -5,5 +5,8 @@
     "clean": "rm -rf dist",
     "serve": "npm run clean && MODE=serve node story.js"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@jaccomeijer/green-lib": "1.2.14"
+  }
 }

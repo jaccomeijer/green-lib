@@ -33,7 +33,7 @@
   },
   "exports": {
     ".": "./index.js",
-    "./css/*.css": "./css/*.css"
+    "./*.css": "./css/*.css"
   },
   "publishConfig": {
     "access": "public"

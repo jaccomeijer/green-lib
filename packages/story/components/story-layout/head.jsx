@@ -1,6 +1,6 @@
-import esbuildReload from '@jaccomeijer/green-lib'
-import globalCss from '../../../green-lib/css/global.bundle.css'
-import settingsCss from '../assets/css/settings.bundle.css'
+import esbuildReload from './esbuild-reload.ce.js'
+import globalCss from '@jaccomeijer/green-lib/global.bundle.css'
+import settingsCss from '../../assets/css/settings.bundle.css'
 
 export const Head = props => {
   const frontmatter = props.page.frontmatter
