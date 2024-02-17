@@ -7,18 +7,20 @@
 html,
 body {
 	margin: 0 auto;
-	padding: 0;
   background-color: var(--color-monochrome-000);
   color: var(--color-monochrome-500);
   font-family: var(--body-font-family);
   font-size: clamp(12px, .8rem + .25vw, 20px);
 }
 
+body {
+	padding: 0 1rem;
+}
+
 .container {
 	display: block;
 	margin: 0 auto;
 	max-width: var(--container-width);
-	padding: 0 1rem;
 	width: 100%;
 }
 
