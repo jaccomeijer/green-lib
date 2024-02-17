@@ -1,15 +1,15 @@
-## @jaccomeijer/green-lib 1.2.12
+## @jaccomeijer/green-lib 1.2.13
 
-## [1.2.12](https://github.com/jaccomeijer/green-lib/compare/1.2.11...1.2.12) (2024-2-17)
+## [1.2.13](https://github.com/jaccomeijer/green-lib/compare/1.2.12...1.2.13) (2024-2-17)
 
 
 ### Commits
 
-* consisten use of actions ([7779afd](https://github.com/jaccomeijer/green-lib/commit/7779afde9edfac37dab16db6a4c19144778aca63))
+* add props.stylesheets to head component ([8bb272c](https://github.com/jaccomeijer/green-lib/commit/8bb272c142252f1590d9422c5bde599f30a6bcab))
 
 
 ### Code Refactoring
 
-* move data to config ([883f437](https://github.com/jaccomeijer/green-lib/commit/883f437116c53d7a32b82cd594da0d86713724f1))
+* define assetUrl variable once ([51a1441](https://github.com/jaccomeijer/green-lib/commit/51a1441821b9165a00afe8ab9127c0516844876e))
 
 
