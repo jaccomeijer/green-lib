@@ -1,9 +1,9 @@
-import { config } from './config.js'
+import { buildConfig } from './build-config.js'
 import { metadata } from './metadata.js'
 
 export const globals = {
-  assetUrl: config.assetUrl,
-  baseUrl: config.baseUrl,
-  imageSizes: config.imageSizes,
+  assetUrl: '/assets/',
+  baseUrl: '',
+  imageSizes: buildConfig.imageSizes,
   metadata,
 }

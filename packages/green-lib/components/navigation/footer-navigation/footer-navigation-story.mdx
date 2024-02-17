@@ -3,14 +3,14 @@ navigation:
   heading: FooterNavigation
   parent: Navigation
 
-mainMenu:
+mainActions:
   - heading: Main1
     url: /main1
   - heading: Main2
     icon: archive
     url: /main2
 
-socialMenu:
+socialActions:
   - heading: Heading and icon
     icon: cloud
   - icon: github
@@ -23,52 +23,35 @@ import { globals } from '@local/story/config/globals.js'
 # {frontmatter.navigation.heading}
 ## Frontmatter
 ```yaml
-mainMenu:
+mainActions:
   - heading: Main1
     url: /main1
   - heading: Main2
     icon: archive
     url: /main2
 
-socialMenu:
+socialActions:
   - heading: Github
     icon: github
   - heading: LinkedIn
     icon: linkedin
 ```
 
-
 ## Example
 ```html
 <div class="border-top border-bottom">
   <FooterNavigation
     globals={globals}
-    mainMenu={frontmatter.mainMenu}
-    socialMenu={frontmatter.socialMenu}
+    mainActions={frontmatter.mainActions}
+    socialActions={frontmatter.socialActions}
   />
 </div>
 ```
 <div class="border-top border-bottom">
   <FooterNavigation
     globals={globals}
-    mainMenu={frontmatter.mainMenu}
-    socialMenu={frontmatter.socialMenu}
-  />
-</div>
-
-## Example
-```html
-<div class="border-top border-bottom">
-  <FooterNavigation
-    globals={globals}
-    mainMenu={frontmatter.mainMenu}
-  />
-</div>
-```
-<div class="border-top border-bottom">
-  <FooterNavigation
-    globals={globals}
-    mainMenu={frontmatter.mainMenu}
+    mainActions={frontmatter.mainActions}
+    socialActions={frontmatter.socialActions}
   />
 </div>
 
@@ -77,13 +60,29 @@ socialMenu:
 <div class="border-top border-bottom">
   <FooterNavigation
     globals={globals}
-    socialMenu={frontmatter.socialMenu}
+    mainActions={frontmatter.mainActions}
   />
 </div>
 ```
 <div class="border-top border-bottom">
   <FooterNavigation
     globals={globals}
-    socialMenu={frontmatter.socialMenu}
+    mainActions={frontmatter.mainActions}
+  />
+</div>
+
+## Example
+```html
+<div class="border-top border-bottom">
+  <FooterNavigation
+    globals={globals}
+    socialActions={frontmatter.socialActions}
+  />
+</div>
+```
+<div class="border-top border-bottom">
+  <FooterNavigation
+    globals={globals}
+    socialActions={frontmatter.socialActions}
   />
 </div>

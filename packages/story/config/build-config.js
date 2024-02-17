@@ -1,14 +1,12 @@
-const buildConfig = {
+const buildEnv = {
   serve: false,
 }
 
-const serveConfig = {
+const serveEnv = {
   serve: true,
 }
 
-export const config = {
-  assetUrl: '/assets/',
-  baseUrl: '',
+export const buildConfig = {
   outdir: 'dist',
   entryPointsGlob: '../green-lib/components/**/*.{mdx}',
   imageSizes: {
@@ -19,6 +17,6 @@ export const config = {
   initialProps: {},
   removeBundle: false,
   stripFromOutputPath: '../green-lib/components',
-  ...(process.env.MODE === 'build' ? buildConfig : {}),
-  ...(process.env.MODE === 'serve' ? serveConfig : {}),
+  ...(process.env.MODE === 'build' ? buildEnv : {}),
+  ...(process.env.MODE === 'serve' ? serveEnv : {}),
 }

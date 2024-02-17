@@ -1,10 +1,10 @@
 import { IconButton } from '../../element/icon-button/icon-button'
 
 export const ButtonSegment = props => {
-  const menu = props.menu || []
+  const actions = props.actions || []
 
   return (<div class="button-segment">
-    {menu.map(action => <IconButton
+    {actions.map(action => <IconButton
       action={action}
       globals={props.globals}
       variant="s"

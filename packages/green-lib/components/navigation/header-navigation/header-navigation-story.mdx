@@ -3,20 +3,20 @@ navigation:
   heading: HeaderNavigation
   parent: Navigation
 
-mainMenu:
+mainActions:
   - heading: Main1
     url: /main1
   - heading: Main2
     icon: archive
     url: /main2
 
-socialMenu:
+socialActions:
   - heading: Heading and icon
     icon: cloud
   - icon: github
   - icon: linkedin
 
-actionMenu:
+callActions:
   - heading: Share
     icon: share
   - icon: x
@@ -29,20 +29,20 @@ import { globals } from '@local/story/config/globals.js'
 # {frontmatter.navigation.heading}
 ## Frontmatter
 ```yaml
-mainMenu:
+mainActions:
   - heading: Main1
     url: /main1
   - heading: Main2
     icon: archive
     url: /main2
 
-socialMenu:
+socialActions:
   - heading: Github
     icon: github
   - heading: LinkedIn
     icon: linkedin
 
-actionMenu:
+callActions:
   - heading: Share
     icon: share
   - heading: Circle
@@ -53,50 +53,50 @@ actionMenu:
 ```html
 <HeaderNavigation 
   globals={globals}
-  mainMenu={frontmatter.mainMenu}
-  socialMenu={frontmatter.socialMenu}
-  actionMenu={frontmatter.actionMenu} 
+  mainActions={frontmatter.mainActions}
+  socialActions={frontmatter.socialActions}
+  callActions={frontmatter.callActions} 
 />
 ```
 <HeaderNavigation 
   globals={globals}
-  mainMenu={frontmatter.mainMenu}
-  socialMenu={frontmatter.socialMenu}
-  actionMenu={frontmatter.actionMenu} 
+  mainActions={frontmatter.mainActions}
+  socialActions={frontmatter.socialActions}
+  callActions={frontmatter.callActions} 
 />
 
 ## Example
 ```html
 <HeaderNavigation 
   globals={globals}
-  mainMenu={frontmatter.mainMenu}
+  mainActions={frontmatter.mainActions}
 />
 ```
 <HeaderNavigation 
   globals={globals}
-  mainMenu={frontmatter.mainMenu}
+  mainActions={frontmatter.mainActions}
 />
 
 ## Example
 ```html
 <HeaderNavigation 
   globals={globals}
-  actionMenu={frontmatter.actionMenu} 
+  callActions={frontmatter.callActions} 
 />
 ```
 <HeaderNavigation 
   globals={globals}
-  actionMenu={frontmatter.actionMenu} 
+  callActions={frontmatter.callActions} 
 />
 
 ## Example
 ```html
 <HeaderNavigation 
   globals={globals}
-  socialMenu={frontmatter.socialMenu}
+  socialActions={frontmatter.socialActions}
 />
 ```
 <HeaderNavigation 
   globals={globals}
-  socialMenu={frontmatter.socialMenu}
+  socialActions={frontmatter.socialActions}
 />

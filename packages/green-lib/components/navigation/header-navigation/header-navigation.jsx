@@ -17,17 +17,17 @@ export const HeaderNavigation = props => {
           variant="s"
         />
         <nav>
-          <Segment globals={props.globals} menu={props.mainMenu} pageUrl={props.pageUrl} />
-          <Segment globals={props.globals} menu={props.socialMenu} />
-          <ButtonSegment globals={props.globals} menu={props.actionMenu} />
+          <Segment globals={props.globals} actions={props.mainActions} pageUrl={props.pageUrl} />
+          <Segment globals={props.globals} actions={props.socialActions} />
+          <ButtonSegment globals={props.globals} actions={props.callActions} />
         </nav>
         <div>
           <button id="menu-button">Menu</button>
           <ModalMenu
             globals={props.globals}
-            mainMenu={props.mainMenu}
-            socialMenu={props.socialMenu}
-            actionMenu={props.actionMenu}
+            mainActions={props.mainActions}
+            socialActions={props.socialActions}
+            callActions={props.callActions}
           />
         </div>
       </div>
