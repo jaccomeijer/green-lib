@@ -11,7 +11,7 @@ export const NavigationHeader = props => {
     <template shadowrootmode="open">
       <div class="navigation-header">
         <div class="wide-menu-view">
-          <nav class="main-actions">
+          <nav class="main-actions" aria-label="primary">
             <Action
               action={props.globals.metadata.branding}
               class="branding"
