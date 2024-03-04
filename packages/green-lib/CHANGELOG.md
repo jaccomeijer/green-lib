@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/jaccomeijer/green-lib/compare/3.0.2...3.0.3) (2024-3-4)
+
+
+### Commits
+
+* style updates ([a89add9](https://github.com/jaccomeijer/green-lib/commit/a89add9d97da87499bab6afe038447d507badb15))
+
 ## [3.0.2](https://github.com/jaccomeijer/green-lib/compare/3.0.1...3.0.2) (2024-3-4)
 
 
