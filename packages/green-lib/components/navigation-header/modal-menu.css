@@ -1,3 +1,8 @@
+/*
+ * For this component to work, the parent element of this custom element needs a
+ * high css z-index.
+ */
+
 .modal-menu {
   .modal-background {
     background-color: rgba(0, 0, 0, 0.5);
