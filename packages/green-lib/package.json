@@ -1,6 +1,6 @@
 {
   "name": "@jaccomeijer/green-lib",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "MDX component library for green-build",
   "keywords": [
     "esbuild",
@@ -30,7 +30,7 @@
     "clean": "rm -rf dist",
     "serve": "npm run clean && MODE=serve node stories.js",
     "build": "echo No need to build static files"
-  },  
+  },
   "exports": {
     ".": "./index.js",
     "./index.bundle.css": "./index.bundle.css",
