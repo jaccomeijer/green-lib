@@ -5,7 +5,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2xs);
+    gap: var(--space-xs);
     justify-content: center;
     width: 100%;
   }

@@ -15,7 +15,7 @@
 
     @container (min-width: 45rem) {
       & {
-        max-width: 25vw;
+        max-width: 17vw;
       }
     }
 
@@ -44,8 +44,9 @@
       justify-content: center;
     }
 
-    .topic-heading.display {
+    .topic-heading {
       font-size: var(--font-size-1);
+      text-align: center;
     }
 
     .topic-abstract {
