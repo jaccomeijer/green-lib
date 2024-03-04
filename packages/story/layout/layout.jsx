@@ -1,6 +1,6 @@
 import { getMenuActions, getRootMenuAction } from '@jaccomeijer/green-lib'
-import { Head } from '../components/head/head.jsx'
-import { Menu } from '../components/menu.jsx'
+import { Head } from './head/head.jsx'
+import { Menu } from './menu.jsx'
 import favicon from '../assets/favicon/favicon.ico'
 import { globals } from '../config/globals.js'
 
