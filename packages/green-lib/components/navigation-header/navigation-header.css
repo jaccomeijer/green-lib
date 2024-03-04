@@ -9,6 +9,15 @@
     text-decoration: none;
   }
 
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   .wide-menu-view {
     display: none;
 
