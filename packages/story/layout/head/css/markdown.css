@@ -50,4 +50,16 @@
   h4.display {
     font-size: var(--font-size-4);
   }
+
+  .topic.topic-block,
+  .topic.topic-card {
+    margin-block-end: var(--space-s);
+  }
+
+  .topic.topic-headline,
+  .topic.topic-hero,
+  .topic.topic-profile,
+  .topic.topic-quote {
+    margin-block-end: var(--space-xl);
+  }
 }
