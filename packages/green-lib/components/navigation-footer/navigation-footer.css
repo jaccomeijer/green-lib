@@ -10,8 +10,15 @@
     width: 100%;
   }
 
-  sup {
-    margin-top: -1.4em;
+  a, a:visited {
+    color: currentColor;
+    /* Vertically center lonely icons */
+    display: flex;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   @container (min-width: 45rem) {

@@ -4,13 +4,20 @@
 }
 
 .navigation-header {
+  /* Needed for the modal to work inside a virtual DOM */
+  position: relative;
+  z-index: 100;
+
   .branding {
+    color: var(--color-mono-500);
     font-weight: var(--font-body-weight-bold);
     text-decoration: none;
   }
 
-  a {
+  a, a:visited {
     color: currentColor;
+    /* Vertically center lonely icons */
+    display: flex;
     text-decoration: none;
   }
 
