@@ -3,10 +3,10 @@
   "version": "3.0.2",
   "devDependencies": {
     "@jaccomeijer/green-build": "1.1.1",
-    "esbuild": "0.20.0",
-    "eslint": "8.56.0",
+    "esbuild": "0.20.1",
+    "eslint": "8.57.0",
     "eslint-config-eslint": "9.0.0",
-    "eslint-plugin-react": "7.33.2"
+    "eslint-plugin-react": "7.34.0"
   },
   "workspaces": [
     "packages/green-lib",
