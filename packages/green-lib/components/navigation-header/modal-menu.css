@@ -3,6 +3,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: opacity 0.5s ease 0s;
     visibility: hidden;
+    height: 100vh;
   }
 
   .modal-close-button {
