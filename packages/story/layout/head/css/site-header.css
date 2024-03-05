@@ -13,6 +13,11 @@
     text-decoration: underline;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
   .main-menu {
     color: var(--color-primary-400);
     font-size: var(--font-size-0);

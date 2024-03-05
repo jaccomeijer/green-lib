@@ -2,4 +2,3 @@
 
 @import "../../../design-tokens/design.tokens.css";
 @import "./site-header.css";
-@import "./markdown.css" layer(markdown);

@@ -1,6 +1,7 @@
 @import "./css/global/reset.css" layer(reset);
 @import "./css/global/body.css" layer(body);
 @import "./css/global/font.css" layer(font);
+@import "./css/global/markdown.css" layer(markdown);
 @import "./css/highlight/highlight.css" layer(highlight);
 @import "./bundles/css/structures.css" layer(structures);
 @import "./bundles/css/components.css" layer(components);

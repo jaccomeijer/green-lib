@@ -35,13 +35,13 @@ export const Layout = props => {
           </nav>
         </header>
         <main tabindex="-1" id="main-content">
-          <div class="page s-wrapper s-block-space u-block-space-l">
-            <article class="markdown s-flex-column u-gap-m">
+          <div class="page s-wrapper">
+            <article class="markdown s-flex-column u-gap-0">
               {props.children}
             </article>
           </div>
         </main>
-        <footer class="s-wrapper u-font-size--1">
+        <footer class="s-wrapper u-font-size--1 s-block-space u-block-space-l">
           This is the footer
         </footer>
       </body>

@@ -11,6 +11,11 @@
     margin-top: -1.4em;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
   a, a:visited {
     color: currentColor;
     /* Vertically center lonely icons */
