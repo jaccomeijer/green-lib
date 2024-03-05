@@ -6,7 +6,7 @@
 	hr {
 		border: 0.5px solid var(--color-mono-200);
 		color: var(--color-mono-100);
-		margin-block-start: var(--space-xl);
+		margin-block-start: var(--space-s-xl);
 		width: 100%;
 	}
 
@@ -25,7 +25,7 @@
   }
 
   :is(p, ul, ol, pre) {
-    margin-block-start: var(--space-m);
+    margin-block-start: var(--space-2xs-m);
   }
 
   :is(h1, h2, h3, h4) {
@@ -40,25 +40,25 @@
 
   h1 {
     font-size: var(--font-size-5);
-    margin-block-start: var(--space-2xl);
+    margin-block-start: var(--space-m-2xl);
   }
 
   h2 {
     font-size: var(--font-size-4);
-    margin-block-start: var(--space-2xl);
+    margin-block-start: var(--space-m-2xl);
   }
 
   h3 {
     font-size: var(--font-size-3);
-    margin-block-start: var(--space-l);
+    margin-block-start: var(--space-xs-l);
   }
 
   h4 {
     font-size: var(--font-size-2);
-    margin-block-start: var(--space-l);
+    margin-block-start: var(--space-xs-l);
   }
 
   .topic {
-    margin-block-start: var(--space-xl);
+    margin-block-start: var(--space-s-xl);
   }
 }

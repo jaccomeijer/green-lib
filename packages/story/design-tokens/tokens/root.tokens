@@ -1,6 +1,6 @@
 {
   "gutter": {
-    "$value": "{space.s-m}"
+    "$value": "{space.xs-l}"
   },
   "wrapper": {
     "width": {
