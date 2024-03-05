@@ -3,9 +3,14 @@
   gap: var(--space-2xl);
 
   .topic-picture {
-    aspect-ratio: 5/2;
+    aspect-ratio: 1/1;
+    @container (min-width: 45rem) {
+      & {
+        aspect-ratio: 9/4;
+      }
+    }
   }
-
+  
   .topic-content {
     align-items: center;
     gap: var(--space-m);

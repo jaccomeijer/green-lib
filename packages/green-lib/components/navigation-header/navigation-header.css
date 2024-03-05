@@ -27,7 +27,14 @@
   }
 
   .wide-menu-view {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .main-actions,
+    .social-actions {
+      display: none;
+    }
 
     @container (min-width: 45rem) {
       & {
@@ -35,9 +42,9 @@
       }
 
       &,
-      .main-actions,
+      .branding-main-actions,
       .social-actions,
-      .main-actions ul,
+      .branding-main-actions ul,
       .social-actions ul {
         align-items: center;
         display: flex;
@@ -45,7 +52,7 @@
         gap: var(--space-xs);
       }
 
-      .main-actions,
+      .branding-main-actions,
       .social-actions {
         gap: var(--space-s);
       }
@@ -55,7 +62,7 @@
   .open-menu-button {
     border-radius: var(--border-radius-rounded);
     display: block;
-    margin-inline-start: auto;
+    /* margin-inline-start: auto; */
 
     @container (min-width: 45rem) {
       & {

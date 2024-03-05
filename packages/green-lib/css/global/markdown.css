@@ -59,6 +59,6 @@
   }
 
   .topic {
-    margin-block-start: var(--space-s-xl);
+    margin-block-start: var(--space-xs-l);
   }
 }
