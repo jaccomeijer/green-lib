@@ -15,7 +15,6 @@ export const Head = props => {
     <meta name="description" content={frontmatter.description || props.globals.metadata.branding.description} />
     <meta name="generator" content={props.globals.metadata.content.generator} />
 
-    <use href={`${assetUrl}${sprite}#${props.icon}`} />
     <link rel="icon" type="image/x-icon" href={assetUrl + props.favicon } />
     { stylesheets.map(stylesheet =>
       <link rel="stylesheet" type="text/css" href={assetUrl + stylesheet } />)}
