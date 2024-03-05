@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/jaccomeijer/green-lib/compare/3.0.5...3.1.0) (2024-3-5)
+
+
+### Features
+
+* responsive spaces ([656b71d](https://github.com/jaccomeijer/green-lib/commit/656b71d6f27bc78e700c377e0a22e10ee1148ae1))
+
 ## [3.0.5](https://github.com/jaccomeijer/green-lib/compare/3.0.4...3.0.5) (2024-3-5)
 
 

@@ -1,16 +1,26 @@
-## @jaccomeijer/green-lib 3.0.5
+## @jaccomeijer/green-lib 3.1.0
 
-## [3.0.5](https://github.com/jaccomeijer/green-lib/compare/3.0.4...3.0.5) (2024-3-5)
+## [3.1.0](https://github.com/jaccomeijer/green-lib/compare/3.0.5...3.1.0) (2024-3-5)
+
+
+### Features
+
+* responsive spaces ([656b71d](https://github.com/jaccomeijer/green-lib/commit/656b71d6f27bc78e700c377e0a22e10ee1148ae1))
+
+
+
+## @local/story 3.1.0
+
+## [3.1.0](https://github.com/jaccomeijer/green-lib/compare/3.0.5...3.1.0) (2024-3-5)
+
+
+### Features
+
+* responsive spaces ([656b71d](https://github.com/jaccomeijer/green-lib/commit/656b71d6f27bc78e700c377e0a22e10ee1148ae1))
 
 
 ### Commits
 
-* add u-margin-block-start-0 ([bb4fb16](https://github.com/jaccomeijer/green-lib/commit/bb4fb16a17f2205fe7b17fda65bb7616a0e8c5b9))
-
-
-
-## @local/story 3.0.5
-
-## [3.0.5](https://github.com/jaccomeijer/green-lib/compare/3.0.4...3.0.5) (2024-3-5)
+* remove icon from head ([203e00b](https://github.com/jaccomeijer/green-lib/commit/203e00b5f80586a08c51bac0c2c878bcd3e0c367))
 
 
