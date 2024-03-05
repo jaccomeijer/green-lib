@@ -1,6 +1,6 @@
 {
   "name": "@local/story",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "scripts": {
     "build": "echo No build needed, this package is never published",
     "clean": "rm -rf dist",
@@ -10,7 +10,7 @@
   "private": "true",
   "type": "module",
   "devDependencies": {
-    "@jaccomeijer/green-lib": "3.0.4"
+    "@jaccomeijer/green-lib": "3.0.5"
   },
   "dependencies": {
     "design-tokens-cli": "0.0.6"
