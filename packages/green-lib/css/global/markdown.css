@@ -6,7 +6,7 @@
 	hr {
 		border: 0.5px solid var(--color-mono-200);
 		color: var(--color-mono-100);
-		margin-block-start: var(--space-s-xl);
+		margin-block-start: var(--space-l-3xl);
 		width: 100%;
 	}
 
@@ -58,7 +58,12 @@
     margin-block-start: var(--space-xs-l);
   }
 
-  .topic {
+  :is(.topic-block, .topic-card) {
     margin-block-start: var(--space-xs-l);
   }
+
+  :is(.topic-featured, .topic-headline, .topic-hero, .topic-profile, .topic-quote, .topic-showcase) {
+    margin-block-start: var(--space-s-xl);
+  }
+
 }
