@@ -7,11 +7,11 @@ export const Head = props => {
   const frontmatter = props.page.frontmatter
   const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   const stylesheets = [localCss, indexCss]
-
+  console.log(frontmatter.navigation?.heading)
   return (<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{props.globals.metadata.branding.heading} - {frontmatter.title || frontmatter.navigation?.heading}</title>
+    <title>{props.globals.metadata.branding.heading} - {frontmatter.navigation?.heading}</title>
     <meta name="description" content={frontmatter.description || props.globals.metadata.branding.description} />
     <meta name="generator" content={props.globals.metadata.content.generator} />
 
