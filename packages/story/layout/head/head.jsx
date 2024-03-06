@@ -7,7 +7,7 @@ export const Head = props => {
   const frontmatter = props.page.frontmatter
   const assetUrl = props.globals.baseUrl + props.globals.assetUrl
   const stylesheets = [localCss, indexCss]
-  console.log(frontmatter.navigation?.heading)
+
   return (<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
