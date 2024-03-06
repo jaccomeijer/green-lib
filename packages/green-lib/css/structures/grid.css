@@ -2,6 +2,6 @@
   display: grid;
   gap: var(--gap, var(--space-s));
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--column-width), 100%), 1fr));
   width: 100%;
 }
