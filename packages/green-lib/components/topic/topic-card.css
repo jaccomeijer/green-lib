@@ -8,4 +8,7 @@
   &:hover {
     transform: translateY(-0.3rem);
   } 
+  .topic-abstract {
+    flex: 1;
+  }
 }

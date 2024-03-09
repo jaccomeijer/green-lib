@@ -37,8 +37,5 @@
     .topic-heading {
       font-size: var(--font-size-1);
     }
-    .topic-abstract {
-      flex: 1;
-    }
   }
 }

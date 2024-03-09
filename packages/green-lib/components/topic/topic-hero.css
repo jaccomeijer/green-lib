@@ -42,7 +42,6 @@
     .topic-abstract {
       font-size: var(--font-size-1);
       font-weight: var(--font-body-weight-bold);
-      flex: 0;
       max-width: 40ch;
       text-wrap: balance;
     }
