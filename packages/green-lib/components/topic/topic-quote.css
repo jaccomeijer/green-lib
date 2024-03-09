@@ -9,8 +9,11 @@
     }
   }
 
-  .topic-picture {
+  .topic-picture img {
     aspect-ratio: 1/1;
+  }
+
+  .topic-picture {
     max-width: 200px;
 
     @container (min-width: 45rem) {
@@ -31,7 +34,7 @@
 
     @container (min-width: 45rem) {
       & {
-        max-width: 25vw;
+        max-width: 40vw;
       }
     }
 

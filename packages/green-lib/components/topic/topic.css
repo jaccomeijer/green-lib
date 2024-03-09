@@ -13,7 +13,7 @@
     order: var(--order);
     width: 100%;
     img {
-      height: 100%;
+      aspect-ratio: 2/1;
       object-fit: cover;
       width: 100%;    
     }

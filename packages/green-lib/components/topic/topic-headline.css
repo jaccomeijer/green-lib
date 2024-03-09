@@ -2,7 +2,7 @@
   align-items: center;
   gap: var(--space-2xl);
 
-  .topic-picture {
+  .topic-picture img {
     aspect-ratio: 1/1;
     @container (min-width: 45rem) {
       & {

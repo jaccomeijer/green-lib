@@ -4,7 +4,7 @@
   gap: var(--space-l);
   position: relative;
 
-  .topic-picture {
+  .topic-picture img {
     aspect-ratio: 2/3;
 
     @container (min-width: 45rem) {

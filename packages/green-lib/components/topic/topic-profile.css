@@ -2,8 +2,11 @@
   align-items: center;
   gap: var(--space-m);
 
-  .topic-picture {
+  .topic-picture img {
     aspect-ratio: 1/1;
+  }
+
+  .topic-picture {
     max-width: 300px;
   }
 

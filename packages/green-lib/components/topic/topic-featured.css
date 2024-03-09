@@ -8,9 +8,11 @@
     }
   }
 
-  .topic-picture {
+  .topic-picture img {
     aspect-ratio: 5/4;
+  }
 
+  .topic-picture {
     @container (min-width: 45rem) {
       & {
         width: calc(50% - (var(--space-l)/2));
