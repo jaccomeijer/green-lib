@@ -1,16 +1,21 @@
-## @jaccomeijer/green-lib 3.3.3
+## @jaccomeijer/green-lib 3.3.4
 
-## [3.3.3](https://github.com/jaccomeijer/green-lib/compare/3.3.2...3.3.3) (2024-3-10)
-
-
-### Bug Fixes
-
-* add padding to popout ([26e2afb](https://github.com/jaccomeijer/green-lib/commit/26e2afb5f4e3113d89fb1f4c43cd817bc74b69d2))
+## [3.3.4](https://github.com/jaccomeijer/green-lib/compare/3.3.3...3.3.4) (2024-3-13)
 
 
+### Commits
 
-## @local/story 3.3.3
+* better spacing for nested headings ([0e07c36](https://github.com/jaccomeijer/green-lib/commit/0e07c36a4515722a86edea9b0a1f605711d8caa6))
 
-## [3.3.3](https://github.com/jaccomeijer/green-lib/compare/3.3.2...3.3.3) (2024-3-10)
+
+
+## @local/story 3.3.4
+
+## [3.3.4](https://github.com/jaccomeijer/green-lib/compare/3.3.3...3.3.4) (2024-3-13)
+
+
+### Commits
+
+* better spacing for nested headings ([0e07c36](https://github.com/jaccomeijer/green-lib/commit/0e07c36a4515722a86edea9b0a1f605711d8caa6))
 
 
