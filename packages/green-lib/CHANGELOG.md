@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.5](https://github.com/jaccomeijer/green-lib/compare/3.3.4...3.3.5) (2024-3-13)
+
+
+### Commits
+
+* remove gutter from popout ([1d91e07](https://github.com/jaccomeijer/green-lib/commit/1d91e0705e59884f90303f12c47941188ee465ce))
+
 ## [3.3.4](https://github.com/jaccomeijer/green-lib/compare/3.3.3...3.3.4) (2024-3-13)
 
 
