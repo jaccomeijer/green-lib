@@ -12,6 +12,13 @@
   }
   
   .topic-content {
+   /* 
+    * Add padding and max width to content so that the topic can be used full
+    * width
+    */
+    max-width: var(--wrapper-width);
+    padding: var(--space-2xs);
+
     align-items: center;
     gap: var(--space-m);
 

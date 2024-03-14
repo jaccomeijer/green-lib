@@ -1,4 +1,4 @@
 @layer reset, body, font, highlight, markdown, structures, components, utilities;
 
-@import "../../../design-tokens/design.tokens.css";
+@import "../../design-tokens/design.tokens.css";
 @import "./site-header.css";

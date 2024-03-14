@@ -15,15 +15,20 @@
   }
 
   .topic-content {
-    bottom: 0;
-    justify-content: center;
+   /* 
+    * Add padding and max width to content so that the topic can be used full
+    * width
+    */
     max-width: var(--wrapper-width);
     padding: var(--space-2xl);
+
+    bottom: 0;
+    gap: var(--space-m);
+    justify-content: center;
     position: absolute;
     top: 0;
     width: 100%;
-    gap: var(--space-m);
-
+ 
     .topic-icon {
       font-size: var(--font-size-5);
     }
