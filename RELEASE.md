@@ -1,21 +1,16 @@
-## @jaccomeijer/green-lib 3.3.6
+## @jaccomeijer/green-lib 3.3.7
 
-## [3.3.6](https://github.com/jaccomeijer/green-lib/compare/3.3.5...3.3.6) (2024-3-14)
-
-
-### Commits
-
-* content padding for full width topics ([5e8f3ba](https://github.com/jaccomeijer/green-lib/commit/5e8f3baa35a141f33272ea0e86bd979603fb3a07))
-
-
-
-## @local/story 3.3.6
-
-## [3.3.6](https://github.com/jaccomeijer/green-lib/compare/3.3.5...3.3.6) (2024-3-14)
+## [3.3.7](https://github.com/jaccomeijer/green-lib/compare/3.3.6...3.3.7) (2024-3-14)
 
 
 ### Commits
 
-* content padding for full width topics ([5e8f3ba](https://github.com/jaccomeijer/green-lib/commit/5e8f3baa35a141f33272ea0e86bd979603fb3a07))
+* add container-type to markdown class ([bdbf73c](https://github.com/jaccomeijer/green-lib/commit/bdbf73ce64bde93702e7741100ae0f9f1c5db234))
+
+
+
+## @local/story 3.3.7
+
+## [3.3.7](https://github.com/jaccomeijer/green-lib/compare/3.3.6...3.3.7) (2024-3-14)
 
 
