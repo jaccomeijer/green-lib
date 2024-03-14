@@ -1,5 +1,7 @@
 # Changelog
 
+## [3.3.8](https://github.com/jaccomeijer/green-lib/compare/3.3.7...3.3.8) (2024-3-14)
+
 ## [3.3.7](https://github.com/jaccomeijer/green-lib/compare/3.3.6...3.3.7) (2024-3-14)
 
 ## [3.3.6](https://github.com/jaccomeijer/green-lib/compare/3.3.5...3.3.6) (2024-3-14)
