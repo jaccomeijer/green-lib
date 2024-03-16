@@ -2,11 +2,11 @@
   "button": {
     "primary": {
       "color": {
-        "$value": "{color.primary.400}"
+        "$value": "var(--color-primary-400)"
       },
       "contrast": {
         "color": {
-          "$value": "{color.mono.000}"
+          "$value": "var(--color-mono-000)"
         }
       }
     }

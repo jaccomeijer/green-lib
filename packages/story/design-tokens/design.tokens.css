@@ -2,8 +2,8 @@
  	--border-radius-circle: 9999px;
  	--border-radius-pill: 0.5rem;
  	--border-radius-rounded: 0.35rem;
- 	--button-primary-color: hsl(216, 73%, 45%);
- 	--button-primary-contrast-color: hsl(0, 0%, 100%);
+ 	--button-primary-color: var(--color-primary-400);
+ 	--button-primary-contrast-color: var(--color-mono-000);
  	--color-mono-000: hsl(0, 0%, 100%);
  	--color-mono-100: hsl(0, 0%, 90%);
  	--color-mono-200: hsl(0, 0%, 75%);
