@@ -1,16 +1,21 @@
-## @jaccomeijer/green-lib 3.3.8
+## @jaccomeijer/green-lib 3.4.0
 
-## [3.3.8](https://github.com/jaccomeijer/green-lib/compare/3.3.7...3.3.8) (2024-3-14)
-
-
-### Commits
-
-* increase topic content padding for full width topics ([11014f0](https://github.com/jaccomeijer/green-lib/commit/11014f0259bd7151449dcf22060823237b30a38f))
+## [3.4.0](https://github.com/jaccomeijer/green-lib/compare/3.3.8...3.4.0) (2024-3-16)
 
 
+### Features
 
-## @local/story 3.3.8
+* support for dark color scheme ([62d134c](https://github.com/jaccomeijer/green-lib/commit/62d134cfb82cd4f1e1803bafe0ce89a03f9aade9))
 
-## [3.3.8](https://github.com/jaccomeijer/green-lib/compare/3.3.7...3.3.8) (2024-3-14)
+
+
+## @local/story 3.4.0
+
+## [3.4.0](https://github.com/jaccomeijer/green-lib/compare/3.3.8...3.4.0) (2024-3-16)
+
+
+### Features
+
+* support for dark color scheme ([62d134c](https://github.com/jaccomeijer/green-lib/commit/62d134cfb82cd4f1e1803bafe0ce89a03f9aade9))
 
 
