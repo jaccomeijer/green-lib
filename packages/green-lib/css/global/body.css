@@ -1,5 +1,5 @@
 body {
-  background: var(--color-white);
+  background: var(--color-mono-000);
   color: var(--color-mono-500);
   display: flex;
   flex-direction: column;

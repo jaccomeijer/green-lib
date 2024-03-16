@@ -1,4 +1,5 @@
 .textarea {
+  background-color: var(--color-mono-000);
   border: 1px solid transparent;
   border-color: var(--color-mono-200);
   border-radius: var(--border-radius-rounded);

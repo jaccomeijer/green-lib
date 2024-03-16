@@ -2,3 +2,4 @@
 
 @import "../../design-tokens/design.tokens.css";
 @import "./site-header.css";
+@import "./prefers-color-scheme.css";
