@@ -1,3 +1,7 @@
+import packageJson from '../../../package.json'
+
+const version = packageJson.version
+
 export const metadata = {
   branding: {
     copyright: 'Copyright © 2024 Jacco Meijer',
@@ -10,7 +14,7 @@ export const metadata = {
     heading: 'Made with Green UI Library',
     icon: 'globe',
     url: 'https://github.com/jaccomeijer/green-lib',
-    version: '4.0.0',
+    version,
   },
   content: {
     generator: 'esbuild',
