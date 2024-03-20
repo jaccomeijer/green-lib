@@ -4,7 +4,7 @@
   "scripts": {
     "build": "npm run clean-docs && MODE=build node story.js && npm run move-docs",
     "clean-dist": "rm -rf dist",
-    "clean-docs": "rm -rf docs",
+    "clean-docs": "rm -rf ../../docs",
     "move-docs": "mv docs ../..",
     "design-tokens": "designTokens transform",
     "serve": "npm run clean-dist && MODE=serve node story.js"

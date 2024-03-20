@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Green Reference - Segment</title><meta name="description" content="A reference implementation of the Green UI Library."><meta name="generator" content="esbuild"><link rel="icon" type="image/x-icon" href="/assets/./favicon-WMNGZEA5.ico"><link rel="stylesheet" type="text/css" href="/assets/./local.bundle-G5FSA6DM.css"><link rel="stylesheet" type="text/css" href="/assets/./index.bundle-HFXFHGX2.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header role="banner" class="site-header s-wrapper"><div class="main-menu s-flex-row u-justify-space-between s-block-space u-block-space-2xs"><nav aria-label="primary"><ul role="list" class="s-flex-row"><li><a href="/">Home</a></li><li><a href="/green-lib/css/global/global">Global</a></li><li><a href="/green-lib/css/structures/structures">Structures</a></li><li><a href="/green-lib/components/components">Components</a></li><li><a href="/green-lib/css/utilities/utilities">Utilities</a></li><li><a href="/green-lib/components/topic/topic">Topic</a></li><li><a href="/example-page">Example page</a></li></ul></nav><div class="site-branding">Green lib</div></div><nav class="sub-menu s-flex-row s-block-space u-block-space-3xs"><ul role="list" class="s-flex-row"><li><a href="/green-lib/components/action/action">Action</a></li><li><a href="/green-lib/components/button">button</a></li><li><a href="/green-lib/components/carousel-layout/carousel-layout">CarouselLayout</a></li><li><a href="/green-lib/components/empty-element/empty-element">EmptyElement</a></li><li><a href="/green-lib/components/icon/icon">Icon</a></li><li><a href="/green-lib/components/input">input</a></li><li><a href="/green-lib/components/navigation-footer/navigation-footer">NavigationFooter</a></li><li><a href="/green-lib/components/navigation-header/navigation-header">NavigationHeader</a></li><li><a href="/green-lib/components/navigation-legal/navigation-legal">NavigationLegal</a></li><li><a href="/green-lib/components/picture/picture">Picture</a></li><li><a href="/override/default/url">Segment</a></li><li><a href="/green-lib/components/textarea">textarea</a></li></ul></nav></header><main tabindex="-1" id="main-content"><div class="page s-wrapper"><article class="markdown s-flex-column u-gap-0"><h2>Segment</h2>
+<h3>Example</h3>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">Segment</span>
+  <span class="hljs-attr">actions</span>=<span class="hljs-string">{frontmatter.actions}</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-font-size-1 u-gap-s s-flex-row&quot;</span>
+  <span class="hljs-attr">element</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">globals</span>=<span class="hljs-string">{globals}</span>
+  <span class="hljs-attr">pageUrl</span>=<span class="hljs-string">&quot;/demo-b&quot;</span>
+/></span>
+</code></pre>
+<ul class="u-font-size-1 u-gap-s s-flex-row" role="list"><li><button class="with-icon button u-border-radius-rounded" aria-label="archive" onclick='location.href="/demo-a"' element="button"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#archive"></use></svg>Item A</button></li><li><button class="with-icon button u-border-radius-rounded" aria-label="clock" onclick='location.href="/demo-b"' element="button"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#clock"></use></svg>Item B</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-c"' element="button">Item C</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-d"' element="button">Item D</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-e"' element="button">Item E</button></li></ul>
+<h3>Example</h3>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">Segment</span>
+  <span class="hljs-attr">actions</span>=<span class="hljs-string">{frontmatter.actions}</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-font-size-1 u-gap-s s-flex-row&quot;</span>
+  <span class="hljs-attr">element</span>=<span class="hljs-string">&quot;a&quot;</span>
+  <span class="hljs-attr">globals</span>=<span class="hljs-string">{globals}</span>
+  <span class="hljs-attr">pageUrl</span>=<span class="hljs-string">&quot;/demo-b&quot;</span>
+/></span>
+</code></pre>
+<ul class="u-font-size-1 u-gap-s s-flex-row" role="list"><li><a class="with-icon" aria-label="archive" href="/demo-a"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#archive"></use></svg>Item A</a></li><li><a class="with-icon active" aria-label="clock" href="/demo-b"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#clock"></use></svg>Item B</a></li><li><a class href="/demo-c">Item C</a></li><li><a class href="/demo-d">Item D</a></li><li><a class href="/demo-e">Item E</a></li></ul>
+<h3>Example</h3>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">Segment</span>
+  <span class="hljs-attr">actions</span>=<span class="hljs-string">{frontmatter.actions}</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;s-flex-column u-gap-s&quot;</span>
+  <span class="hljs-attr">element</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">globals</span>=<span class="hljs-string">{globals}</span>
+  <span class="hljs-attr">pageUrl</span>=<span class="hljs-string">&quot;/demo-b&quot;</span>
+/></span>
+</code></pre>
+<ul class="s-flex-column u-gap-s" role="list"><li><button class="with-icon button u-border-radius-rounded" aria-label="archive" onclick='location.href="/demo-a"' element="button"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#archive"></use></svg>Item A</button></li><li><button class="with-icon button u-border-radius-rounded" aria-label="clock" onclick='location.href="/demo-b"' element="button"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#clock"></use></svg>Item B</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-c"' element="button">Item C</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-d"' element="button">Item D</button></li><li><button class="button u-border-radius-rounded" onclick='location.href="/demo-e"' element="button">Item E</button></li></ul>
+<h3>Example</h3>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">Segment</span>
+  <span class="hljs-attr">actions</span>=<span class="hljs-string">{frontmatter.actions}</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-gap-2xs s-flex-row&quot;</span>
+  <span class="hljs-attr">element</span>=<span class="hljs-string">&quot;a&quot;</span>
+  <span class="hljs-attr">globals</span>=<span class="hljs-string">{globals}</span>
+  <span class="hljs-attr">pageUrl</span>=<span class="hljs-string">&quot;/demo-b&quot;</span>
+/></span>
+</code></pre>
+<ul class="u-gap-2xs s-flex-row" role="list"><li><a class="with-icon" aria-label="archive" href="/demo-a"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#archive"></use></svg>Item A</a></li><li><a class="with-icon active" aria-label="clock" href="/demo-b"><svg class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/./feather-sprite-LD4UDZHI.svg#clock"></use></svg>Item B</a></li><li><a class href="/demo-c">Item C</a></li><li><a class href="/demo-d">Item D</a></li><li><a class href="/demo-e">Item E</a></li></ul>
+<h3>Frontmatter</h3>
+<pre><code class="hljs language-yaml"><span class="hljs-attr">navigation:</span>
+  <span class="hljs-attr">parent:</span> <span class="hljs-string">Components</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">/override/default/url</span>
+
+<span class="hljs-attr">actions:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">heading:</span> <span class="hljs-string">Item</span> <span class="hljs-string">A</span>
+    <span class="hljs-attr">icon:</span> <span class="hljs-string">archive</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">/demo-a</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">heading:</span> <span class="hljs-string">Item</span> <span class="hljs-string">B</span>
+    <span class="hljs-attr">icon:</span> <span class="hljs-string">clock</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">/demo-b</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">heading:</span> <span class="hljs-string">Item</span> <span class="hljs-string">C</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">/demo-c</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">heading:</span> <span class="hljs-string">Item</span> <span class="hljs-string">D</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">/demo-d</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">heading:</span> <span class="hljs-string">Item</span> <span class="hljs-string">E</span>
+    <span class="hljs-attr">url:</span> <span class="hljs-string">/demo-e</span>
+</code></pre></article></div></main><footer class="s-wrapper u-font-size--1 s-block-space u-block-space-l">This is the footer</footer></body></html>
