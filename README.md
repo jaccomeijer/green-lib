@@ -41,6 +41,7 @@ Design token scales generated with <https://utopia.fyi>.
 
 - https://www.w3.org/community/design-tokens/
 - https://tr.designtokens.org/format/
+- https://github.com/Heydon/design-tokens-cli
 
 ```bash
 npm -w @local/story run design-tokens
