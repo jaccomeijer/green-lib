@@ -3,7 +3,7 @@ import { metadata } from './metadata.js'
 
 const buildEnv = {
   assetUrl: '/assets/',
-  baseUrl: '',
+  baseUrl: '/green-lib',
 }
 
 const serveEnv = {
