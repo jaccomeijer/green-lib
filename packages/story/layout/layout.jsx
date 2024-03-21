@@ -42,7 +42,7 @@ export const Layout = props => {
           </div>
         </main>
         <footer class="s-wrapper u-font-size--1 s-block-space u-block-space-l">
-          This is the footer
+          This is the unstyled footer
         </footer>
       </body>
     </html>
