@@ -1,8 +1,9 @@
 # green-lib
 
-MDX component library for [green-build](https://github.com/jaccomeijer/green-build).
-
-This project builds to: https://www.jaccomeijer.nl/green-lib/
+MDX component library for
+[green-build](https://github.com/jaccomeijer/green-build). The [source of the
+library](https://github.com/jaccomeijer/green-lib) is on Github and there's also
+the [integrated documentation](https://www.jaccomeijer.nl/green-lib/).
 
 ## Related repositories
 
