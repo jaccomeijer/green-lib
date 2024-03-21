@@ -2,6 +2,8 @@
 
 MDX component library for [green-build](https://github.com/jaccomeijer/green-build).
 
+This project builds to: https://www.jaccomeijer.nl/green-lib/
+
 ## NPM scripts
 
 ### Update design tokens
