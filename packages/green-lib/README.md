@@ -6,19 +6,25 @@ This project builds to: https://www.jaccomeijer.nl/green-lib/
 
 ## NPM scripts
 
-### Update design tokens
+Update design tokens:
 
 ```bash
 npm -w @local/story run design-tokens
 ```
 
-### Live reloading web server with stories
+Start live reloading web server with stories:
 
 ```bash
 npm -w @local/story run serve
 ```
 
-### Create a new Github release and push to NPM registry
+Build a new static site to the root docs folder:
+
+```bash
+npm -w @local/story run build
+```
+
+Create a new Github release and push to NPM registry:
 
 ```bash
 npx @jaccomeijer/jmmake release @jaccomeijer/green-lib

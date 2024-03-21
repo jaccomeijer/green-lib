@@ -2,13 +2,16 @@
 <p>MDX component library for <a href="https://github.com/jaccomeijer/green-build">green-build</a>.</p>
 <p>This project builds to: <a href="https://www.jaccomeijer.nl/green-lib/">https://www.jaccomeijer.nl/green-lib/</a></p>
 <h2>NPM scripts</h2>
-<h3>Update design tokens</h3>
+<p>Update design tokens:</p>
 <pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run design-tokens
 </code></pre>
-<h3>Live reloading web server with stories</h3>
+<p>Start live reloading web server with stories:</p>
 <pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run serve
 </code></pre>
-<h3>Create a new Github release and push to NPM registry</h3>
+<p>Build a new static site to the root docs folder:</p>
+<pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run build
+</code></pre>
+<p>Create a new Github release and push to NPM registry:</p>
 <pre><code class="hljs language-bash">npx @jaccomeijer/jmmake release @jaccomeijer/green-lib
 </code></pre>
 <h2>Project structure</h2>
