@@ -2,7 +2,10 @@
 
 UI Library created with [green-build](https://github.com/jaccomeijer/green-build)
 
-The [README](https://github.com/jaccomeijer/green-lib/tree/main/packages/green-lib) of the green-lib sub package contains more information on the library. More on the background in this [blog post](https://www.jaccomeijer.nl/blog/ui-library/).
+The README of the [green-lib sub
+package]((https://github.com/jaccomeijer/green-lib/tree/main/packages/green-lib))
+contains more information on the library. More on the background in this [blog
+post](https://www.jaccomeijer.nl/blog/ui-library/).
 
 ## Related repositories
 
