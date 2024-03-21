@@ -1,71 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Green Reference - Home</title><meta name="description" content="A reference implementation of the Green UI Library."><meta name="generator" content="esbuild"><link rel="icon" type="image/x-icon" href="/green-lib/assets/./favicon-WMNGZEA5.ico"><link rel="stylesheet" type="text/css" href="/green-lib/assets/./local.bundle-G5FSA6DM.css"><link rel="stylesheet" type="text/css" href="/green-lib/assets/./index.bundle-HFXFHGX2.css"><script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="9e4dcc33-86ff-4757-98bd-3c2123df9a4c" async></script></head><body><a class="skip-link" href="#main-content">Skip to content</a><header role="banner" class="site-header s-wrapper"><div class="main-menu s-flex-row u-justify-space-between s-block-space u-block-space-2xs"><nav aria-label="primary"><ul role="list" class="s-flex-row"><li><a href="/green-lib/">Home</a></li><li><a href="/green-lib/green-lib/css/global/global">Global</a></li><li><a href="/green-lib/green-lib/css/structures/structures">Structures</a></li><li><a href="/green-lib/green-lib/components/components">Components</a></li><li><a href="/green-lib/green-lib/css/utilities/utilities">Utilities</a></li><li><a href="/green-lib/green-lib/components/topic/topic">Topic</a></li><li><a href="/green-lib/example-page">Example page</a></li></ul></nav><div class="site-branding">Green lib</div></div><nav class="sub-menu s-flex-row s-block-space u-block-space-3xs">No submenu items</nav></header><main tabindex="-1" id="main-content"><div class="page s-wrapper"><article class="markdown s-flex-column u-gap-0"><h1>green-lib</h1>
-<p>MDX component library for
-<a href="https://github.com/jaccomeijer/green-build">green-build</a>. The <a href="https://github.com/jaccomeijer/green-lib">source of the
-library</a> is on Github and there's also
-the <a href="https://www.jaccomeijer.nl/green-lib/">integrated documentation</a>.</p>
-<h2>Related repositories</h2>
 <ul>
-<li><a href="https://www.jaccomeijer.nl/blog/11ty-and-github-pages/">11ty and Github pages</a>, Blog post that started all this</li>
-<li><a href="https://github.com/jaccomeijer/render-jsx-plugin-poc">render-jsx-plugin-poc</a>, Proof Of Concept using Esbuild as a static site generator</li>
-<li><a href="https://github.com/jaccomeijer/green-build">green-build</a>, More capable version of the <a href="https://github.com/jaccomeijer/render-jsx-plugin-poc">render-jsx-plugin-poc</a></li>
-<li><a href="https://github.com/jaccomeijer/green-lib">green-lib</a>, UI Library created with <a href="https://github.com/jaccomeijer/green-build">green-build</a></li>
-<li><a href="https://github.com/jaccomeijer/green-reference">green-reference</a>, A reference implementation of the <a href="https://github.com/jaccomeijer/green-lib">green-lib</a> Library</li>
-</ul>
-<h2>NPM scripts</h2>
-<p>Update design tokens:</p>
-<pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run design-tokens
-</code></pre>
-<p>Start live reloading web server with stories:</p>
-<pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run serve
-</code></pre>
-<p>Build a new static site to the root docs folder:</p>
-<pre><code class="hljs language-bash">npm -w @<span class="hljs-built_in">local</span>/story run build
-</code></pre>
-<p>Create a new Github release and push to NPM registry:</p>
-<pre><code class="hljs language-bash">npx @jaccomeijer/jmmake release @jaccomeijer/green-lib
-</code></pre>
-<h2>Project structure</h2>
-<p>The project methodology is simple and defines three concepts:</p>
-<ul>
-<li>Utilities</li>
-<li>Structures</li>
-<li>Components</li>
-</ul>
-<h3>Utilities</h3>
-<ul>
-<li>CSS classes</li>
-<li>Prefixed with <code>u-</code></li>
-<li>Set something, e.g. a font size or a custom property value</li>
-<li>Examples: u-font-size-xl, u-gap-xs, u-primary-color-300</li>
-</ul>
-<h3>Structures</h3>
-<ul>
-<li>CSS classes</li>
-<li>Prefixed with <code>s-</code></li>
-<li>Consume utilities</li>
-<li>Provide structure</li>
-<li>Examples: s-grid, s-wrapper</li>
-</ul>
-<h3>Components</h3>
-<ul>
-<li>Provide HTML + styling for a specific conceptual context</li>
-<li>Do not have a prefix</li>
-<li>CSS rules start with component class <code>.component-class</code></li>
-<li>Internal elements, like a button, are also handled as a component</li>
-<li>Examples: card, action, picture, navigation-header, etc.</li>
-</ul>
-<h2>Typical CSS layer order</h2>
-<pre><code class="hljs language-css"><span class="hljs-keyword">@layer</span> reset, body, font, highlight, markdown, structures, components, utilities, custom;
-</code></pre>
-<h2>Type and space scales</h2>
-<p>Font and space scales in the design tokens are generated with <a href="https://utopia.fyi">https://utopia.fyi</a>.</p>
-<h2>Design tokens</h2>
-<ul>
-<li><a href="https://www.w3.org/community/design-tokens/">https://www.w3.org/community/design-tokens/</a></li>
-<li><a href="https://tr.designtokens.org/format/">https://tr.designtokens.org/format/</a></li>
-<li><a href="https://github.com/Heydon/design-tokens-cli">https://github.com/Heydon/design-tokens-cli</a></li>
-</ul>
-<h2>Tracking</h2>
-<ul>
-<li><a href="https://beamanalytics.io">https://beamanalytics.io</a></li>
+<li><a href="https://www.jaccomeijer.nl/blog/ui-library/">Blog post about this library</a></li>
+<li><a href="https://www.npmjs.com/package/@jaccomeijer/green-lib">This library on NPM</a></li>
+<li><a href="https://www.jaccomeijer.nl/green-lib/">A static documentation build</a></li>
+<li><a href="https://github.com/jaccomeijer/green-lib">Source of the library at Github</a></li>
 </ul></article></div></main><footer class="s-wrapper u-font-size--1 s-block-space u-block-space-l">This is the unstyled footer</footer></body></html>
