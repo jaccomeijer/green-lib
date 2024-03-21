@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.4.2](https://github.com/jaccomeijer/green-lib/compare/3.4.1...3.4.2) (2024-03-21)
+
+
+### Commits
+
+* simplify root menu pages ([bfa39b8](https://github.com/jaccomeijer/green-lib/commit/bfa39b819971de6565cfc5e24267c3d56520aa7d))
+* update docs ([b17e301](https://github.com/jaccomeijer/green-lib/commit/b17e301351ef1248868cfc8ea219d67d549ce543))
+* updated docs ([d9b7b71](https://github.com/jaccomeijer/green-lib/commit/d9b7b716da598ea8b41302ca2025335dc44b91d5))
+
+
+### Documentation
+
+* add build location ([c87f8ca](https://github.com/jaccomeijer/green-lib/commit/c87f8cab61730b8b2564b7fdc92d08a5dde6844d))
+* more general info ([2fde887](https://github.com/jaccomeijer/green-lib/commit/2fde8875a6b30e805668ffd9d5ee8b03d162abdc))
+* update links ([ea66f30](https://github.com/jaccomeijer/green-lib/commit/ea66f304b1abb2a2dea0369634057842d3584fbb))
+
 ## [3.4.1](https://github.com/jaccomeijer/green-lib/compare/3.4.0...3.4.1) (2024-3-16)
 
 ## [3.4.0](https://github.com/jaccomeijer/green-lib/compare/3.3.8...3.4.0) (2024-3-16)
