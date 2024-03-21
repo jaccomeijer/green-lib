@@ -24,14 +24,14 @@ export const Layout = props => {
         <header role="banner" class="site-header s-wrapper">
           <div class="main-menu s-flex-row u-justify-space-between s-block-space u-block-space-2xs">
             <nav aria-label="primary">
-              <Menu menu={mainMenu} class="s-flex-row" />
+              <Menu menu={mainMenu} globals={globals} class="s-flex-row" />
             </nav>
             <div class="site-branding">
               Green lib
             </div>
           </div>
           <nav class="sub-menu s-flex-row s-block-space u-block-space-3xs">
-            <Menu menu={subMenu} class="s-flex-row" />
+            <Menu menu={subMenu} globals={globals} class="s-flex-row" />
           </nav>
         </header>
         <main tabindex="-1" id="main-content">
