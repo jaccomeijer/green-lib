@@ -3,7 +3,7 @@
 UI Library created with [green-build](https://github.com/jaccomeijer/green-build)
 
 The README of the [green-lib sub
-package]((https://github.com/jaccomeijer/green-lib/tree/main/packages/green-lib))
+package](https://github.com/jaccomeijer/green-lib/tree/main/packages/green-lib)
 contains more information on the library. More on the background in this [blog
 post](https://www.jaccomeijer.nl/blog/ui-library/).
 
