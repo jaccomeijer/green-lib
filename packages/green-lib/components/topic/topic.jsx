@@ -4,6 +4,15 @@ import { Icon } from "../icon/icon.jsx"
 import { Picture } from "../picture/picture.jsx"
 import { Segment } from "../segment/segment.jsx"
 
+/**
+ * 
+ * Generic Topic component
+ *  
+ * data-variant = <string> [block|card|featured|headline|hero|profile|quote|showcase]
+ * swap-image = <boolean> [true|false]
+ * heading-element = <string> [h1|h2|h3|h4]
+ * 
+ */
 export const Topic = props => {
   if (!props.topic) {
     return <>props.topic is undefined</>
@@ -51,6 +60,7 @@ export const Topic = props => {
       break;
   }
   const topicClass = 'topic-' + variant
+  HeadingElement = props['heading-element'] || HeadingElement
 
   return (
     <div class={['topic', topicClass, props.class].join(' ')} onclick={onclick}>
