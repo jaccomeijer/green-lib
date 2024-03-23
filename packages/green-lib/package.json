@@ -29,7 +29,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "serve": "npm run clean && MODE=serve node stories.js",
-    "build": "node build.js"
+    "build": "echo 'Publishing source instead of bundle (node build.js)'"
   },
   "exports": {
     ".": "./index.js",
