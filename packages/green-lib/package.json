@@ -33,7 +33,7 @@
   },
   "exports": {
     ".": "./index.js",
-    "./react": "./dist/index.js",
+    "./react": "./react/index.js",
     "./index.bundle.css": "./index.bundle.css",
     "./reset.css": "./css/global/reset.css",
     "./body.css": "./css/global/body.css",
