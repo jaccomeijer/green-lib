@@ -11,6 +11,7 @@ a.fat-link, a:visited.fat-link {
   font: inherit;
   line-height: 1;
   padding: 0.9cap 1.5cap;
+  text-align: center;
   text-decoration: none;
   user-select: none;
 
