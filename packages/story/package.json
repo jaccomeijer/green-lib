@@ -1,6 +1,6 @@
 {
   "name": "@local/story",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "scripts": {
     "build": "npm run clean-docs && MODE=build node story.js && npm run move-docs",
     "clean-dist": "rm -rf dist",
@@ -12,7 +12,7 @@
   "private": "true",
   "type": "module",
   "devDependencies": {
-    "@jaccomeijer/green-lib": "4.1.1"
+    "@jaccomeijer/green-lib": "4.1.2"
   },
   "dependencies": {
     "design-tokens-cli": "0.0.6"

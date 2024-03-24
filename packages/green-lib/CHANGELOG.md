@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.2](https://github.com/jaccomeijer/green-lib/compare/4.1.1...4.1.2) (2024-03-24)
+
+
+### Bug Fixes
+
+* react warnings ([1231708](https://github.com/jaccomeijer/green-lib/commit/12317083501389fb06c5cb7661a999844cc04fe7))
+
 ## [4.1.1](https://github.com/jaccomeijer/green-lib/compare/4.1.0...4.1.1) (2024-03-24)
 
 ## [4.1.0](https://github.com/jaccomeijer/green-lib/compare/4.0.2...4.1.0) (2024-03-24)
