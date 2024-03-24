@@ -34,7 +34,8 @@ export const NavigationHeader = props => {
             />
             <Segment
               actions={props.callActions}
-              element="button"
+              actionClassName="fat-link"
+              element="a"
               globals={props.globals}
             />
           </nav>

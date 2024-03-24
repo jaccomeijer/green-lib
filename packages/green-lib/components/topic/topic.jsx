@@ -1,65 +1,65 @@
-import { getOnClickAction } from "../../jsx-helpers/get-action.js"
-import { Action } from "../action/action.jsx"
-import { Icon } from "../icon/icon.jsx"
-import { Picture } from "../picture/picture.jsx"
-import { Segment } from "../segment/segment.jsx"
+import { getOnClickAction } from '../../jsx-helpers/get-action.js'
+import { Action } from '../action/action.jsx'
+import { Icon } from '../icon/icon.jsx'
+import { Picture } from '../picture/picture.jsx'
+import { Segment } from '../segment/segment.jsx'
 
 /**
- * 
+ *
  * Generic Topic component
- *  
+ *
  * variant = <string> [block|card|featured|headline|hero|profile|quote|showcase]
  * swap-image = <boolean> [true|false]
  * heading-element = <string> [h1|h2|h3|h4]
- * 
+ *
  */
 export const Topic = props => {
   if (!props.topic) {
     return <>props.topic is undefined</>
   }
-  if (props['variant'] === 'hero' && !props.topic.image) {
+  if (props.variant === 'hero' && !props.topic.image) {
     return <p>Image is required for Hero topics</p>
   }
 
-  let actionElement = 'button'
+  let actionClassName = 'fat-link'
   let HeadingElement = 'h3'
-  let variant = props['variant']
+  let variant = props.variant
   let onclick
   let headingClass
 
   switch (variant) {
-    case 'block':
-      actionElement = 'button'
-      break;
-    case 'card':
-      onclick = getOnClickAction({ globals: props.globals, action: props.topic.action })
-      break;
-    case 'featured':
-      HeadingElement = 'h2'
-      headingClass = 'display'
-      break;
-    case 'headline':
-      HeadingElement = 'h1'
-      headingClass = 'display'
-      break;
-    case 'hero':
-      HeadingElement = 'h1'
-      headingClass = 'display'
-      break;
-    case 'profile':
-      headingClass = 'display'
-      break;
-    case 'quote':
-      break;
-    case 'showcase':
-      actionElement = 'a'
-      break;
+  case 'block':
+    break
+  case 'card':
+    onclick = getOnClickAction({ globals: props.globals, action: props.topic.action })
+    break
+  case 'featured':
+    HeadingElement = 'h2'
+    headingClass = 'display'
+    break
+  case 'headline':
+    HeadingElement = 'h1'
+    headingClass = 'display'
+    break
+  case 'hero':
+    HeadingElement = 'h1'
+    headingClass = 'display'
+    break
+  case 'profile':
+    headingClass = 'display'
+    break
+  case 'quote':
+    break
+  case 'showcase':
+    actionClassName = ''
+    break
 
-    default:
-      variant = 'block'
-      break;
+  default:
+    variant = 'block'
+    break
   }
-  const topicClass = 'topic-' + variant
+  const topicClass = `topic-${variant}`
+
   HeadingElement = props['heading-element'] || HeadingElement
 
   return (
@@ -95,8 +95,8 @@ export const Topic = props => {
         {props.topic.action &&
           <Action
             action={props.topic.action}
-            className="topic-action"
-            element={actionElement}
+            className={['topic-action', actionClassName].join(' ')}
+            element="a"
             globals={props.globals}
           />}
       </div>

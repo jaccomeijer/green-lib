@@ -4,11 +4,15 @@ import { getHrefAction } from '../../jsx-helpers/get-action.js'
 
 export const Action = props => {
   const allowedElements = ['a', 'button']
-  if (!allowedElements.includes(props.element)) return `Action.props.element is required. Valid: ${allowedElements.join(', ')}`
+
+  if (!allowedElements.includes(props.element)) {
+    return `Action.props.element is required. Valid: ${allowedElements.join(', ')}`
+  }
 
   let Element
 
   const classList = [props.className]
+
   if (props.action?.icon) {
     classList.push('with-icon')
   }
@@ -19,7 +23,8 @@ export const Action = props => {
 
   if (props.element === 'a') {
     Element = 'a'
-    elementProps.href=getHrefAction({ globals: props.globals, action: props.action })
+    elementProps.href = getHrefAction({ globals: props.globals, action: props.action })
+    classList.push('u-border-radius-rounded')
     if (props.active) {
       classList.push('active')
     }
@@ -27,8 +32,8 @@ export const Action = props => {
 
   if (props.element === 'button') {
     Element = 'button'
-    elementProps.onClick=getOnClickAction({ globals: props.globals, action: props.action })
-    elementProps.element='button'
+    elementProps.onClick = getOnClickAction({ globals: props.globals, action: props.action })
+    elementProps.element = 'button'
     classList.push('button', 'u-border-radius-rounded')
   }
 

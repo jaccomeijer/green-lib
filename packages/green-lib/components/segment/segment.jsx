@@ -1,8 +1,11 @@
-import { Action } from "../action/action.jsx"
+import { Action } from '../action/action.jsx'
 
 export const Segment = props => {
-  if (!props.actions) return
+  if (!props.actions) {
+    return
+  }
   const actions = props.actions || []
+
   return (
     <ul className={[props.className].join(' ')} role="list">
       {actions.map((action, key) => (
@@ -10,6 +13,7 @@ export const Segment = props => {
           <Action
             action={action}
             active={props.pageUrl === action.url}
+            className={props.actionClassName}
             element={props.element}
             globals={props.globals}
           />

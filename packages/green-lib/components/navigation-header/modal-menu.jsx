@@ -21,8 +21,9 @@ export const ModalMenu = props => (
         />
         <Segment
           actions={props.callActions}
+          actionClassName="fat-link"
           className="popup-call-actions"
-          element="button"
+          element="a"
           globals={props.globals}
         />
       </nav>
