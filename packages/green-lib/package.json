@@ -1,6 +1,6 @@
 {
   "name": "@jaccomeijer/green-lib",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "MDX component library for green-build",
   "keywords": [
     "esbuild",
