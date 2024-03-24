@@ -1,16 +1,21 @@
-## @jaccomeijer/green-lib 4.0.2
+## @jaccomeijer/green-lib 4.1.0
 
-## [4.0.2](https://github.com/jaccomeijer/green-lib/compare/4.0.1...4.0.2) (2024-03-24)
-
-
-### Commits
-
-* update build to react folder ([ad928bd](https://github.com/jaccomeijer/green-lib/commit/ad928bd1e7c8bb7dfca6c988756af260d787e8b7))
+## [4.1.0](https://github.com/jaccomeijer/green-lib/compare/4.0.2...4.1.0) (2024-03-24)
 
 
+### Features
 
-## @local/story 4.0.2
+* make iconSpriteUrl adjustable ([db77eea](https://github.com/jaccomeijer/green-lib/commit/db77eea304198644713a66a6377c9f48edb29689))
 
-## [4.0.2](https://github.com/jaccomeijer/green-lib/compare/4.0.1...4.0.2) (2024-03-24)
+
+
+## @local/story 4.1.0
+
+## [4.1.0](https://github.com/jaccomeijer/green-lib/compare/4.0.2...4.1.0) (2024-03-24)
+
+
+### Features
+
+* make iconSpriteUrl adjustable ([db77eea](https://github.com/jaccomeijer/green-lib/commit/db77eea304198644713a66a6377c9f48edb29689))
 
 
