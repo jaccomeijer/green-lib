@@ -5,16 +5,15 @@ import { metadata } from './metadata.js'
 const buildEnv = {
   assetUrl: '/assets/',
   baseUrl: '/green-lib',
-  iconSpriteUrl: `/assets/${iconSpriteUrl}`,
 }
 
 const serveEnv = {
   assetUrl: '/assets/',
   baseUrl: '',
-  iconSpriteUrl: `/assets/${iconSpriteUrl}`,
 }
 
 export const globals = {
+  iconSpriteUrl: `/assets/${iconSpriteUrl}`,
   imageSizes: buildConfig.imageSizes,
   metadata,
   ...(process.env.MODE === 'build' ? buildEnv : {}),
