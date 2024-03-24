@@ -3,7 +3,6 @@
 *.log
 *.mdx
 *.sh
-dist
 logs
 node_modules
 npm-debug.log*
