@@ -1,4 +1,3 @@
-import { getOnClickAction } from '../../jsx-helpers/get-action.js'
 import { Action } from '../action/action.jsx'
 import { Icon } from '../icon/icon.jsx'
 import { Picture } from '../picture/picture.jsx'
@@ -24,14 +23,12 @@ export const Topic = props => {
   let actionClassName = 'fat-link'
   let HeadingElement = 'h3'
   let variant = props.variant
-  let onclick
   let headingClass
 
   switch (variant) {
   case 'block':
     break
   case 'card':
-    onclick = getOnClickAction({ globals: props.globals, action: props.topic.action })
     break
   case 'featured':
     HeadingElement = 'h2'
@@ -63,7 +60,7 @@ export const Topic = props => {
   HeadingElement = props['heading-element'] || HeadingElement
 
   return (
-    <div className={['topic', topicClass, props.className].join(' ')} onClick={onclick} key={props.key}>
+    <div className={['topic', topicClass, props.className].join(' ')}>
       {props.topic.image &&
         <Picture
           alt={props.topic.imageDescription}

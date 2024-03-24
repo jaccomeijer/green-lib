@@ -25,9 +25,10 @@ export const Picture = props => {
     return (
       <picture className={props.className}>
         {/* Create a source for each image with a higher width than the img.src */}
-        {sizesArray.map(size => (
+        {sizesArray.map((size, index) => (
           <source
-            srcset={`${imageBasePath}-${size.name}.webp`}
+            key={index}
+            srcSet={`${imageBasePath}-${size.name}.webp`}
             media={`(min-width: ${size.width}px)`}
             type="image/webp"
           />
@@ -50,5 +51,4 @@ export const Picture = props => {
       />
     </picture>
   )
-
 }

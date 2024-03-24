@@ -34,7 +34,7 @@ export const Layout = props => {
             <Menu menu={subMenu} globals={globals} className="s-flex-row" />
           </nav>
         </header>
-        <main tabindex="-1" id="main-content">
+        <main tabIndex="-1" id="main-content">
           <div className="page s-wrapper">
             <article className="markdown s-flex-column u-gap-0">
               {props.children}

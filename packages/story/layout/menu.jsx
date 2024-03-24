@@ -1,7 +1,7 @@
 import { getHrefAction } from '@jaccomeijer/green-lib'
 
 const MenuAction = props => (
-  <li key={props.key}>
+  <li>
     <a
       href={getHrefAction({
         action: props.menuAction,
@@ -16,11 +16,11 @@ export const Menu = props => {
   }
   return (
     <ul role="list" className={props.className} >
-      {props.menu.map((menuAction, key) => (
+      {props.menu.map((menuAction, index) => (
         <MenuAction
           menuAction={menuAction}
           globals={props.globals}
-          key={key}
+          key={index}
         />
       ))}
     </ul>

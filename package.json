@@ -2,7 +2,7 @@
   "name": "@local/root",
   "version": "4.1.1",
   "devDependencies": {
-    "@jaccomeijer/green-build": "1.2.1",
+    "@jaccomeijer/green-build": "2.0.1",
     "esbuild": "0.20.2",
     "eslint": "8.57.0",
     "eslint-config-eslint": "9.0.0",

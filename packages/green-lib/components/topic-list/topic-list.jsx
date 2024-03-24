@@ -6,13 +6,13 @@ export const TopicList = props => {
   }
   return (
     <div className={props.className}>
-      {props.topics.map((topic, key) =>
+      {props.topics.map((topic, index) =>
         <Topic
           globals={props.globals}
           images={props.images}
           variant={props.variant}
           topic={topic}
-          key={key}
+          key={index}
         />)}
     </div>
   )

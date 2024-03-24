@@ -8,8 +8,8 @@ export const Segment = props => {
 
   return (
     <ul className={[props.className].join(' ')} role="list">
-      {actions.map((action, key) => (
-        <li key={key}>
+      {actions.map((action, index) => (
+        <li key={index}>
           <Action
             action={action}
             active={props.pageUrl === action.url}
