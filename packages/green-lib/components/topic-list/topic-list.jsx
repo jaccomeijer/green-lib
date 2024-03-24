@@ -1,4 +1,4 @@
-import { Topic } from "../topic/topic.jsx"
+import { Topic } from '../topic/topic.jsx'
 
 export const TopicList = props => {
   if (!Array.isArray(props.topics)) {
@@ -10,7 +10,7 @@ export const TopicList = props => {
         <Topic
           globals={props.globals}
           images={props.images}
-          variant={props['variant']}
+          variant={props.variant}
           topic={topic}
           key={key}
         />)}

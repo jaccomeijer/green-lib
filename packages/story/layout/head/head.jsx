@@ -11,7 +11,7 @@ export const Head = props => {
   return (<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{props.globals.metadata.branding.heading}{heading && (' - ' + heading)}</title>
+    <title>{props.globals.metadata.branding.heading}{heading && (` - ${heading}`)}</title>
     <meta name="description" content={frontmatter.description || props.globals.metadata.branding.description} />
     <meta name="generator" content={props.globals.metadata.content.generator} />
 
