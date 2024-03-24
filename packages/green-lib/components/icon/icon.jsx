@@ -9,9 +9,9 @@ export const Icon = props => {
       className={['icon', props.className].join(' ')}
       fill="none"
       stroke="currentColor"
-      stroke-width={strokeWidth}
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <use href={`${assetUrl}${sprite}#${props.icon}`} />
     </svg >

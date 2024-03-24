@@ -27,7 +27,7 @@ export const Action = props => {
 
   if (props.element === 'button') {
     Element = 'button'
-    elementProps.onclick=getOnClickAction({ globals: props.globals, action: props.action })
+    elementProps.onClick=getOnClickAction({ globals: props.globals, action: props.action })
     elementProps.element='button'
     classList.push('button', 'u-border-radius-rounded')
   }

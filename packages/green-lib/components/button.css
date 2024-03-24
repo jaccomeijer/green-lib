@@ -20,12 +20,12 @@
     filter: brightness(70%);
   }
 
-  &[data-variant='outline'] {
+  &[variant='outline'] {
     background-color: transparent;
     color: var(--button-primary-color);
   }
 
-  &[data-variant='stretch'] {
+  &[variant='stretch'] {
     width: 100%;
   }
 }

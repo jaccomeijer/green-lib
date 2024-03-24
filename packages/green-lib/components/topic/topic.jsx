@@ -8,7 +8,7 @@ import { Segment } from "../segment/segment.jsx"
  * 
  * Generic Topic component
  *  
- * data-variant = <string> [block|card|featured|headline|hero|profile|quote|showcase]
+ * variant = <string> [block|card|featured|headline|hero|profile|quote|showcase]
  * swap-image = <boolean> [true|false]
  * heading-element = <string> [h1|h2|h3|h4]
  * 
@@ -17,13 +17,13 @@ export const Topic = props => {
   if (!props.topic) {
     return <>props.topic is undefined</>
   }
-  if (props['data-variant'] === 'hero' && !props.topic.image) {
+  if (props['variant'] === 'hero' && !props.topic.image) {
     return <p>Image is required for Hero topics</p>
   }
 
   let actionElement = 'button'
   let HeadingElement = 'h3'
-  let variant = props['data-variant']
+  let variant = props['variant']
   let onclick
   let headingClass
 
@@ -63,7 +63,7 @@ export const Topic = props => {
   HeadingElement = props['heading-element'] || HeadingElement
 
   return (
-    <div className={['topic', topicClass, props.className].join(' ')} onclick={onclick}>
+    <div className={['topic', topicClass, props.className].join(' ')} onClick={onclick} key={props.key}>
       {props.topic.image &&
         <Picture
           alt={props.topic.imageDescription}

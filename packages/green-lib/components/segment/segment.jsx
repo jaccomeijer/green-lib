@@ -5,12 +5,16 @@ export const Segment = props => {
   const actions = props.actions || []
   return (
     <ul className={[props.className].join(' ')} role="list">
-      {actions.map(action => <li><Action
-        action={action}
-        active={props.pageUrl === action.url}
-        element={props.element}
-        globals={props.globals}
-      /></li>)}
+      {actions.map((action, key) => (
+        <li key={key}>
+          <Action
+            action={action}
+            active={props.pageUrl === action.url}
+            element={props.element}
+            globals={props.globals}
+          />
+        </li>
+      ))}
     </ul>
   )
 }
