@@ -1,5 +1,19 @@
 # Changelog
 
+## [4.0.0](https://github.com/jaccomeijer/green-lib/compare/3.5.0...4.0.0) (2024-03-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* For Topics, use the variant attribute instead of data-variant
+* because of React compatibility, the class attribute changed into class.
+
+### Commits
+
+* linter fixes ([9eabd57](https://github.com/jaccomeijer/green-lib/commit/9eabd57970ebcf640ca95f7b105b34af75a36813))
+* React compatibility changes ([72cb678](https://github.com/jaccomeijer/green-lib/commit/72cb67856da7a8af71d501f1529773460d8592ef))
+* Use className instead of class ([26bf0a6](https://github.com/jaccomeijer/green-lib/commit/26bf0a63949eed78bb80434edf596e52c24c2a92))
+
 ## [3.5.0](https://github.com/jaccomeijer/green-lib/compare/3.4.2...3.5.0) (2024-03-22)
 
 ## [3.4.2](https://github.com/jaccomeijer/green-lib/compare/3.4.1...3.4.2) (2024-03-21)
