@@ -2,7 +2,7 @@ import ceCss from './empty-element.ce.css'
 import ceJs from './empty-element.ce.js'
 
 export const EmptyElement = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
+  const assetUrl = (props.globals?.baseUrl || '') + (props.globals?.assetUrl || '')
 
 return (<empty-element>
     <template shadowrootmode="open">

@@ -4,7 +4,7 @@ export const Segment = props => {
   if (!props.actions) return
   const actions = props.actions || []
   return (
-    <ul class={[props.class].join(' ')} role="list">
+    <ul className={[props.className].join(' ')} role="list">
       {actions.map(action => <li><Action
         action={action}
         active={props.pageUrl === action.url}

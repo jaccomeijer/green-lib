@@ -20,28 +20,28 @@ export const Layout = props => {
         page={props.page}
       />
       <body>
-        <a class="skip-link" href="#main-content">Skip to content</a>
-        <header role="banner" class="site-header s-wrapper">
-          <div class="main-menu s-flex-row u-justify-space-between s-block-space u-block-space-2xs">
+        <a className="skip-link" href="#main-content">Skip to content</a>
+        <header role="banner" className="site-header s-wrapper">
+          <div className="main-menu s-flex-row u-justify-space-between s-block-space u-block-space-2xs">
             <nav aria-label="primary">
-              <Menu menu={mainMenu} globals={globals} class="s-flex-row" />
+              <Menu menu={mainMenu} globals={globals} className="s-flex-row" />
             </nav>
-            <div class="site-branding">
+            <div className="site-branding">
               Green lib
             </div>
           </div>
-          <nav class="sub-menu s-flex-row s-block-space u-block-space-3xs">
-            <Menu menu={subMenu} globals={globals} class="s-flex-row" />
+          <nav className="sub-menu s-flex-row s-block-space u-block-space-3xs">
+            <Menu menu={subMenu} globals={globals} className="s-flex-row" />
           </nav>
         </header>
         <main tabindex="-1" id="main-content">
-          <div class="page s-wrapper">
-            <article class="markdown s-flex-column u-gap-0">
+          <div className="page s-wrapper">
+            <article className="markdown s-flex-column u-gap-0">
               {props.children}
             </article>
           </div>
         </main>
-        <footer class="s-wrapper u-font-size--1 s-block-space u-block-space-l">
+        <footer className="s-wrapper u-font-size--1 s-block-space u-block-space-l">
           This is the unstyled footer
         </footer>
       </body>

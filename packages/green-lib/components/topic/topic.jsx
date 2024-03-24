@@ -63,18 +63,18 @@ export const Topic = props => {
   HeadingElement = props['heading-element'] || HeadingElement
 
   return (
-    <div class={['topic', topicClass, props.class].join(' ')} onclick={onclick}>
+    <div className={['topic', topicClass, props.className].join(' ')} onclick={onclick}>
       {props.topic.image &&
         <Picture
           alt={props.topic.imageDescription}
           globals={props.globals}
-          class={['topic-picture', props['swap-image'] && 'u-order-2'].join(' ')}
+          className={['topic-picture', props['swap-image'] && 'u-order-2'].join(' ')}
           src={props.images[props.topic.image]}
         />}
-      <div class="topic-content">
+      <div className="topic-content">
         {props.topic.icon &&
           <Icon
-            class="topic-icon"
+            className="topic-icon"
             globals={props.globals}
             icon={props.topic.icon}
           />
@@ -82,20 +82,20 @@ export const Topic = props => {
         {props.topic.labels &&
           <Segment
             actions={props.topic.labels.map(label => ({ heading: label }))}
-            class="topic-labels"
+            className="topic-labels"
             element='a'
             globals={props.globals}
             pageUrl={props.pageUrl}
           />
         }
         {props.topic.heading &&
-          <HeadingElement class={['topic-heading', headingClass].join(' ')}>{props.topic.heading}</HeadingElement>}
+          <HeadingElement className={['topic-heading', headingClass].join(' ')}>{props.topic.heading}</HeadingElement>}
         {props.topic.abstract &&
-          <p class="topic-abstract">{props.topic.abstract}</p>}
+          <p className="topic-abstract">{props.topic.abstract}</p>}
         {props.topic.action &&
           <Action
             action={props.topic.action}
-            class="topic-action"
+            className="topic-action"
             element={actionElement}
             globals={props.globals}
           />}

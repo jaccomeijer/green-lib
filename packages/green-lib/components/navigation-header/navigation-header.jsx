@@ -5,28 +5,28 @@ import indexCss from '../../index.bundle.css'
 import ceJs from './navigation-header.ce.js'
 
 export const NavigationHeader = props => {
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
+  const assetUrl = (props.globals?.baseUrl || '') + (props.globals?.assetUrl || '')
 
   return (<navigation-header>
     <template shadowrootmode="open">
-      <div class="navigation-header">
-        <div class="wide-menu-view">
-          <nav class="branding-main-actions" aria-label="primary">
+      <div className="navigation-header">
+        <div className="wide-menu-view">
+          <nav className="branding-main-actions" aria-label="primary">
             <Action
               action={props.globals.metadata.branding}
-              class="branding"
+              className="branding"
               element="a"
               globals={props.globals}
             />
             <Segment
               actions={props.mainActions}
-              class="main-actions"
+              className="main-actions"
               element="a"
               globals={props.globals}
               pageUrl={props.pageUrl}
             />
           </nav>
-          <nav class="social-actions">
+          <nav className="social-actions">
             <Segment
               actions={props.socialActions}
               element="a"
@@ -38,7 +38,7 @@ export const NavigationHeader = props => {
               globals={props.globals}
             />
           </nav>
-          <button class="open-menu-button button">Menu</button>
+          <button className="open-menu-button button">Menu</button>
         </div>
         <ModalMenu
           callActions={props.callActions}

@@ -8,7 +8,7 @@ export const Action = props => {
 
   let Element
 
-  const classList = [props.class]
+  const classList = [props.className]
   if (props.action?.icon) {
     classList.push('with-icon')
   }
@@ -33,7 +33,7 @@ export const Action = props => {
   }
 
   return (
-    <Element class={classList.join(' ')} {...elementProps} >
+    <Element className={classList.join(' ')} {...elementProps} >
       {props.action.icon &&
         <Icon
           icon={props.action.icon}

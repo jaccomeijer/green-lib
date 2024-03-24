@@ -5,7 +5,7 @@ export const TopicList = props => {
     return <>props.topics must be an Array</>
   }
   return (
-    <div class={props.class}>
+    <div className={props.className}>
       {props.topics.map(topic =>
         <Topic
           globals={props.globals}

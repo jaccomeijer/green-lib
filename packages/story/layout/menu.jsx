@@ -14,7 +14,7 @@ const MenuAction = props => {
 export const Menu = props => {
   if (!props.menu) return <>No submenu items</>
   return (
-    <ul role="list" class={props.class} >
+    <ul role="list" className={props.className} >
       {props.menu.map(menuAction => <MenuAction menuAction={menuAction} globals={props.globals} />)}
     </ul>
   )

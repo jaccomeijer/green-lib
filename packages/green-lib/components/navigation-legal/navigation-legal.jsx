@@ -2,7 +2,7 @@ import { Action } from '../action/action.jsx'
 
 export const NavigationLegal = props => {
   return (
-    <nav class={['navigation-legal', props.class].join(' ')}>
+    <nav className={['navigation-legal', props.className].join(' ')}>
       <div>{props.globals.metadata.branding.copyright}</div>
       <Action
         action={props.globals.metadata.vendor}

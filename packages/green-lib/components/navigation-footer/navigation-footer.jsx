@@ -2,7 +2,7 @@ import { Segment } from '../segment/segment.jsx'
 
 export const NavigationFooter = props => {
   return (
-    <nav class={['navigation-footer', props.class].join(' ')}>
+    <nav className={['navigation-footer', props.className].join(' ')}>
       <Segment
         actions={props.mainActions}
         element="a"

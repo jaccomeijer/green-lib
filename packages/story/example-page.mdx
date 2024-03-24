@@ -26,7 +26,7 @@ import { globals } from './config/globals.js'
 import demoImage from './assets/images/pexels-skyler-ewing-4596712.jpg'
 import demoImage2 from './assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
 
-<div class="s-popout">
+<div className="s-popout">
   <Topic
     globals={globals}
     images={{ demoImage, demoImage2 }}
@@ -36,7 +36,7 @@ import demoImage2 from './assets/images/rianne-zuur-PoxFTU7_QKo-unsplash.jpg'
   />
 </div>
 
-export const assetUrl = globals.baseUrl + globals.assetUrl
+export const assetUrl = (globals?.baseUrl || '') + (globals?.assetUrl || '')
 
 ## Topic opener is heading 1, continue here with heading 2
 
@@ -115,7 +115,7 @@ bibendum. Quisque maximus orci eget justo venenatis posuere.
 Sed velit sapien, sagittis quis ligula eu, molestie ornare eros. Etiam lobortis
 sagittis orci volutpat maximus.
 
-<div class="s-popout">
+<div className="s-popout">
   <Topic
     globals={globals}
     images={{ demoImage, demoImage2 }}
@@ -135,7 +135,7 @@ ut non orci. Suspendisse nec orci est. Duis id turpis quis mauris venenatis
 condimentum.
 
 <Picture
-  class="s-block-space u-block-space-s"
+  className="s-block-space u-block-space-s"
   globals={globals}
   src={ demoImage }
 />
@@ -164,7 +164,7 @@ sit amet elit dui. Fusce porta volutpat porttitor.
 Cras felis magna, imperdiet eu turpis ut, dignissim venenatis justo. Nullam
 cursus fermentum risus nec semper. Fusce ornare ipsum et facilisis consequat.
 
-<div class="s-popout">
+<div className="s-popout">
   <Topic
     globals={globals}
     images={{ demoImage, demoImage2 }}
@@ -180,7 +180,7 @@ Integer eu consectetur libero, et ullamcorper felis. Integer tempus turpis vel
 ornare pulvinar.
 
 <TopicList 
-  class="s-grid u-grid-four-cols u-gap-xs"
+  className="s-grid u-grid-four-cols u-gap-xs"
   data-variant="card"
   globals={globals}
   images={{ demoImage, demoImage2 }}

@@ -4,7 +4,7 @@ import indexCss from '@jaccomeijer/green-lib/index.bundle.css'
 
 export const Head = props => {
   const frontmatter = props.page.frontmatter
-  const assetUrl = props.globals.baseUrl + props.globals.assetUrl
+  const assetUrl = (props.globals?.baseUrl || '') + (props.globals?.assetUrl || '')
   const stylesheets = [localCss, indexCss]
   const heading = frontmatter.navigation?.heading
 
