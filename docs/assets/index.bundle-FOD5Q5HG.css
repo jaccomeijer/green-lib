@@ -1152,11 +1152,41 @@
       transition: 0.35s;
       filter: brightness(70%);
     }
-    &[data-variant=outline] {
+    &[variant=outline] {
       background-color: transparent;
       color: var(--button-primary-color);
     }
-    &[data-variant=stretch] {
+    &[variant=stretch] {
+      width: 100%;
+    }
+  }
+}
+
+/* ../green-lib/components/fat-link.css */
+@layer components {
+  a.fat-link {
+    background-color: var(--button-primary-color);
+    border: 1px solid var(--button-primary-color);
+    color: var(--button-primary-contrast-color);
+    cursor: pointer;
+    font: inherit;
+    line-height: 1;
+    padding: 0.9cap 1.5cap;
+    text-decoration: none;
+    user-select: none;
+    &:focus,
+    &:active {
+      box-shadow: 0 0 0.5rem var(--color-primary-200);
+    }
+    &:hover {
+      transition: 0.35s;
+      filter: brightness(70%);
+    }
+    &[variant=outline] {
+      background-color: transparent;
+      color: var(--button-primary-color);
+    }
+    &[variant=stretch] {
       width: 100%;
     }
   }
