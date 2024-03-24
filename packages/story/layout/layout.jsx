@@ -27,7 +27,7 @@ export const Layout = props => {
               <Menu menu={mainMenu} globals={globals} className="s-flex-row" />
             </nav>
             <div className="site-branding">
-              Green lib
+              Green lib v{globals.metadata.vendor.version}
             </div>
           </div>
           <nav className="sub-menu s-flex-row s-block-space u-block-space-3xs">
