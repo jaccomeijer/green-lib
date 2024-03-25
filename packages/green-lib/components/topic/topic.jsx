@@ -2,6 +2,7 @@ import { Action } from '../action/action.jsx'
 import { Icon } from '../icon/icon.jsx'
 import { Picture } from '../picture/picture.jsx'
 import { Segment } from '../segment/segment.jsx'
+import { getHrefAction } from '../../jsx-helpers/get-action.js'
 
 /**
  *
@@ -106,7 +107,9 @@ export const Topic = props => {
   )
 
   if (variant === 'card') {
-    return <a href={props.topic.action.url}>{topicWithoutWrapper}</a>
+    const href = getHrefAction({ globals: props.globals, action: props.topic.action })
+
+    return <a href={href}>{topicWithoutWrapper}</a>
   }
   return topicWithoutWrapper
 }
