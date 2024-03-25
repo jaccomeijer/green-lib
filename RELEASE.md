@@ -1,16 +1,21 @@
-## @jaccomeijer/green-lib 4.1.3
+## @jaccomeijer/green-lib 4.2.0
 
-## [4.1.3](https://github.com/jaccomeijer/green-lib/compare/4.1.2...4.1.3) (2024-03-24)
-
-
-### Bug Fixes
-
-* center text of fat-link ([9018b1c](https://github.com/jaccomeijer/green-lib/commit/9018b1c407aa04da6b502a7d08437b06e52665a9))
+## [4.2.0](https://github.com/jaccomeijer/green-lib/compare/4.1.3...4.2.0) (2024-03-25)
 
 
+### Features
 
-## @local/story 4.1.3
+* topic card with anchor wrapper instead of onclick handler ([3f45160](https://github.com/jaccomeijer/green-lib/commit/3f4516035cd2bf3db2885823a2aa0135b9a11b6a))
 
-## [4.1.3](https://github.com/jaccomeijer/green-lib/compare/4.1.2...4.1.3) (2024-03-24)
+
+
+## @local/story 4.2.0
+
+## [4.2.0](https://github.com/jaccomeijer/green-lib/compare/4.1.3...4.2.0) (2024-03-25)
+
+
+### Features
+
+* topic card with anchor wrapper instead of onclick handler ([3f45160](https://github.com/jaccomeijer/green-lib/commit/3f4516035cd2bf3db2885823a2aa0135b9a11b6a))
 
 
