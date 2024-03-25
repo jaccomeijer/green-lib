@@ -1,6 +1,6 @@
 const parseUrl = ({ globals, action }) => {
   if (!(action?.url)) {
-    return '#'
+    return ''
   }
   if (action.url && action.url.startsWith('http')) {
     return action.url

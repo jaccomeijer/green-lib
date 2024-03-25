@@ -25,7 +25,7 @@
     gap: var(--space-xs);
     height: 100%;
     .topic-icon {
-      font-size: var(--font-size-4);
+      font-size: var(--font-size-3);
       color: var(--color-primary-400);
     }
     .topic-labels {

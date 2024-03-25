@@ -10,6 +10,7 @@
     @container (min-width: 45rem) {
       & {
         aspect-ratio: 15/7;
+        min-height: 38rem;
       }
     }
   }
@@ -29,14 +30,14 @@
     top: 0;
     width: 100%;
  
-    .topic-icon {
-      font-size: var(--font-size-5);
-    }
-
     .topic-labels {
       font-size: var(--font-size-1);
       font-weight: var(--font-body-weight-bold);
       justify-content: center;
+    }
+
+    .topic-icon {
+      font-size: var(--font-size-5);
     }
 
     .topic-heading.display {

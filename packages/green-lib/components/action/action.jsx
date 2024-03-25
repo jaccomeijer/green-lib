@@ -22,8 +22,15 @@ export const Action = props => {
   }
 
   if (props.element === 'a') {
-    Element = 'a'
-    elementProps.href = getHrefAction({ globals: props.globals, action: props.action })
+    const href = getHrefAction({ globals: props.globals, action: props.action })
+
+    // Without action url, render a div element without href
+    if (href) {
+      Element = 'a'
+      elementProps.href = href
+    } else {
+      Element = 'div'
+    }
     classList.push('u-border-radius-rounded')
     if (props.active) {
       classList.push('active')

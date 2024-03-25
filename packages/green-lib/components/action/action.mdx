@@ -8,6 +8,10 @@ action:
   icon: circle
   url: /demo-url-with-icon
 
+actionWithoutUrl:
+  heading: actionWithoutUrl
+  icon: circle
+
 actionWithHref:
   heading: actionWithHref
   icon: circle
@@ -49,6 +53,22 @@ import { globals } from '@local/story/config/globals.js'
 ```
 <Action
   action={frontmatter.action}
+  className="u-font-size-0"
+  globals={globals}
+  element="a"
+/>
+
+### Example
+```html
+<Action
+  action={frontmatter.actionWithoutUrl}
+  className="u-font-size-0"
+  globals={globals}
+  element="a"
+/>
+```
+<Action
+  action={frontmatter.actionWithoutUrl}
   className="u-font-size-0"
   globals={globals}
   element="a"

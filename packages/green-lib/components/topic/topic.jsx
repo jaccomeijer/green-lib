@@ -24,11 +24,16 @@ export const Topic = props => {
   let HeadingElement = 'h3'
   let variant = props.variant
   let headingClass
+  const internalAction = Object.assign({}, props.topic.action)
 
   switch (variant) {
   case 'block':
     break
   case 'card':
+
+    // Cards are fully clickable by wrapping an anchor, this means the internal
+    // action must be disabled
+    delete internalAction.url
     break
   case 'featured':
     HeadingElement = 'h2'
@@ -59,7 +64,7 @@ export const Topic = props => {
 
   HeadingElement = props['heading-element'] || HeadingElement
 
-  return (
+  const topicWithoutWrapper = (
     <div className={['topic', topicClass, props.className].join(' ')}>
       {props.topic.image &&
         <Picture
@@ -89,9 +94,9 @@ export const Topic = props => {
           <HeadingElement className={['topic-heading', headingClass].join(' ')}>{props.topic.heading}</HeadingElement>}
         {props.topic.abstract &&
           <p className="topic-abstract">{props.topic.abstract}</p>}
-        {props.topic.action &&
+        {internalAction &&
           <Action
-            action={props.topic.action}
+            action={internalAction}
             className={['topic-action', actionClassName].join(' ')}
             element="a"
             globals={props.globals}
@@ -99,4 +104,9 @@ export const Topic = props => {
       </div>
     </div>
   )
+
+  if (variant === 'card') {
+    return <a href={props.topic.action.url}>{topicWithoutWrapper}</a>
+  }
+  return topicWithoutWrapper
 }
