@@ -554,7 +554,7 @@
         }
       }
       .topic-icon {
-        font-size: var(--font-size-5);
+        font-size: var(--font-size-4);
       }
       .topic-heading.display {
         font-size: var(--font-size-4);
@@ -575,6 +575,7 @@
     border-radius: var(--border-radius-rounded);
     border: 1px solid var(--color-mono-200);
     box-shadow: 0 0 1rem var(--color-mono-100);
+    cursor: pointer;
     padding: var(--space-s);
     transition: transform .20s ease;
     &:hover {
@@ -583,6 +584,11 @@
     .topic-abstract {
       flex: 1;
     }
+  }
+  :is(a, a:visited):has(> .topic-card) {
+    text-decoration: none;
+    display: block;
+    width: 100%;
   }
 }
 
@@ -613,7 +619,7 @@
       gap: var(--space-xs);
       height: 100%;
       .topic-icon {
-        font-size: var(--font-size-4);
+        font-size: var(--font-size-3);
         color: var(--color-primary-400);
       }
       .topic-labels {
@@ -742,6 +748,7 @@
       @container (min-width: 45rem) {
         & {
           aspect-ratio: 15/7;
+          min-height: 38rem;
         }
       }
     }
@@ -754,13 +761,13 @@
       position: absolute;
       top: 0;
       width: 100%;
-      .topic-icon {
-        font-size: var(--font-size-5);
-      }
       .topic-labels {
         font-size: var(--font-size-1);
         font-weight: var(--font-body-weight-bold);
         justify-content: center;
+      }
+      .topic-icon {
+        font-size: var(--font-size-5);
       }
       .topic-heading.display {
         font-size: var(--font-size-5);
@@ -1163,8 +1170,7 @@
 
 /* ../green-lib/components/fat-link.css */
 @layer components {
-  a.fat-link,
-  a:visited.fat-link {
+  :is(a, a:visited, div).fat-link {
     background-color: var(--button-primary-color);
     border: 1px solid var(--button-primary-color);
     color: var(--button-primary-contrast-color);
