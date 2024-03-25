@@ -1,5 +1,7 @@
 # Changelog
 
+## [4.2.2](https://github.com/jaccomeijer/green-lib/compare/4.2.1...4.2.2) (2024-03-25)
+
 ## [4.2.1](https://github.com/jaccomeijer/green-lib/compare/4.2.0...4.2.1) (2024-03-25)
 
 ## [4.2.0](https://github.com/jaccomeijer/green-lib/compare/4.1.3...4.2.0) (2024-03-25)

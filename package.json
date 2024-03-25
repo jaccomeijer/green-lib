@@ -1,6 +1,6 @@
 {
   "name": "@local/root",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "devDependencies": {
     "@jaccomeijer/green-build": "2.0.1",
     "esbuild": "0.20.2",
