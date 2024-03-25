@@ -587,7 +587,7 @@
   }
   :is(a, a:visited):has(> .topic-card) {
     text-decoration: none;
-    display: block;
+    display: flex;
     width: 100%;
   }
 }
