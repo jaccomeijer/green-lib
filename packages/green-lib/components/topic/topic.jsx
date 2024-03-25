@@ -94,7 +94,7 @@ export const Topic = props => {
           <HeadingElement className={['topic-heading', headingClass].join(' ')}>{props.topic.heading}</HeadingElement>}
         {props.topic.abstract &&
           <p className="topic-abstract">{props.topic.abstract}</p>}
-        {internalAction &&
+        {props.topic.action &&
           <Action
             action={internalAction}
             className={['topic-action', actionClassName].join(' ')}
